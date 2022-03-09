@@ -1,6 +1,89 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import '../css/index.scss';
+import '../css/slider.scss';
+import translation from '../locales/en.json';
+const {lang = "en" } = Astro.props;
 
-const {lang: lang } = Astro.props;
 ---
-<Layout lang={lang} />
+
+<script defer type="module" hoist>
+import '../js/index.ts';
+</script>
+
+<style>
+    main > .slider {
+        position: relative;
+    }
+    main > .slider li {
+        position: absolute;
+    }
+    main > .slider li:first-child {
+        position: relative;
+    }
+</style>
+
+<Layout lang={lang} title="index" description="index">
+<ul class="slider">
+    <li>
+        <a href="/story/nestpower">
+            <picture>
+                <source srcset="/img/index/sp/headimg01-sp_en.jpg" media="(max-width: 480px)" />
+                <img src="/img/index/headimg01_en.jpg" width="1920" height="800" alt="" />
+            </picture>
+        </a>
+    </li>
+    <li>
+        <a href="/story/">
+            <picture>
+                <source srcset="/img/index/sp/headimg02-sp_en.jpg" media="(max-width: 480px)" />
+                <img src="/img/index/headimg02_en.jpg" width="1920" height="800" alt="" />
+            </picture>
+        </a>
+    </li>
+    <li>
+        <a href="/story/threepromises">
+            <picture>
+                <source srcset="/img/index/sp/headimg03-sp_en.jpg" media="(max-width: 480px)" />
+                <img src="/img/index/headimg03_en.jpg" width="1920" height="800" alt="" />
+            </picture>
+        </a>
+    </li>
+</ul>
+
+<section id="products">
+    <h2>Products</h2>
+    <section id="HealthyFood">
+        <header data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear">
+            <h3 title="Healthy Food">{translation.index.food.title}</h3>
+            <p>
+                {translation.index.food.sub}<em>{translation.index.food.emphasis}</em>
+            </p>
+        </header>
+
+        <div data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear" data-sal-delay="1000">
+            <p>{translation.index.food.body}</p>
+            <p class="button">
+                <a href="/product/healthy_food">{translation.index.category.button}</a>
+            </p>
+        </div>
+    </section>
+
+    <section id="SkinCare">
+        <header data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear">
+            <h3 title="Skin Care">{translation.index.care.title}</h3>
+            <p>
+                {translation.index.care.sub}<em class="attention">{translation.index.care.attention.symbol}</em>
+                <em>{translation.index.care.emphasis}</em>
+            </p>
+            <p class="attention">{translation.index.care.attention.symbol}{translation.index.care.attention.comment}</p>
+        </header>
+        <div data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear" data-sal-delay="1000">
+            <p>{translation.index.care.body}</p>
+            <p class="button">
+                <a href="/product/cosmetics">{translation.index.category.button}</a>
+            </p>
+        </div>
+    </section>
+</section>
+</Layout>

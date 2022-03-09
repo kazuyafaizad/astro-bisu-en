@@ -848,7 +848,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001314
-      electron-to-chromium: 1.4.78
+      electron-to-chromium: 1.4.79
       escalade: 3.1.1
       node-releases: 2.0.2
       picocolors: 1.0.0
@@ -1039,8 +1039,8 @@ packages:
     resolution: {integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=}
     dev: true
 
-  /electron-to-chromium/1.4.78:
-    resolution: {integrity: sha512-o61+D/Lx7j/E0LIin/efOqeHpXhwi1TaQco9vUcRmr91m25SfZY6L5hWJDv/r+6kNjboFKgBw1LbfM0lbhuK6Q==}
+  /electron-to-chromium/1.4.79:
+    resolution: {integrity: sha512-nWfAxof87mGHkbORCwVRPst4FlSVdprOKS6dBMrcwn3sjwf8iHXEhsu1+FU5Psd7Ps3KKeBufAdfsPK5BmbSUg==}
     dev: true
 
   /emmet/2.3.6:
