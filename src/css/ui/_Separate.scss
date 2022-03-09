@@ -1,0 +1,23 @@
+@mixin Separate-flex($Percentage, $margin) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    > * {
+        margin-top: $margin;
+        margin-bottom: $margin;
+        width: $Percentage;
+    }
+}
+@mixin Separate($num, $subtraction: 0, $margin: 0, $mobile: false) {
+    $Percentage: 100% / $num - $subtraction;
+
+    @if ($mobile == true) {
+        @include Separate-flex($Percentage, $margin);
+        @content;
+    } @else if ($mobile == false) {
+        @include min-screen($breakpoint-sp-horizontal) {
+            @include Separate-flex($Percentage, $margin);
+            @content;
+        }
+    }
+}

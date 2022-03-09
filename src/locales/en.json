@@ -1,0 +1,389 @@
+{
+    "master": {
+        "sitename": "BI-SU Official",
+        "gtm": "master.gtm",
+        "nav": {
+            "1": {
+                "1": {
+                    "title": "Thoughts of the CEO"
+                },
+                "2": {
+                    "title": "3 promises of BI-SU"
+                },
+                "3": {
+                    "title": "Mysterious power of swiftlet's nest"
+                },
+                "4": {
+                    "title": "It is possible because it is \"Genuine\""
+                },
+                "head": "Brand Story"
+            },
+            "2": {
+                "1": {
+                    "a": "Featured products",
+                    "b": "All products",
+                    "c": "BI-SU Health Foods",
+                    "d": "BI-SU Cosmetics"
+                },
+                "2": {
+                    "a": "About the payment",
+                    "b": "About the delivery",
+                    "c": "About regular delivery",
+                    "d": "Full refund service",
+                    "e": "About wrapping"
+                },
+                "3": {
+                    "a": "Login",
+                    "a_link": "https://shop.bi-su.jp/ec/cart/list",
+                    "b": "Sign Up",
+                    "b_link": "https://shop.bi-su.jp/auth/regist"
+                },
+                "head": "Shop"
+            },
+            "3": {
+                "1": {
+                    "title": "BI-SU Customer Centre"
+                },
+                "2": {
+                    "title": "Mail Inquiry"
+                },
+                "head": "Q&A"
+            },
+            "4": {
+                "1": {
+                    "a": "Notification",
+                    "b": "News",
+                    "c": "Column",
+                    "d": "Media",
+                    "e": "Genuine"
+                },
+                "2": {
+                    "a": "Company profile / milestone",
+                    "b": "Message from the CEO",
+                    "c": "Miranest",
+                    "d": "Job Information"
+                },
+                "head": "Contact"
+            },
+            "call": "tel:0120-128-213"
+        },
+        "footer": {
+            "copy": "© 2020 M-Style Japan Co., Ltd."
+        },
+        "description": "Bi-Su is a natural swiftlet's nest brand that contains glyco-nutrients sialic acid, EGF, and FGF. We manufacture and sell beauty and health foods, supplements, and cosmetics using only genuine raw materials harvested in the jungle of Malaysia. BI-SU is the miracle created from the finest 100% natural swiftlet's nest. "
+    },
+    "index": {
+        "title": "Beauty & health foods and cosmetics containing 100% natural swiftlet's nest",
+        "description": "Bi-Su is a natural swiftlet's nest brand that contains glyco-nutrients sialic acid, EGF, and FGF. We manufacture and sell beauty and health foods, supplements, and cosmetics using only genuine raw materials harvested in the jungle of Malaysia. BI-SU is the miracle created from the finest 100% natural swiftlet's nest.",
+        "items": {
+            "1": {
+                "title": "Face Cream"
+            },
+            "2": {
+                "title": "Lotion"
+            },
+            "3": {
+                "title": "Hand Cream (Rose)"
+            },
+            "4": {
+                "title": "Enzyme Stick"
+            },
+            "title": "Seasonal Item"
+        },
+        "food": {
+            "title": "Healthy Foods",
+            "sub": "Approaching Beauty and Health",
+            "emphasis": "With the abundance of glyco-nutrients",
+            "body": "The priceless treasure of swiftlet’s nest has been valued as an excellent foodstuff since ancient times. Approaching the abundance of glyco-nutrients within. Beautiful from the inside of the body, and achieve a healthy daily life."
+        },
+        "category": {
+            "button": "View the products"
+        },
+        "care": {
+            "title": "Skincare",
+            "sub": "Natural anti-aging ingredients",
+            "emphasis": "肌で感じるツバメの巣の恵み",
+            "body": "The base is the extract extracted from swiftlet’s nest, a natural beauty and moisturizing ingredient. Richly contained with glyco-nutrients to support the natural beauty of your hair and skin.",
+            "attention": {
+                "symbol": "*",
+                "comment": "Age Appropriate Care"
+            }
+        },
+        "policy": {
+            "1": "Dealing with BI-SU",
+            "2": "Privacy Policy",
+            "3": "Notation based on Specified Commercial Transaction Law"
+        },
+        "nav": {
+            "sns": {
+                "1": {
+                    "link": "https://twitter.com/BiSuOfficialEn1",
+                    "title": "twitter"
+                },
+                "2": {
+                    "link": "https://www.facebook.com/bisueng2018",
+                    "title": "facebook"
+                },
+                "3": {
+                    "link": "https://www.instagram.com/bi_su_official_english/",
+                    "title": "instagram"
+                }
+            }
+        }
+    },
+    "story": {
+        "1": {
+            "title": "Swiftlet's Nest, a very treasure and a talisman, a remedy for major diseases in Malaysia",
+            "body": {
+                "1": "The \"BI-SU\" brand started with the encounter of Inatomi (CEO) with swiftlet's nest.",
+                "2": "Back in 2009, Mr Inatomi felt some emptiness while he was managing  construction and restaurant businesses. \"Is there anything that I can enthusiastically do in my life?\" His first encounter with the swiftlet's nest was during a dinner in Malaysia. He was in tremendous shock when he heard that the local people consumes swiftlet's nest as a talisman and a remedy against serious illness and to hear about the benefits of swiftlet's nest.",
+                "3": "\"Isn't swiftlet's nest originated from China?\", \"Why is it consumed as a talisman and a remedy against serious illness?\" Numbers of questions that popped up in his head, and vaguely he felt that \"isn't this what I want to devote myself to throughout my life?\" In that very moment, he felt like the encounter was his destiny."
+            }
+        },
+        "2": {
+            "title": "Returning to Malaysia as his heart moved by the mystery and current situation.",
+            "body": {
+                "1": "Immediately after returning to Japan, Mr Inatomi read more information and books on the swiftlet's nest. The more he investigated, the more he discovered the charm of the swiftlet's nest and its mystery that has yet to be revealed. At the same time, he was very concerned on the environment surrounding the swiftlet's nest.",
+                "2": "This swiftlet's nest is extremely rare as a food material and has various effects on humans. Hence there are mass production of fake nest as well as over-hunting of swiftlet's nest that destroying mother nature.",
+                "3": "Mr Inatomi headed back to Malaysia while decided that \"My mission is to convey the wonders of a real swiftlet’s nest to as many people as possible!\""
+            }
+        },
+        "3": {
+            "title": "Heading to the Jungle, a life-threatening destination.",
+            "body": {
+                "1": "\"I want people to know the real swiftlet's nest. That's why I need to deliver it myself.\" With that in mind, he made contact with a Malaysian who’s familiar with the swiftlet’s nest in Malaysia, and crossed the sea to hear his story.",
+                "2": "Mr Inatomi asked the contact person on the swiftlet's nest that he showed, \"I may seems rude, but is this a real, natural swiftlet's nest? Is there anything that proves it?\" The answer returned was \"It's real, but there is no proof.\" Mr Inatomi then asked, \"I can't deliver it with confidence without checking with my own eyes to see if it's genuine. I'd like you to take me to the site where the nests are being harvested.\" But the contact person refused Mr Inatomi's request. This was because the cave where swiftlets nested are in the land that is strictly managed by the government. Moreover, ones also need to cross a live-threatening jungle to go to the cave.",
+                "3": "However, as a result of Mr Inatomi's strong determination and attitude towards the swiftlet's nest, he was finally allowed to accompany him to the cave."
+            }
+        },
+        "4": {
+            "title": "Intuition that \"this is life-changing place\"",
+            "body": {
+                "1": "The caves, where swiftlets live, are located on Borneo Island, a wilderness full of 1.5 million species of plants and animals, two hours away from the Peninsular Malaysia by air. To reach your destination, you'll have to travel by car 2 to 3 hours from the airport, and then followed by miles of jungles and mountains trekking.",
+                "2": "In the jungle, he encountered with the endangered orang utan and the dangerous poisonous spiders and snakes. The cave that appears after miles of trekking in such a jungle is strictly controlled by the Malaysian government. Only in the specific seasons and the appointed persons are allowed to enter the area.",
+                "3": "The moment when he first entered the cave, he was fascinated by the mystery, trembled and intuitively felt that \"this is a life-changing place\"."
+            }
+        },
+        "5": {
+            "title": "Even for a veteran, harvesting swiftlet's nests is so dangerous that many fatalities recorded each year.",
+            "body": {
+                "1": "Swiftlets live in a cave that is large enough to fit an entire Tokyo Dome.",
+                "2": "The harvesting of swiftlet's nests is done by climbing an iron ladder in this large cave without a lifeline, so every year even veterans lose their lives. Even so, they are harvested since it gives high incomes to the harvester, but behind that reasons, they might have been fascinated to the mysteries of the swiftlet’s nest.",
+                "3": "Inatomi was not an exception. When he picked up the swiftlet's nest, he was really fascinated by its beauty  that made him decided that [I will deliver this wonderful creation to the world ]."
+            }
+        },
+        "title": "BI-SU Story",
+        "stories": {
+            "title": "~Encounter with the natural swiftlet's nest~"
+        },
+        "motto": "Risking life to ensure the genuineness of the product",
+        "goal": {
+            "title": "What is the goal of BI-SU?",
+            "body": {
+                "1": "Mr Inatomi has been travelling to Malaysia every year since the establishment of BI-SU, and harvesting swiftlet's nests with his own hands. The reason for this is, of course, the desire to \"deliver the real swiftlet's nest\", but at the same time to ritually thanks and pay respect to the swiftlets.",
+                "2": "\"I want to deliver this wonderful creation to t\"he world. This thought is the starting point of \"BI-SU\". Bit by bit, thanks to the customers who understand its genuineness, BI-SU has grown bigger. However, we have not reached the top of the mountain we are aiming for. The current situation with the swiftlet’s nest is still in bad condition, the \"environmental destruction of the jungle\" and \"the distribution of fake nests\" still continues.",
+                "3": "We will not only be receiving the blessings of the swiftlets, but also need to improve the environment of the jungle and mother nature, and convey the genuine  goodness to the world. We will only reach our goal when the BI-SU's activity acknowledge by the world and when the relation between human and nature becomes a \"circulating relation\" that compensate each other. Mr Inatomi believes that is the way to return the favour to the swiftlets that shared with us their grace",
+                "4": "BI-SU will continue to grow with the customers who understand the genuineness of the products."
+            },
+            "dfn": "「Genuine＋Heart」＝BI-SU"
+        }
+    },
+    "threepromises": {
+        "1": {
+            "title": "It is possible because it is \"genuine\"",
+            "sub": "There are reasons why we are very particular on the genuineness",
+            "body": {
+                "1": "The swiftlet's nest is a rare species that can only be found in very limited places, such as caves in the jungles and coastal cliffs of Southeast Asia. In addition, because it is extremely valuable in terms of beauty and health, a great number of fake and cultivated products are in circulation.",
+                "2": "The fake, of course, does not have the original effect of the swiftlet's nest. Recent research has also revealed that cultivated products also have less nutrients than the natural ones. It is thought that cultured farming attracts swiftlets to the birds-house to form the nests, that water, food and air condition also different from the natural habitat. That's why \"BI-SU\" is particular about the genuine, natural nest."
+            }
+        },
+        "2": {
+            "title": "Differences between genuine and farm cultured nest",
+            "body": "The nest of swiftlets contains a lot of non-native ingredients that hold the key to beauty and health. * Self-analysis and research by our company"
+        },
+        "3": {
+            "title": "Returning the favour to the swiftlets\"",
+            "sub": "Over-hunted of swiftlet's nest",
+            "body": {
+                "1": "Swiftlets will never use the same nest twice after parenting period. Therefore, the swiftlet's nest is a complete blessing of nature with no damage to the natural environment.",
+                "2": "However, if you over-exploit the nest before the eggs being laid or before the hatchling leave the nest, you will naturally jeopardise the life of the swiftlets. We want to protect the natural environment rather than exploiting it only for humans need. Therefore, \"BI-SU\" only harvest the nest from the cave controlled by the Malaysian government, where the harvesting is only allowed for a certain period of time and only nest that has been confirmed left by the hatchlings are harvested. ",
+                "3": "Furthermore, since the beginning of our business, we have consistently donated a part of our sales to protect the environment in Borneo. In recognition of this activity, we received a letter of appreciation from the Malaysian government and a \"certificate of genuineness\" of the swiftlet's nest."
+            }
+        },
+        "title": "3 promises",
+        "header": {
+            "title": "3 promises",
+            "list": {
+                "1": "BI-SU promises to deliver \"genuine products only\" that we have checked with our own eyes.",
+                "2": "BI-SU contributes to the creation of the natural environment that protects the ecosystem.",
+                "3": "BI-SU tries to unearths the unknown possibilities hidden in the swiftlet's nest that has yet to be discovered, creating wonders and happiness around the world."
+            }
+        }
+    },
+    "nestpower": {
+        "1": {
+            "title": {
+                "1": "Key to the beauty and health",
+                "2": "\"Sugar-chain\"",
+                "ruby": "Sugar-chain"
+            },
+            "body": {
+                "1": "\"Sugar-chain\" plays a very important role in our beauty and health.",
+                "2": "Sugar-chains are attached to each and every cell (about 60 trillion) in our  body like hair, and are responsible for communication between cells. Therefore, when the sugar-chains are reduced, it becomes difficult for the wound to regenerate and our immunity becomes weak.",
+                "3": "In order for sugar-chains to work properly, you need to supplement eight kinds of \"glyco-nutrients\"."
+            }
+        },
+        "2": {
+            "title": "Swiftlet's nest compensate the sugar-chain nutrients in a well-balanced manner",
+            "body": "It is quite difficult to intake all eight types of  \"glyco-nutrients\" from our diet and it needs to be compensated through supplements. The swiftlet's nest contains 6 types of glyco-nutrients. Amongst them, the amount of sialic acid, which is the key to sugar-chains, is 200 times that of Royal Jelly."
+        },
+        "3": {
+            "title": "Two-ingredient factors contained in swiftlet's nest"
+        },
+        "title": "Mysterious power of swiftlet's nest",
+        "glycan": {
+            "1": {
+                "1": "Glucose",
+                "2": "Galactose",
+                "3": "Mannose",
+                "4": "Fucose",
+                "5": "Xylose",
+                "6": "Nr-Acetylglucosamine",
+                "7": "Nr-Acetylgalactosamine",
+                "8": "Sialic acid",
+                "head": "Glyco-nutrients"
+            },
+            "2": {
+                "1": "Most plants and cereals",
+                "2": "Dairy products,",
+                "3": "Cactus, konjac,",
+                "4": "Algae, mushrooms,",
+                "5": "cereals, plant skins, mushrooms",
+                "6": "crustacean,",
+                "7": "Milk, shark cartilage,",
+                "8": "Breast Milk,",
+                "head": "Main ingredient",
+                "2_nest": "Swiftlet's Nest",
+                "3_nest": "Swiftlet's Nest",
+                "4_nest": "Swiftlet's Nest",
+                "6_nest": "Swiftlet's Nest",
+                "7_nest": "Swiftlet's Nest",
+                "8_nest": "Swiftlet's Nest"
+            },
+            "3": {
+                "head": "Ease of consumption",
+                "1_2": "Can be adequately replenish through meal",
+                "3_5": "Only small amount can be replenished through meal",
+                "6_8": "Mostly cannot be replenished through meal"
+            }
+        },
+        "possibility": {
+            "title": "Uncover the infinite possibilities.",
+            "body": "The swiftlet's nest possess a history of more than 2000 years, but yet some part of its benefits still remain unknown.  We established the \"Swiftlet's Nest Research Center\" with the aim of revealing its power. We are also conducting joint research with university and hospitals. In addition to the beauty and health fields, we also aim to eventually apply to various fields."
+        }
+    },
+    "other": {
+        "about_us": {
+            "title": "M-Style Japan Company Profile",
+            "company": {
+                "head": "Company Profile",
+                "shopname": {
+                    "title": "Store Name",
+                    "body": "Bi-SU"
+                },
+                "name": {
+                    "title": "Company Name",
+                    "name": "M-Style Japan Co. Ltd."
+                },
+                "tel": {
+                    "office": {
+                        "title": "Telephone Number",
+                        "body": "092-406-4564"
+                    },
+                    "new": {
+                        "title": "toll free number",
+                        "no": "0120-128-213",
+                        "text": ""
+                    },
+                    "concierge": {
+                        "title": "toll free number",
+                        "no": "0120-005-213",
+                        "text": ""
+                    }
+                },
+                "url": {
+                    "title": "URL",
+                    "body": "https://en.bi-su.jp/"
+                },
+                "mail": {
+                    "title": "Email Address",
+                    "body": "info-global@bi-su.jp"
+                },
+                "address": {
+                    "title": "Address",
+                    "zipcode": "Postal Code: 810-0021",
+                    "body": "1-20-2 TENJIN MENT 9F, Imaizumi, Chuo-ku, Fukuoka City. Fukuoka Prefecture"
+                },
+                "fax": {
+                    "title": "Fax Number",
+                    "no": "092-406-4565"
+                },
+                "details": {
+                    "title": "Business Contents",
+                    "data1": "Manufacturing and sale of health foods and beauty cosmetics made from 100% natural swiftlets nest. Also receiving mail orders through internet catalogue.",
+                    "data2": "Development and marketing of new products using natural swiftlets nest as raw materials"
+                },
+                "brand": {
+                    "title": "Our Company Brand",
+                    "body": "美巣(BI-SU) ミラネスト(MIRANEST)"
+                },
+                "realstore": {
+                    "title": "Distributor",
+                    "body": "Isetan Shinjuku Flagship Store"
+                },
+                "client": {
+                    "title": "Main Business Deals",
+                    "body": "Ginza Furuta & Lexus Kurume"
+                }
+            },
+            "qualitypolicy": {
+                "head": "Quality Policy",
+                "list1": "The Malaysian government strictly controls the harvesting in caves and only entities that have obtained certification by the government is able to handle nests and even to enter the caves. Bi-Su brings only 100% natural swiftlets nest to our customers",
+                "list2": "Our factories are manufacturing under a very thorough hygienic control and is undergoing GMP (Goof Manufacturing Practice) obtained in Japan and also in Malaysia. This standard is proof that a factory is able to produce high quality and safe products. In addition, dirt and dust from the swiftlets nest itself is removed carefully by hand."
+            },
+            "history": {
+                "head": "History",
+                "1": {
+                    "title": "Year 2010",
+                    "data": "M-Style Japan Co. Ltd."
+                },
+                "2": {
+                    "title": "Year 2013",
+                    "data": "Confrence meeting with The Father of Malaysia, Prime Minister Tun Dr Mahathir Mohamad"
+                },
+                "3": {
+                    "title": "Year 2014",
+                    "data": "M-Stlye Asia is established in Hong Kong"
+                },
+                "4": {
+                    "title": "Year 2015",
+                    "data": "Acquired Halal Certification"
+                },
+                "5": {
+                    "title": "Year 2016",
+                    "data": "Launch of new brand, MIRANEST"
+                }
+            },
+            "ceo": {
+                "head": "CEO MESSAGE",
+                "subhead": "We are delivering genuine items only",
+                "message1": "Fake swiftlets nests have been circulating in the market. So it is our duty to bring forward genuine products.",
+                "message2": "We went deep inside the caves ourselves, risking our lives to scale the walls to bring you genuine goods which we have seen with our own eyes and touch with our own hands.",
+                "message3": "In order to preserve the ecosystem and nature, we only harvest nests which have finished serving its purpose. We want to bring happiness as much as possible to the swiftlets.",
+                "company": "M-Style Japan Co. Ltd.",
+                "title1": "Representative and Director",
+                "title2": "Swiftlets Nest Hunter"
+            }
+        }
+    }
+}

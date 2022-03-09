@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+// breakpoint
+$breakpoint-pc: 1400px; // PC
+$breakpoint-tablet: 1000px; // タブレット
+$breakpoint-sp-horizontal: 600px; // SP横
+$breakpoint-sp-vertical: 440px; // SP縦
+
+//$base-padding: 1em;
+//$section-clearance: 100px; // セクションごとの隙間（隣のセクションと合わせて合計100）
+
+// -------------------------------------------------
+
+// 指定以下に適用
+@mixin max-screen($break-point) {
+    @media screen and (max-width: $break-point) {
+        @content;
+    }
+}
+// 指定以上に適用
+@mixin min-screen($break-point) {
+    @media screen and (min-width: $break-point+1) {
+        @content;
+    }
+}
+// 指定範囲に適用
+@mixin screen($break-point-min, $break-point-max) {
+    @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+        @content;
+    }
+}
+
+// -------------------------------------------------
+
+/*
+    ボタン
+    @mixin Button(
+        $selector,
+        $bgcolor: --button-bg-color,
+        $txcolor: --button-text-color
+    ){
+        @content;
+    };
+*/
+@import "../ui/button";
+
+/*
+    指定数に分割 (分割数, 引く幅の割合, 上下間隔, モバイルで無効)
+    @mixin Separate($num, $subtraction: 0, $margin: 0, $mobile: false);
+*/
+@import "../ui/Separate";
+
+// -------------------------------------------------
+
+@mixin animationValue($name, $duration, $function, $delay, $count, $state) {
+    animation: $name $duration + s $function $delay + s $count $state;
+}

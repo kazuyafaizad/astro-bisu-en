@@ -1,0 +1,25 @@
+#msie {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #333;
+    background-color: #fec;
+    padding: 0.25em 0.75em;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    font-size: 0.9em;
+    h2 {
+        display: none;
+    }
+    p {
+        margin: 0.5em;
+    }
+    strong {
+        color: #999;
+    }
+    a {
+        color: #bf3335;
+        text-decoration: underline;
+    }
+}

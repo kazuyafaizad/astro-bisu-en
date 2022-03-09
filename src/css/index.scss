@@ -1,0 +1,429 @@
+@use "sass:math";
+@import "./modules/variables";
+
+#search {
+    width: 95%;
+    margin: 1rem auto 0;
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    form {
+        display: flex;
+        input {
+            width: 100%;
+            margin-right: 0.2rem;
+            appearance: none;
+            border-radius: 0;
+        }
+        button {
+            width: 65px;
+            text-align: center;
+            color: var(--color-button);
+            border: 1px solid;
+            background-color: white;
+        }
+    }
+}
+
+#whats_new {
+    width: 95%;
+    max-width: $breakpoint-tablet;
+    margin: 2rem auto;
+    font-size: 0.9rem;
+    ul li {
+        border: double 4px darkgray;
+        display: grid;
+        grid-template-columns: 5rem 2rem 7rem 1fr;
+        grid-template-areas: "tag separator date title";
+        margin: 0.5rem 0;
+        padding: 0.5rem 1rem;
+        &::before {
+            content: attr(title);
+            text-transform: capitalize;
+            grid-area: tag;
+            font-family: var(--main-font-latin);
+            color: var(--font-darkGold);
+        }
+        &::after {
+            content: "│";
+            grid-area: separator;
+            text-align: center;
+            font-family: var(--main-font-latin);
+            color: var(--font-darkGold);
+        }
+        time {
+            grid-area: date;
+            font-family: var(--main-font-latin);
+            color: var(--font-darkGold);
+        }
+        p {
+            grid-area: title;
+        }
+    }
+    @include max-screen($breakpoint-tablet) {
+        ul li {
+            grid-template-columns: min-content 1.5rem 1fr;
+            grid-template-areas: "tag separator date" "title title title";
+        }
+    }
+}
+
+#items {
+    margin: 4rem auto 6rem;
+    width: 95%;
+    max-width: $breakpoint-tablet;
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        line-height: 1.5;
+        margin: 2rem auto;
+        &::before {
+            font-size: 1.5rem;
+            font-family: var(--main-font-latin);
+            content: attr(title);
+            display: block;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        li {
+            // width: (100% / 4 - 2);
+            width: (math.div(100%, 4) -2);
+            a {
+                display: flex;
+                flex-direction: column-reverse;
+                h3 {
+                    margin-top: 1em;
+                    line-height: 1.5;
+                    font-size: 0.9rem;
+                    &::before {
+                        content: "美巣bi-su";
+                        display: block;
+                        text-transform: uppercase;
+                    }
+                    &:lang(en)::before {
+                        content: "bi-su";
+                    }
+                    &:lang(zh-TW)::before {
+                        content: "美巢燕窩";
+                    }
+                    &:lang(zh-CN)::before {
+                        content: "美巢燕窝";
+                    }
+                }
+            }
+        }
+        @include max-screen($breakpoint-sp-horizontal) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            li {
+                width: 45%;
+                text-align: center;
+                h3 {
+                    margin-bottom: 2rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .campaign {
+        + .campaign {
+            margin-top: 1rem;
+        }
+    }
+}
+
+#products {
+    margin: auto;
+    max-width: $breakpoint-pc;
+    h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        position: relative;
+        // &::after {
+        //     content: "";
+        //     display: block;
+        //     background: url(../img/index/products-head.gif) no-repeat top center;
+        //     width: 1px;
+        //     height: 80px;
+        //     margin: auto;
+        //     position: absolute;
+        //     top: 100%;
+        //     left: 0;
+        //     right: 0;
+        //     z-index: 10;
+        // }
+    }
+    section {
+        margin: 40px auto 6rem;
+        background: no-repeat top center;
+        header {
+            position: relative;
+            height: 480px;
+            background-color: #f2e9e0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h3 {
+                &::before {
+                    font-size: 1.5rem;
+                    font-family: var(--main-font-latin);
+                    content: attr(title);
+                    display: block;
+                }
+                margin-bottom: 2rem;
+            }
+            p {
+                em:not(.attention) {
+                    display: block;
+                    &:lang(ja) {
+                        &::before {
+                            content: "“";
+                        }
+                        &::after {
+                            content: "”";
+                        }
+                    }
+                    &:lang(en) {
+                        font-weight: bold;
+                    }
+                    &:lang(zh-TW) {
+                        font-weight: bold;
+                    }
+                    &:lang(zh-CN) {
+                        font-weight: bold;
+                    }
+                }
+                em.attention {
+                    vertical-align: super;
+                    font-size: small;
+                }
+                &.attention {
+                    font-size: small;
+                    position: absolute;
+                    bottom: 0.5em;
+                    right: 2em;
+                }
+            }
+        }
+        div {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            > * {
+                width: 80%;
+                margin: 0 auto;
+            }
+            .button {
+                @include Button("> a") {
+                    border: 1px solid var(--color-button);
+                    width: 300px;
+                    max-width: 80%;
+                    margin: 2rem auto 0;
+                    line-height: 3;
+                    border-radius: 3px;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 20px;
+                        height: 20px;
+                        background: url(../img/common/arrow-right.png) no-repeat center;
+                        top: 0;
+                        bottom: 0;
+                        right: 15px;
+                        margin: auto;
+                    }
+                    &:hover::after {
+                        background-image: url(../img/common/arrow-right_on.png);
+                    }
+                }
+            }
+        }
+        @include min-screen($breakpoint-sp-horizontal) {
+            display: flex;
+            align-items: flex-end;
+            padding-top: 500px;
+            > * {
+                width: 50%;
+            }
+            div {
+                height: 390px;
+            }
+            &#HealthyFood {
+                background-image: url(../img/index/products-food.jpg);
+            }
+            &#SkinCare {
+                background-image: url(../img/index/products-care.jpg);
+                flex-direction: row-reverse;
+            }
+        }
+        @include max-screen($breakpoint-sp-horizontal) {
+            padding-top: 105vw;
+            background-size: contain;
+            header {
+                width: 85vw;
+                height: 85vw;
+                margin: auto;
+            }
+            div {
+                margin-top: 2rem;
+            }
+            &#HealthyFood {
+                background-image: url(../img/index/products-food_sp.jpg);
+                @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx) {
+                    background-image: url(../img/index/products-food_sp@2x.jpg);
+                }
+                @media (-webkit-min-device-pixel-ratio: 2.25), (min-resolution: 2.25dppx) {
+                    background-image: url(../img/index/products-food_sp@3x.jpg);
+                }
+                @media (-webkit-min-device-pixel-ratio: 3.25), (min-resolution: 3.25dppx) {
+                    background-image: url(../img/index/products-food_sp@4x.jpg);
+                }
+            }
+            &#SkinCare {
+                background-image: url(../img/index/products-care_sp.jpg);
+                flex-direction: row-reverse;
+                @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx) {
+                    background-image: url(../img/index/products-care_sp@2x.jpg);
+                }
+                @media (-webkit-min-device-pixel-ratio: 2.25), (min-resolution: 2.25dppx) {
+                    background-image: url(../img/index/products-care_sp@3x.jpg);
+                }
+                @media (-webkit-min-device-pixel-ratio: 3.25), (min-resolution: 3.25dppx) {
+                    background-image: url(../img/index/products-care_sp@4x.jpg);
+                }
+            }
+        }
+    }
+}
+
+// -------------------------------------------------
+
+body > footer {
+    section {
+        margin: 8rem auto 4rem;
+        #story {
+            h2 {
+                font-family: var(--main-font-latin);
+                font-size: 1.5rem;
+            }
+        }
+        #sns {
+            display: flex;
+            justify-content: center;
+            li {
+                margin: 0 0.5rem;
+                a {
+                    font-family: "icomoon";
+                }
+            }
+        }
+    }
+    #policy {
+        margin: 3rem auto 4rem;
+    }
+    @include max-screen($breakpoint-sp-horizontal) {
+        #story {
+            h2 {
+                text-align: center;
+                margin: 1rem 0;
+            }
+            ul {
+                li {
+                    border-top: 1px dashed darkgray;
+                    padding: 1rem 10%;
+                    &:last-child {
+                        border-bottom: 1px dashed darkgray;
+                    }
+                }
+            }
+        }
+        #sns {
+            margin: 3rem auto;
+            font-size: 2rem;
+        }
+        #policy {
+            border-top: 1px dashed darkgray;
+            border-bottom: 1px dashed darkgray;
+            li {
+                margin: 1rem 10%;
+            }
+        }
+        small {
+            $image-size: 130px;
+            $image-margin: 50px;
+            position: relative;
+            &::before {
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+                right: 0;
+                content: "";
+                display: block;
+                width: $image-size;
+                height: $image-size;
+                background-image: url(../img/index/foot-logo.png);
+                margin: auto;
+                margin-bottom: $image-margin;
+            }
+            margin-top: $image-size + ($image-margin * 2);
+        }
+    }
+    @include min-screen($breakpoint-sp-horizontal) {
+        section {
+            max-width: 800px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                height: 200px;
+                width: 1px;
+                margin: auto;
+                border-left: 1px solid darkgray;
+            }
+            &::after {
+                order: -1;
+                content: "";
+                display: block;
+                width: 130px;
+                height: 130px;
+                background-image: url(../img/index/foot-logo.png);
+                margin: auto;
+                margin-right: 0;
+            }
+            #story {
+                max-width: 600px;
+                ul {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    li {
+                        margin: 1rem 2rem 0 0;
+                    }
+                }
+            }
+            aside {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                #sns {
+                    justify-content: flex-end;
+                }
+            }
+        }
+        #policy {
+            max-width: 1000px;
+            display: flex;
+            justify-content: center;
+            li {
+                padding: 0 2rem;
+            }
+        }
+    }
+}

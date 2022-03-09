@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+// 最終更新：20191017
+* {
+    box-sizing: border-box;
+    margin: initial;
+    padding: initial;
+}
+
+ul,
+ol,
+li {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+img,
+svg,
+iframe,
+video {
+    vertical-align: bottom;
+    border: none;
+    max-width: 100%;
+}
+
+dfn {
+    font: inherit;
+}
+
+button {
+    color: inherit;
+    border-style: initial;
+    background: initial;
+    line-height: inherit;
+    text-align: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+fieldset {
+    border: none;
+}
+
+select {
+    border: none;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+input,
+select,
+textarea {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+}
+
+input {
+    &:read-only,
+    &:disabled {
+        border: none;
+        background-color: transparent;
+    }
+}
+
+address {
+    font-style: inherit;
+}
+
+em {
+    font-style: normal;
+}
+
+small {
+    font-size: inherit;
+}
+
+/* ---- reset.css end. ---- */

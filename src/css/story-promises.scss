@@ -1,0 +1,196 @@
+@import "./modules/variables";
+
+#promises {
+    display: grid;
+    grid-template-areas: "header header header" ". contents pager";
+    grid-template-columns: 100px 1fr 100px;
+    @include screen($breakpoint-sp-horizontal, $breakpoint-tablet) {
+        grid-template-columns: auto 1fr auto;
+    }
+    #contents {
+        grid-area: contents;
+        @include max-screen($breakpoint-tablet) {
+            grid-area: contents-start / contents-start / pager-start / pager-end;
+        }
+    }
+    .sidenavArea {
+        grid-area: pager;
+        .sideNav {
+            margin-top: 0px;
+        }
+    }
+    > header {
+        font-size: 1.5rem;
+        background-color: var(--bgcolor-story-contents);
+        padding: 4rem 0;
+        grid-area: header;
+        > * {
+            max-width: $breakpoint-tablet;
+            margin: auto;
+        }
+        > h3 {
+            text-align: center;
+            &::after {
+                font-size: 1rem;
+                display: block;
+                content: "- " attr(title) " -";
+            }
+        }
+        .image {
+            margin: 2rem auto;
+            text-align: center;
+        }
+        ol {
+            font-size: 1.1rem;
+            li {
+                display: list-item;
+                list-style-type: decimal;
+                list-style-position: inside;
+            }
+        }
+        @include min-screen($breakpoint-tablet) {
+            > * {
+                min-width: $breakpoint-sp-horizontal;
+                width: 50%;
+            }
+        }
+        @include max-screen($breakpoint-tablet) {
+            padding-left: 40px;
+            padding-right: 40px;
+            ol {
+                li + li {
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+
+    > section,
+    #contents > section {
+        h4 {
+            font-size: 1.5rem;
+            text-align: center;
+            width: fit-content;
+            padding: 0 0.5rem;
+            margin: auto;
+            margin-bottom: 4rem;
+            border-bottom: 1px solid var(--color-gold);
+        }
+        max-width: $breakpoint-tablet;
+        width: 95%;
+        margin: 4rem auto;
+        @include max-screen($breakpoint-sp-vertical) {
+            padding-left: 40px;
+            padding-right: 40px;
+            h4 {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    #section1 {
+        > header {
+            h4 {
+                grid-area: head;
+            }
+            figure {
+                grid-area: image;
+                img {
+                    width: 100%;
+                }
+            }
+            > p {
+                grid-area: text;
+                font-size: 1.5rem;
+            }
+            @include min-screen($breakpoint-sp-vertical) {
+                display: grid;
+                grid-template-columns: 60% 33%;
+                grid-template-areas: "head head" "image text";
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        > div {
+            @include min-screen($breakpoint-sp-vertical) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &:nth-of-type(2) {
+                    flex-direction: row-reverse;
+                }
+                p {
+                    width: 65%;
+                }
+                figure {
+                    width: 30%;
+                    img {
+                        width: 100%;
+                        border: 15px solid var(--bdcolor-story-img);
+                    }
+                }
+            }
+        }
+        @include min-screen($breakpoint-sp-vertical) {
+            > * {
+                margin: 4rem auto;
+            }
+        }
+        @include max-screen($breakpoint-sp-vertical) {
+            > * {
+                margin: 1rem auto;
+                p {
+                    margin: 1rem auto;
+                }
+            }
+        }
+    }
+
+    #section2 {
+        text-align: center;
+        @include max-screen($breakpoint-tablet) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    #section3 {
+        background-image: url(../img/common/threepromises-con05.png), url(../img/common/threepromises-con06.png);
+        background-position: top 25% right, bottom right;
+        background-size: auto;
+        background-repeat: no-repeat;
+
+        header {
+            p {
+                font-size: 1.5rem;
+            }
+        }
+        > p {
+            + p {
+                margin-top: 1rem;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: baseline;
+            margin-top: 3rem;
+            max-width: 54%;
+        }
+        @include min-screen($breakpoint-tablet) {
+            > p {
+                padding-right: 220px;
+            }
+        }
+        @include max-screen($breakpoint-tablet) {
+            background-size: auto, contain;
+            ul {
+                margin-top: 2rem;
+                padding-bottom: 50vw;
+                max-width: auto;
+            }
+        }
+    }
+    @include max-screen($breakpoint-sp-vertical) {
+        grid-template-columns: minmax(0, 1fr) auto;
+    }
+}

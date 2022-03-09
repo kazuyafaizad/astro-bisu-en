@@ -1,0 +1,15 @@
+@mixin Button($selector, $bgcolor: --bgcolor-button, $txcolor: --color-button) {
+    &#{$selector} {
+        display: block;
+        text-align: center;
+        background-color: var($bgcolor);
+        color: var($txcolor);
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            background-color: var($txcolor);
+            color: var($bgcolor);
+        }
+        @content;
+    }
+}

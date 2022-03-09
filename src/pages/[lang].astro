@@ -1,0 +1,17 @@
+---
+import en from "../locales/en.json";
+import Layout from '../layouts/Layout.astro';
+
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: undefined }, props: en },
+    { params: { lang : 'en'}, props:  en },
+  ];
+}
+
+const {lang} = Astro.request.params;
+
+---
+
+<Layout lang={lang} />

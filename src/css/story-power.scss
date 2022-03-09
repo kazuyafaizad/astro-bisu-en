@@ -1,0 +1,224 @@
+@import "./modules/variables";
+
+#power {
+    background-color: var(--bgcolor-story-contents);
+    padding: 2rem 0;
+    display: grid;
+    grid-template-areas: ". contents pager";
+    grid-template-columns: 100px 1fr 100px;
+    h3 {
+        display: none;
+    }
+    > section,
+    #contents > section {
+        background-color: white;
+        max-width: $breakpoint-tablet;
+        margin: 4rem auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        h4 {
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 0 0.5rem;
+            margin-bottom: 2rem;
+            ruby rt {
+                text-align: center;
+            }
+        }
+        @include max-screen($breakpoint-sp-vertical) {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            h4 {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    #section1 {
+        h4 {
+            grid-area: head;
+        }
+        .image {
+            grid-area: image;
+        }
+        @include min-screen($breakpoint-sp-vertical) {
+            padding: 4rem 100px;
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: 1fr 300px;
+            grid-template-rows: 1fr 1fr min-content 1fr;
+            grid-template-areas: "head head" "body1 image" "body2 image" "body3 image";
+            p:first-of-type {
+                align-self: flex-end;
+            }
+            .image {
+                align-self: center;
+                text-align: right;
+            }
+        }
+
+        @include max-screen($breakpoint-sp-vertical) {
+            p + p {
+                margin-top: 1rem;
+            }
+            .image {
+                margin-top: 1rem;
+                text-align: center;
+            }
+        }
+    }
+
+    #section2 {
+        @include max-screen($breakpoint-tablet) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @include min-screen($breakpoint-tablet) {
+            padding: 4rem 100px;
+        }
+        > p {
+            margin-bottom: 1rem;
+        }
+        table {
+            width: 100%;
+            min-width: 700px;
+            border-collapse: collapse;
+            border: 2px solid var(--table-color);
+            font-size: 0.95rem;
+            th,
+            td {
+                border: 1px solid var(--table-color);
+            }
+            thead {
+                background-color: var(--table-color);
+                color: white;
+                th {
+                    font-weight: normal;
+                    padding: 0.5rem;
+                    &:first-of-type,
+                    &:nth-of-type(2) {
+                        border-right-color: white;
+                    }
+                }
+            }
+            tbody {
+                th {
+                    font-weight: normal;
+                }
+                th,
+                td {
+                    padding: 0.2rem 1rem;
+                    text-align: left;
+                    em {
+                        font-weight: bold;
+                        color: #eb5f64;
+                    }
+                }
+            }
+        }
+    }
+
+    #section3 {
+        > p {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        picture {
+            img {
+                display: block;
+                margin: auto;
+            }
+        }
+
+        @include min-screen($breakpoint-sp-horizontal) {
+            dl {
+                background: url(https://via.placeholder.com/250x250) no-repeat left center;
+                background-size: 250px 250px;
+                max-width: 800px;
+                min-height: 250px;
+                div {
+                    margin-left: 255px;
+                }
+            }
+        }
+        @include max-screen($breakpoint-sp-horizontal) {
+            dl {
+                &::before {
+                    display: block;
+                    content: "";
+                    background-image: url(https://via.placeholder.com/250x250);
+                    width: 250px;
+                    height: 250px;
+                    margin: 1rem auto;
+                }
+            }
+        }
+    }
+    .sidenavArea {
+        grid-area: pager;
+        .sideNav {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+    }
+    #contents {
+        grid-area: contents;
+        @include max-screen($breakpoint-tablet) {
+            grid-area: contents-start / contents-start / pager-start / pager-end;
+        }
+    }
+
+    @include max-screen($breakpoint-tablet) {
+        grid-template-areas: "contents pager";
+        grid-template-columns: minmax(0, 1fr) auto;
+    }
+}
+
+#possibility {
+    margin: 4rem auto;
+    header {
+        h3 {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+    @include min-screen($breakpoint-sp-vertical) {
+        display: grid;
+        grid-template-areas: "image1 text1" "text2 image2";
+        grid-template-columns: minmax(200px, 500px) minmax(200px, 500px);
+        justify-content: center;
+        header {
+            display: contents;
+            h3 {
+                grid-area: text1;
+                justify-self: center;
+                align-self: center;
+            }
+            figure {
+                grid-area: image1;
+            }
+        }
+        > p {
+            grid-area: text2;
+            align-self: center;
+            padding: 5%;
+        }
+        > figure {
+            grid-area: image2;
+        }
+    }
+    @include max-screen($breakpoint-sp-vertical) {
+        padding: 0 40px;
+        header {
+            h3 {
+                padding-bottom: 1rem;
+            }
+        }
+        p {
+            margin: 2rem auto;
+        }
+    }
+}

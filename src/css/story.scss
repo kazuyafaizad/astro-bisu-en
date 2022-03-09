@@ -1,0 +1,168 @@
+@import "./modules/variables";
+
+main {
+    background-color: var(--bgcolor-story-contents);
+    padding-bottom: 2rem;
+}
+
+#stories {
+    margin: auto;
+    background-color: var(--bgcolor-story-contents);
+    display: grid;
+    grid-template-areas: "title title title" "sticky contents pager";
+    grid-template-columns: minmax(250px, 1fr) minmax(0, 2fr) 100px;
+    .sidenavArea {
+        grid-area: pager;
+        .sideNav {
+            margin-bottom: 4rem;
+        }
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 200;
+        width: 100%;
+        text-align: center;
+        color: white;
+        background-color: var(--bgcolor-story-head);
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-area: title;
+    }
+    $margin: 50px;
+    #sticky {
+        grid-area: sticky;
+        width: auto;
+        img {
+            position: sticky;
+            top: 80px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: auto;
+            margin-top: $margin;
+            margin-bottom: 4rem;
+        }
+    }
+    #contents {
+        grid-area: contents;
+        background-color: white;
+        margin: $margin 5% 4rem 0;
+        @include max-screen($breakpoint-tablet) {
+            margin: $margin 0 4rem 20px;
+            padding-bottom: 4rem;
+
+            grid-column: 2/-1;
+            grid-row: 2;
+        }
+    }
+    > section,
+    > #contents > section {
+        margin: 4rem;
+        h4 {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.3rem;
+            margin: 2rem 0;
+            &::after {
+                content: attr(title);
+                color: var(--font-gold);
+                font-size: 1rem;
+                margin-right: -2rem;
+            }
+            @include max-screen($breakpoint-tablet) {
+                flex-direction: column-reverse;
+                &::after {
+                    margin: 2rem 0 2rem auto;
+                }
+            }
+        }
+        p + p {
+            margin-top: 1em;
+        }
+        @include min-screen($breakpoint-sp-horizontal) {
+            .images {
+                display: flex;
+                justify-content: space-between;
+                margin: 2rem 0;
+                li {
+                    width: 48%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        @include max-screen($breakpoint-tablet) {
+            margin: 1rem 40px 1rem 20px;
+        }
+        @include max-screen($breakpoint-sp-horizontal) {
+            .images {
+                margin: 1rem 0;
+                li + li {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+
+    aside {
+        text-align: center;
+        font-size: 2rem;
+        p {
+            &::before {
+                content: "～ ";
+            }
+            &::after {
+                content: " ～";
+            }
+        }
+    }
+    @include max-screen($breakpoint-tablet) {
+        // display: block;
+        grid-template-columns: 0px minmax(0, 1fr) auto;
+        #sticky {
+            display: none;
+        }
+    }
+    @include max-screen($breakpoint-sp-horizontal) {
+        .motto {
+            display: none;
+        }
+    }
+}
+
+#FinalGoal {
+    margin: 4rem 0;
+    padding: 4rem 0;
+    background-color: white;
+    > * {
+        width: 80%;
+        max-width: $breakpoint-sp-horizontal;
+        margin: auto;
+    }
+    h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        border-bottom: 2px solid var(--font-gold);
+        width: fit-content;
+        padding: 0 0.5em;
+        margin-bottom: 2rem;
+    }
+    p + p {
+        margin-top: 1em;
+    }
+    .definition {
+        color: var(--font-gold);
+        font-size: 3rem;
+        font-weight: 200;
+        text-align: center;
+        margin: 2rem auto;
+        font-feature-settings: "halt";
+        @include max-screen($breakpoint-sp-horizontal) {
+            font-size: 2.5rem;
+            width: 100%;
+        }
+    }
+}

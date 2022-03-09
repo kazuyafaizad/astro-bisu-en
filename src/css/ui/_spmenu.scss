@@ -1,0 +1,91 @@
+@import "button";
+
+@mixin plusIcon() {
+    position: relative;
+    &::before {
+        content: "plus";
+        font-family: "icomoon";
+        font-size: 10px;
+        height: fit-content;
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+@mixin arrowIcon($right: 15px) {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    &::before {
+        content: "arrow";
+        color: #a3947c;
+        font-family: "icomoon";
+        font-size: 10px;
+        height: fit-content;
+        display: block;
+        position: absolute;
+        right: $right;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+@mixin spMenu() {
+    background-color: white;
+    pointer-events: auto;
+    text-align: left;
+    width: 100%;
+    overflow: auto;
+    transition: height 0.5s ease-in-out;
+    %menuItem {
+        padding: 10px;
+        border-bottom: 1px dotted #ccc;
+    }
+    > li {
+        h2 {
+            color: #a3947c;
+            background-color: var(--bgcolor-sp_head-title);
+            @extend %menuItem;
+        }
+        &:first-child {
+            border-top: 2px solid #d2cabd;
+        }
+        > .innerList {
+            > ul {
+                > li {
+                    > a {
+                        @include arrowIcon(15px);
+                        @extend %menuItem;
+                    }
+                    h3 {
+                        @include plusIcon();
+                        @extend %menuItem;
+                    }
+                    > ul {
+                        overflow: hidden;
+                        transition: height 0.5s ease-in-out;
+                        > li {
+                            a {
+                                display: block;
+                                @include arrowIcon(15px);
+                                @extend %menuItem;
+                            }
+                        }
+                    }
+                    &.open {
+                        > h3 {
+                            &::before {
+                                content: "minus";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

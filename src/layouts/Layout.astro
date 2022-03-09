@@ -1,0 +1,36 @@
+---
+export interface Props {
+  title?: string
+  description?: string
+  lang?: string
+}
+import getTranslations from '../locales/translation.ts';
+import Footer from '../components/Footer.astro'
+import Meta from '../components/Meta.astro'
+import Nav from '../components/Nav.astro';
+import '../css/common.scss'
+
+const { title, description,lang } = Astro.props as Props
+const translation = getTranslations(lang);
+---
+
+<html lang={lang}>
+  <head>
+    <title>{title ? `${title} | 记录干杯` : '记录干杯'}</title>
+    <meta
+      name="description"
+      content={description ||
+        '个人网站「记录干杯」，在这里记录一些技术相关的文章、尝试一些新的技术。'}
+    />
+
+    <Meta>
+      <slot name="head" />
+    </Meta>
+  </head>
+
+  <body>
+    <Nav translation={translation} />
+    <main><slot /></main>
+    <Footer translation={translation} />
+  </body>
+</html>

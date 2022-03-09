@@ -1,0 +1,257 @@
+@import "./modules/variables";
+
+main > header {
+  text-align: center;
+  margin: 4rem auto;
+
+  h2 {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+
+    &::before {
+      content: attr(title);
+      display: block;
+      font-size: 1.5rem;
+    }
+  }
+  img {
+    width:100%;
+    max-width: 1200px;
+  }
+}
+
+table {
+  max-width: 1000px;
+  width: 95%;
+  margin: 4rem auto;
+
+  font-size: 0.9rem;
+  border-collapse: collapse;
+  .title {
+    background-color: #f4f3ef;
+    width: 120px;
+  }
+  .data {
+    width: auto;
+  }
+  th,
+  td {
+    padding: 0.5rem;
+    border: 1px solid darken(#f4f3ef, 10%);
+    text-align: left;
+    vertical-align: top;
+  }
+  td {
+    dl {
+      margin: 1em 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      dd {
+        margin-left: 1em;
+      }
+    }
+    ul {
+      // margin: 1em 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      &.nothing {
+        display: flex;
+        margin-top: 1em;
+        flex-wrap: wrap;
+        li {
+          + li {
+            margin-left: 10px;
+          }
+        }
+      }
+      @include max-screen($breakpoint-tablet) {
+        &.nothing {
+          display: block;
+          margin-top: 1em;
+          li {
+            margin-bottom: 1em;
+            img {
+              width: 100%;
+            }
+            + li {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+    ol {
+      li {
+        display: list-item;
+        list-style-type: decimal;
+        margin-left: 1em;
+      }
+    }
+    h3,
+    h4 {
+      margin-top: 1em;
+      font-weight: bold;
+      + ul {
+        margin-top: 0;
+      }
+    }
+    a {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+  }
+  @include min-screen($breakpoint-tablet) {
+    .title {
+      width: 200px;
+    }
+    th,
+    td {
+      padding: 1rem;
+    }
+  }
+}
+#other {
+  max-width: 1000px;
+  width: 95%;
+  margin: 4rem auto;
+  font-size: 0.9rem;
+  section {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1em;
+    }
+  }
+  ul {
+    li {
+      display: list-item;
+      list-style-position: inside;
+      list-style-image: url("/img/other/dot.png");
+    }
+  }
+  @include max-screen($breakpoint-tablet) {
+    section {
+      &:first-child {
+        margin-bottom: 50px * 2;
+      }
+    }
+    ul {
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+    dl {
+      dd {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  @include min-screen($breakpoint-tablet) {
+    display: flex;
+    justify-content: space-between;
+    section {
+      width: 47%;
+    }
+    dl {
+      dt {
+        float: left;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+#ceo {
+  max-width: 1000px;
+  width: 95%;
+  margin: 4rem auto 300px;
+  &::before {
+    background-color: black;
+  }
+  header {
+    grid-area: head;
+    font-size: 1.4rem;
+    h2 {
+      font-size: inherit;
+      margin: 1em 0;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+  }
+  footer {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    display: grid;
+    h3 {
+      img {
+        width: 180px;
+      }
+    }
+    p {
+      font-size: inherit;
+      grid-area: company;
+    }
+    ul {
+      grid-area: title;
+      li {
+        display: inline-block;
+      }
+    }
+  }
+  @include max-screen($breakpoint-tablet) {
+    padding-top: 50px * 2;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: calc(150vw + 20px);
+    &::before {
+      background-image: url("/img/bi-su-about-inatomi_sp-min.png");
+      background-size: contain;
+      background-position: bottom;
+    }
+    figure {
+      order: -1;
+    }
+    > p {
+      margin-bottom: 1em;
+    }
+    footer {
+      grid-template-areas: "company" "title" "signature";
+      grid-template-columns: auto 1fr;
+      grid-template-rows: 1.7em 1fr;
+    }
+  }
+  @include min-screen($breakpoint-tablet) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &::before {
+      background-image: url("/img/bi-su-about-inatomi-min.png");
+      background-position: right;
+    }
+    > * {
+      width: 50%;
+      max-width: 450px;
+    }
+    h3 {
+      margin-left: 15px;
+    }
+    figure {
+      position: absolute;
+      right: 0;
+    }
+    p {
+      &:nth-of-type(3) {
+        margin-top: 1em;
+      }
+    }
+    footer {
+      grid-template-areas: "company signature" "title signature";
+      grid-template-columns: auto 1fr;
+      grid-template-rows: 1.7em 1fr;
+    }
+  }
+}
