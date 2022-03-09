@@ -31,6 +31,10 @@ import '../js/common.ts';
   <body>
     <Nav translation={translation} />
     <main><slot /></main>
+
+    <footer>
+    <slot name="footer" />
     <Footer translation={translation} />
+    </footer>
   </body>
 </html>

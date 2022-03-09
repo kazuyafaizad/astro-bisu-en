@@ -8,5 +8,9 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
 	devOptions: {
     hostname: '0.0.0.0',  // The hostname to run the dev server on.
 		// port: 3000,             // The port to run the dev server on.
-	}
+	},
+	vite: {
+    ssr: { external: ['svgo'] },
+    server: { host: '0.0.0.0' },
+  },
 });
