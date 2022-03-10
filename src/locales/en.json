@@ -5,16 +5,16 @@
         "nav": {
             "1": {
                 "1": {
-                    "title": "Thoughts of the CEO"
+                    "title": "Message from CEO"
                 },
                 "2": {
-                    "title": "3 promises of BI-SU"
+                    "title": "Our promises"
                 },
                 "3": {
-                    "title": "Mysterious power of swiftlet's nest"
+                    "title": "Power of nest"
                 },
                 "4": {
-                    "title": "It is possible because it is \"Genuine\""
+                    "title": ""
                 },
                 "head": "Brand Story"
             },
@@ -92,8 +92,8 @@
         },
         "food": {
             "title": "Healthy Foods",
-            "sub": "Approaching Beauty and Health",
-            "emphasis": "With the abundance of glyco-nutrients",
+            "sub": "Regain Heath and Beauty from inside with the power of Swiftlet‘s Nest",
+            "emphasis": "",
             "body": "The priceless treasure of swiftlet’s nest has been valued as an excellent foodstuff since ancient times. Approaching the abundance of glyco-nutrients within. Beautiful from the inside of the body, and achieve a healthy daily life."
         },
         "category": {
@@ -101,8 +101,8 @@
         },
         "care": {
             "title": "Skincare",
-            "sub": "Natural anti-aging ingredients",
-            "emphasis": "肌で感じるツバメの巣の恵み",
+            "sub": "The ancient secret to keep glowing and young-looking skin",
+            "emphasis": "",
             "body": "The base is the extract extracted from swiftlet’s nest, a natural beauty and moisturizing ingredient. Richly contained with glyco-nutrients to support the natural beauty of your hair and skin.",
             "attention": {
                 "symbol": "*",
@@ -110,9 +110,9 @@
             }
         },
         "policy": {
-            "1": "Dealing with BI-SU",
-            "2": "Privacy Policy",
-            "3": "Notation based on Specified Commercial Transaction Law"
+            "1": "Contact Us",
+            "2": "Privacy Notice",
+            "3": ""
         },
         "nav": {
             "sns": {
