@@ -129,6 +129,7 @@ body > header > nav#global {
                 }
             }
         }
+
     }
 
     // pc
@@ -256,6 +257,93 @@ body > header > nav#language {
     @include max-screen($breakpoint-tablet) {
         display: none;
     }
+}
+
+
+body > header > nav#globe {
+    padding: 0 0.5em;
+     @include max-screen($breakpoint-tablet) {
+        display:none;
+
+    }
+    @include min-screen($breakpoint-tablet) {
+    display: flex;
+    > ul {
+            display: flex;
+            margin: auto;
+            margin-left: 0;
+            height: auto !important;
+            width: 90%;
+            max-width: $breakpoint-tablet;
+            + ul {
+                position: absolute;
+                right: 20px;
+                margin: 0 1em;
+                li {
+                    margin: 0 1em;
+                }
+            }
+            > li {
+                white-space: nowrap;
+                padding: 0 1.3em;
+                .innerList {
+                    position: absolute;
+                    visibility: hidden;
+                    top: 100%;
+                    left: 0;
+                    z-index: 10000;
+                    width: 100%;
+                    overflow: hidden;
+                    transition: height ease-in-out 0.5s;
+                    background-color: white;
+                    > ul {
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 2rem;
+                        padding-bottom: 2rem;
+                        background: linear-gradient(
+                            to bottom,
+                            rgba(239, 239, 239, 1) 0%,
+                            rgba(255, 255, 255, 1) 30px,
+                            rgba(255, 255, 255, 1) 100%
+                        );
+                        > li {
+                            margin: 0 1.5em;
+                            h3 {
+                                color: #a3957d;
+                            }
+                            a {
+                                display: inline-block;
+                                margin: 0.2rem auto;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    > p {
+                        font-family: var(--main-font-latin);
+                        margin: 1.5rem auto;
+                        text-align: center;
+                        width: fit-content;
+                        display: flex;
+                        align-items: center;
+                        color: #a3957d;
+                        &::before,
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 400px;
+                            max-width: 20vw;
+                            height: 1px;
+                            background: #a3957d;
+                            margin: auto 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 /*

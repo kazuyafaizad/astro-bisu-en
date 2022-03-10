@@ -15,7 +15,6 @@ if (typeof matchMedia !== "undefined" && !matchMedia("all").addEventListener) {
 
 function menu(parents: string, trigger: string, menu: string): void {
     const target = document.querySelectorAll(parents);
-
     target.forEach((elm): void => {
         const item = elm.querySelector(`${trigger} + ${menu}`) as HTMLElement;
 
@@ -104,7 +103,7 @@ function innerTitle(): void {
 
 export function setMenu(): void {
     const mql = window.matchMedia("screen and (max-width: 1000px)");
-    const nav = document.querySelector("body > header > nav#global");
+    const nav = document.querySelector("body > header > nav#global,body > header > nav#globe");
 
     const state: { [key: string]: boolean } = {};
     const CheckMedia = (mql: MediaQueryList): void => {

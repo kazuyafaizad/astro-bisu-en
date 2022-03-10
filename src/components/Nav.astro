@@ -1,9 +1,15 @@
 ---
 
+import { Icon } from 'astro-icon';
 const { translation } = Astro.props;
 
 ---
-
+<style>
+.icon{
+    width:32px;
+    height:32px;
+}
+</style>
 <header>
  <h1>
                 <a href="/">
@@ -14,6 +20,8 @@ const { translation } = Astro.props;
                 </a>
             </h1>
             <nav id="global">
+                <ul id="button">
+                </ul>
                 <ul id="menu">
                     <li>
                         <h2>{ translation.master.nav[1].head }</h2>
@@ -27,7 +35,7 @@ const { translation } = Astro.props;
                                     <a href="/story/threepromises">{ translation.master.nav[1][2].title }</a>
                                 </li>
                                 <li>
-                                    <a href="/story/nestpower">{translation.master.nav[1][3].title }</a>
+                                    <a href="/story/nestpower">{ translation.master.nav[1][3].title }</a>
                                 </li>
                                 <li>
                                     <a href="/story/threepromises#section1">{ translation.master.nav[1][4].title }</a>
@@ -105,27 +113,81 @@ const { translation } = Astro.props;
                     </li>
 
                     <li class="lang">
-                        <h2>Language</h2>
-                        <div class="innerList">
+                        <h2 >
+                    <Icon name="bi:globe" class="icon">
+                </h2>
+                <div class="innerList">
                             <ul>
-                                <li><a href="https://www.bi-su.jp/">Japanese</a></li>
-                                <li><a href="https://en.bi-su.jp/">English</a></li>
-                                <li><a href="https://tw.bi-su.jp/">Traditional Chinese</a></li>
-                                <li><a href="https://cn.bi-su.jp/">Chinese</a></li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#">United States</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Japan</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Taiwan (ZH)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Singapore (EN) (ZH)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Global Concept</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </li>
                 </ul>
             </nav>
-            <nav id="language">
-                <h2>
-                    Language<span id="langName">EN</span>
+            <nav id="globe">
+            <ul>
+            <li>
+                <h2 >
+                    <Icon name="bi:globe" class="icon">
                 </h2>
-                <ul>
-                    <li><a href="https://www.bi-su.jp/">JP</a></li>
-                    <li><a href="https://en.bi-su.jp/">EN</a></li>
-                    <li><a href="https://tw.bi-su.jp/">TW</a></li>
-                    <li><a href="https://cn.bi-su.jp/">CN</a></li>
-                </ul>
+                <div class="innerList">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#">United States</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Japan</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Taiwan (ZH)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Singapore (EN) (ZH)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Global Concept</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        </li>
+                        </ul>
             </nav>
             </header>
