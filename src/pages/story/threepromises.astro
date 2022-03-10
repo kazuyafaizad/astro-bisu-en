@@ -1,0 +1,99 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../css/story-promises.scss';
+import translation from '../../locales/en.json';
+const {lang = "en" } = Astro.props;
+
+---
+
+<script defer type="module" hoist>
+import '../../js/story.ts';
+</script>
+
+<script>
+const startup = () => {
+        stickyItems({ main: "#promises", contents: ":scope > section" });
+        sideNav({
+            title: "three promises",
+            target: "#promises",
+            anchor: ["#section1", "#section2", "#section3"],
+        });
+    };
+    window.addEventListener("DOMContentLoaded", startup, { passive: true });
+
+</script>
+
+<Layout lang={lang} title="threepromises" description="threepromises">
+<header>
+    <h2>
+        <picture>
+            <source srcset="/img/story/sp/3promise-header-sp_en.jpg" media="(max-width: 480px)" />
+            <img src="/img/story/story-headimg03_en.jpg" alt={translation.threepromises.title} />
+        </picture>
+    </h2>
+</header>
+
+<section id="promises">
+    <header data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear" id="promises_header">
+        <h3 title="Three promises">{ translation.threepromises.header.title}</h3>
+        <p class="image">
+            <picture>
+                <source srcset="/img/story/sp/threepromises-con01-sp_en.png" media="(max-width: 480px)" />
+                <img src="/img/story/threepromises-con01_en.png" alt="" />
+            </picture>
+        </p>
+        <ol>
+            <li>{ translation.threepromises.header.list[1]}</li>
+            <li>{ translation.threepromises.header.list[2]}</li>
+            <li>{ translation.threepromises.header.list[3]}</li>
+        </ol>
+    </header>
+
+    <section id="section1">
+        <header data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear">
+            <h4>{ translation.threepromises[1].title}</h4>
+            <figure><img src="/img/story/threepromises-con02.jpg" alt="" /></figure>
+            <p>{ translation.threepromises[1].sub}</p>
+        </header>
+
+        <div data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear">
+            <p>{ translation.threepromises[1].body[1]}</p>
+            <figure><img src="/img/story/threepromises-con04.jpg" alt="" /></figure>
+        </div>
+
+        <div data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear">
+            <p>{ translation.threepromises[1].body[2]}</p>
+            <figure><img src="/img/story/threepromises-con03.jpg" alt="" /></figure>
+        </div>
+    </section>
+
+    <section id="section2" data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear">
+        <h4>{ translation.threepromises[2].title}</h4>
+
+        <p class="image">
+            <picture>
+                <source srcset="/img/story/sp/threepromises-con09-sp{{ langSuffix }}.png" media="(max-width: 480px)" />
+                <img src="/img/story/threepromises-con09{{ langSuffix }}.png" alt="" />
+            </picture>
+        </p>
+
+        <p>{ translation.threepromises[2].body}</p>
+    </section>
+
+    <section id="section3" data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear">
+        <header>
+            <h4>{ translation.threepromises[3].title}</h4>
+            <p>{ translation.threepromises[3].sub}</p>
+        </header>
+
+        <p>{ translation.threepromises[3].body[1]}</p>
+        <p>{ translation.threepromises[3].body[2]}</p>
+        <p>{ translation.threepromises[3].body[3]}</p>
+
+        <ul>
+            <li><img src="/img/story/threepromises-con07.jpg" alt="" /></li>
+            <li><img src="/img/story/threepromises-con08.jpg" alt="" /></li>
+        </ul>
+    </section>
+</section>
+</Layout>

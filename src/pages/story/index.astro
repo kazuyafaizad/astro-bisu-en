@@ -1,0 +1,186 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../css/story.scss';
+import translation from '../../locales/en.json';
+const {lang = "en" } = Astro.props;
+
+---
+
+<script defer type="module" hoist>
+import '../../js/story.ts';
+</script>
+
+<script>
+const startup = () => {
+    stickyItems({ main: "#stories", position: "h3", contents: "section, aside" });
+    sideNav({
+        title: "bi-su story",
+        target: "#stories",
+        anchor: ["#section1", "#section2", "#section3", "#section4", "#section5"],
+    });
+};
+window.addEventListener("DOMContentLoaded", startup, { passive: true });
+
+</script>
+
+<Layout lang={lang} title="story" description="story">
+<header>
+    <h2>
+        <picture>
+            <source srcset="/img/story/sp/story-header-sp_en.jpg" media="(max-width: 480px)" />
+            <img src="/img/story/story-headimg02_en.jpg" class="w-100" alt={translation.story.title} />
+        </picture>
+    </h2>
+</header>
+
+<section id="stories" data-src="/img/story/left-storyimg.png">
+    <h3>{translation.story.stories.title}</h3>
+
+    <section id="section1">
+        <h4 title="Section.01">{translation.story[1].title}</h4>
+        <p>{translation.story[1].body[1]}</p>
+        <p>{translation.story[1].body[2]}</p>
+        <p>{translation.story[1].body[3]}</p>
+
+        <ul class="images">
+            <li>
+                <img
+                    data-sal="slide-up"
+                    data-sal-duration="1500"
+                    data-sal-easing="linear"
+                    src="/img/story/main-story-01.jpg"
+                    alt=""
+                />
+            </li>
+            <li>
+                <img
+                    data-sal="slide-up"
+                    data-sal-duration="1500"
+                    data-sal-easing="linear"
+                    src="/img/story/main-story-02.jpg"
+                    alt=""
+                />
+            </li>
+        </ul>
+    </section>
+
+    <section id="section2">
+        <h4 title="Section.02">{translation.story[2].title}</h4>
+        <p>{translation.story[2].body[1]}</p>
+        <p>{translation.story[2].body[2]}</p>
+        <p>{translation.story[2].body[3]}</p>
+
+        <ul class="images">
+            <li>
+                <img
+                    data-sal="slide-up"
+                    data-sal-duration="1500"
+                    data-sal-easing="linear"
+                    src="/img/story/main-story-03.jpg"
+                    alt=""
+                />
+            </li>
+            <li>
+                <img
+                    data-sal="slide-up"
+                    data-sal-duration="1500"
+                    data-sal-easing="linear"
+                    src="/img/story/main-story-04.jpg"
+                    alt=""
+                />
+            </li>
+        </ul>
+    </section>
+
+    <aside class="motto">
+        <p>{translation.story.motto}</p>
+    </aside>
+
+    <section id="section3">
+        <h4 title="Section.03">{translation.story[3].title}</h4>
+        <p>{translation.story[3].body[1]}</p>
+        <p>{translation.story[3].body[2]}</p>
+        <p>{translation.story[3].body[3]}</p>
+
+        <ul class="images">
+            <li>
+                <img
+                    data-sal="slide-up"
+                    data-sal-duration="1500"
+                    data-sal-easing="linear"
+                    src="/img/story/main-story-05.jpg"
+                    alt=""
+                />
+            </li>
+            <li>
+                <img
+                    data-sal="slide-up"
+                    data-sal-duration="1500"
+                    data-sal-easing="linear"
+                    src="/img/story/main-story-06.jpg"
+                    alt=""
+                />
+            </li>
+        </ul>
+    </section>
+
+    <section id="section4">
+        <h4 title="Section.04">{translation.story[4].title}</h4>
+        <p>{translation.story[4].body[1]}</p>
+        <p>{translation.story[4].body[2]}</p>
+        <p>{translation.story[4].body[3]}</p>
+
+        <p class="image">
+            <picture>
+                <source srcset="/img/story/sp/main-storyimg2-sp.jpg" media="(max-width: 480px)" />
+                <img
+                    data-sal="slide-up"
+                    data-sal-duration="1500"
+                    data-sal-easing="linear"
+                    src="/img/story/main-storyimg2.jpg"
+                    alt=""
+                />
+            </picture>
+        </p>
+    </section>
+
+    <section id="section5">
+        <h4 title="Section.05">{translation.story[5].title}</h4>
+        <p>{translation.story[5].body[1]}</p>
+        <p>{translation.story[5].body[2]}</p>
+        <p>{translation.story[5].body[3]}</p>
+
+        <ul class="images">
+            <li>
+                <img
+                    data-sal="slide-up"
+                    data-sal-duration="1500"
+                    data-sal-easing="linear"
+                    src="/img/story/main-story-07.jpg"
+                    alt=""
+                />
+            </li>
+            <li>
+                <img
+                    data-sal="slide-up"
+                    data-sal-duration="1500"
+                    data-sal-easing="linear"
+                    src="/img/story/main-story-08.jpg"
+                    alt=""
+                />
+            </li>
+        </ul>
+    </section>
+</section>
+
+<section id="FinalGoal">
+    <h3>{translation.story.goal.title}</h3>
+    <p>{translation.story.goal.body[1]}</p>
+    <p>{translation.story.goal.body[2]}</p>
+    <p>{translation.story.goal.body[3]}</p>
+
+    <p class="definition">{translation.story.goal.dfn}</p>
+
+    <p>{translation.story.goal.body[4]}</p>
+</section>
+</Layout>

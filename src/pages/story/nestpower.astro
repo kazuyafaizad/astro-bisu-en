@@ -1,0 +1,145 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../css/story-promises.scss';
+import translation from '../../locales/en.json';
+const {lang = "en" } = Astro.props;
+
+---
+
+<script defer type="module" hoist>
+import '../../js/story.ts';
+import '../../js/story-power.ts';
+</script>
+
+<script>
+const startup = () => {
+        stickyItems({ main: "#promises", contents: ":scope > section" });
+        sideNav({
+            title: "three promises",
+            target: "#promises",
+            anchor: ["#section1", "#section2", "#section3"],
+        });
+    };
+    window.addEventListener("DOMContentLoaded", startup, { passive: true });
+
+</script>
+
+<Layout lang={lang} title="story" description="story">
+
+<header>
+    <h2>
+        <picture>
+            <source srcset="/img/story/sp/power-header-sp_en.jpg" media="(max-width: 480px)" />
+            <img src="/img/story/story-headimg01_en.jpg" alt={translation.nestpower.title} />
+        </picture>
+    </h2>
+</header>
+
+<section id="power">
+    <h3>{translation.nestpower.title}</h3>
+
+    <section id="section1" data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear">
+        <h4>
+            {translation.nestpower[1].title[1]}
+            <ruby>
+                {translation.nestpower[1].title[2]}
+                <rt>{translation.nestpower[1].title.ruby}</rt>
+            </ruby>
+        </h4>
+
+        <p>{translation.nestpower[1].body[1]}</p>
+        <p>{translation.nestpower[1].body[2]}</p>
+        <p>{translation.nestpower[1].body[3]}</p>
+
+        <p class="image"><img src="/img/story/power-img01_en.png" alt="" /></p>
+    </section>
+
+    <section id="section2" data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear">
+        <h4>{translation.nestpower[2].title}</h4>
+
+        <p>{translation.nestpower[2].body}</p>
+
+        <table class="glycan">
+            <thead>
+                <tr>
+                    <th>{translation.nestpower.glycan[1].head}</th>
+                    <th>{translation.nestpower.glycan[2].head}</th>
+                    <th>{translation.nestpower.glycan[3].head}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>{translation.nestpower.glycan[1][1]}</th>
+                    <td>{translation.nestpower.glycan[2][1]}</td>
+                    <td rowspan="2">{translation.nestpower.glycan[3]["1_2"]}</td>
+                </tr>
+                <tr>
+                    <th>{translation.nestpower.glycan[1][2]}</th>
+                    <td>
+                        {translation.nestpower.glycan[2][2]}<em>{translation.nestpower.glycan[2]["2_nest"]}</em>
+                    </td>
+                </tr>
+                <tr>
+                    <th>{translation.nestpower.glycan[1][3]}</th>
+                    <td>
+                        {translation.nestpower.glycan[2][3]}<em>{translation.nestpower.glycan[2]["3_nest"]}</em>
+                    </td>
+                    <td rowspan="3">{translation.nestpower.glycan[3]["3_5"]}</td>
+                </tr>
+                <tr>
+                    <th>{translation.nestpower.glycan[1][4]}</th>
+                    <td>
+                        {translation.nestpower.glycan[2][4]}<em>{translation.nestpower.glycan[2]["4_nest"]}</em>
+                    </td>
+                </tr>
+                <tr>
+                    <th>{translation.nestpower.glycan[1][5]}</th>
+                    <td>{translation.nestpower.glycan[2][5]}</td>
+                </tr>
+                <tr>
+                    <th>{translation.nestpower.glycan[1][6]}</th>
+                    <td>
+                        {translation.nestpower.glycan[2][6]}<em>{translation.nestpower.glycan[2]["6_nest"]}</em>
+                    </td>
+                    <td rowspan="3">{translation.nestpower.glycan[3]["6_8"]}</td>
+                </tr>
+                <tr>
+                    <th>{translation.nestpower.glycan[1][7]}</th>
+                    <td>
+                        {translation.nestpower.glycan[2][7]}<em>{translation.nestpower.glycan[2]["7_nest"]}</em>
+                    </td>
+                </tr>
+                <tr>
+                    <th>{translation.nestpower.glycan[1][8]}</th>
+                    <td>
+                        {translation.nestpower.glycan[2][8]}<em>{translation.nestpower.glycan[2]["8_nest"]}</em>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="section3" data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear">
+        <h4>{translation.nestpower[3].title}</h4>
+
+        <picture>
+            <source srcset="/img/story/sp/power-img-sp02_en.png" media="(max-width: 480px)" />
+            <img src="/img/story/power-img02_en.png" alt="" />
+        </picture>
+    </section>
+</section>
+
+<section id="possibility" data-sal="slide-up" data-sal-duration="1500">
+    <header>
+        <h3 title="Three promises">{translation.nestpower.possibility.title}</h3>
+        <figure>
+            <img src="/img/story/power-img03_en.jpg" alt="" />
+        </figure>
+    </header>
+
+    <p>{translation.nestpower.possibility.body}</p>
+    <figure>
+        <img src="/img/story/power-img03-2.jpg" alt="" />
+    </figure>
+</section>
+</Layout>
