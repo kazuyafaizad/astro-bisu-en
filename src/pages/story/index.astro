@@ -1,13 +1,13 @@
 ---
+import '../../styles/story.scss';
 import Layout from '../../layouts/Layout.astro';
-import '../../css/story.scss';
 import translation from '../../locales/en.json';
 const {lang = "en" } = Astro.props;
 
 ---
 
 <script defer type="module" hoist>
-import '../../js/story.ts';
+import '../../scripts/story.ts';
 </script>
 
 <script>

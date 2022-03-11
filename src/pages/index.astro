@@ -1,14 +1,14 @@
 ---
+import '../styles/index.scss';
+import '../styles/slider.scss';
 import Layout from '../layouts/Layout.astro';
-import '../css/index.scss';
-import '../css/slider.scss';
 import translation from '../locales/en.json';
 const {lang = "en" } = Astro.props;
 
 ---
 
 <script defer type="module" hoist>
-import '../js/index.ts';
+import '../scripts/index.ts';
 </script>
 
 <style>

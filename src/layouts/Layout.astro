@@ -4,16 +4,16 @@ export interface Props {
   description?: string
   lang?: string
 }
+import '../styles/common.scss'
 import translation from '../locales/en.json';
 import Footer from '../components/Footer.astro'
 import Meta from '../components/Meta.astro'
 import Nav from '../components/Nav.astro';
-import '../css/common.scss'
 
 const { title, description,lang } = Astro.props as Props
 ---
 <script defer type="module" hoist>
-import '../js/common.ts';
+import '../scripts/common.ts';
 </script>
 <html lang={lang}>
   <head>
