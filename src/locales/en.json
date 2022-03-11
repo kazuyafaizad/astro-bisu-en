@@ -20,10 +20,9 @@
             },
             "2": {
                 "1": {
-                    "a": "Featured products",
-                    "b": "All products",
-                    "c": "BI-SU Health Foods",
-                    "d": "BI-SU Cosmetics"
+                    "a": "All Items",
+                    "b": "Healthy Foods",
+                    "c": "Cosmetics"
                 },
                 "2": {
                     "a": "About the payment",
@@ -199,7 +198,7 @@
         },
         "2": {
             "title": "Differences between genuine and farm cultured nest",
-            "body": "The nest of swiftlets contains a lot of non-native ingredients that hold the key to beauty and health. * Self-analysis and research by our company"
+            "body": ""
         },
         "3": {
             "title": "Returning the favour to the swiftlets\"",
@@ -214,9 +213,9 @@
         "header": {
             "title": "3 promises",
             "list": {
-                "1": "BI-SU promises to deliver \"genuine products only\" that we have checked with our own eyes.",
-                "2": "BI-SU contributes to the creation of the natural environment that protects the ecosystem.",
-                "3": "BI-SU tries to unearths the unknown possibilities hidden in the swiftlet's nest that has yet to be discovered, creating wonders and happiness around the world."
+                "1": "We promise to deliver only natural, genuine products that we have personally checked ourselves",
+                "2": "We shall contribute to the protection of the natural environment and its ecosystems.",
+                "3": "We strive to discover the unknown possibilities in swiftlet's nest to help building a better world."
             }
         }
     },

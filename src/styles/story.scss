@@ -112,10 +112,10 @@ main {
         font-size: 2rem;
         p {
             &::before {
-                content: "～ ";
+                content: "";
             }
             &::after {
-                content: " ～";
+                content: "";
             }
         }
     }

@@ -10,13 +10,16 @@ const {lang = "en" } = Astro.props;
 import '../../scripts/story.ts';
 import '../../scripts/story-power.ts';
 </script>
-
+<Fragment slot="head">
+<link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css" />
+</Fragment>
 <script>
-const startup = () => {
-        stickyItems({ main: "#promises", contents: ":scope > section" });
+ const startup = () => {
+        stickyItems({ main: "#power", contents: ":scope > section" });
+
         sideNav({
-            title: "three promises",
-            target: "#promises",
+            title: "nest power",
+            target: "#power",
             anchor: ["#section1", "#section2", "#section3"],
         });
     };
@@ -24,26 +27,25 @@ const startup = () => {
 
 </script>
 
-<Layout lang={lang} title="story" description="story">
+<Layout lang={lang} title="nestpower" description="nestpower">
 
 <header>
     <h2>
         <picture>
-            <source srcset="/img/story/sp/power-header-sp_en.jpg" media="(max-width: 480px)" />
-            <img src="/img/story/story-headimg01_en.jpg" alt={translation.nestpower.title} />
+            <source srcset="/img/en/SP/power-header-sp_en.jpg" media="(max-width: 480px)" />
+            <img src="/img/en/PC/story-headimg01_en.jpg" alt={translation.nestpower.title} />
         </picture>
     </h2>
 </header>
 
 <section id="power">
     <h3>{translation.nestpower.title}</h3>
-
+    <div id="contents">
     <section id="section1" data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear">
         <h4>
             {translation.nestpower[1].title[1]}
             <ruby>
                 {translation.nestpower[1].title[2]}
-                <rt>{translation.nestpower[1].title.ruby}</rt>
             </ruby>
         </h4>
 
@@ -127,13 +129,14 @@ const startup = () => {
             <img src="/img/story/power-img02_en.png" alt="" />
         </picture>
     </section>
+    </div>
 </section>
 
 <section id="possibility" data-sal="slide-up" data-sal-duration="1500">
     <header>
         <h3 title="Three promises">{translation.nestpower.possibility.title}</h3>
         <figure>
-            <img src="/img/story/power-img03_en.jpg" alt="" />
+            <img src="/img/en/power-img03_en.jpg" alt="" />
         </figure>
     </header>
 

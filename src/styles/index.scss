@@ -255,10 +255,10 @@
                 height: 390px;
             }
             &#HealthyFood {
-                background-image: url(/img/index/products-food.jpg);
+                background-image: url(/img/en/products-pc.jpg);
             }
             &#SkinCare {
-                background-image: url(/img/index/products-care.jpg);
+                background-image: url(/img/en/products-care.jpg);
                 flex-direction: row-reverse;
             }
         }
@@ -274,28 +274,28 @@
                 margin-top: 2rem;
             }
             &#HealthyFood {
-                background-image: url(/img/index/products-food_sp.jpg);
+                background-image: url(/img/en/products-food_sp.jpg);
                 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx) {
-                    background-image: url(/img/index/products-food_sp@2x.jpg);
+                    // background-image: url(/img/index/products-food_sp@2x.jpg);
                 }
                 @media (-webkit-min-device-pixel-ratio: 2.25), (min-resolution: 2.25dppx) {
-                    background-image: url(/img/index/products-food_sp@3x.jpg);
+                    // background-image: url(/img/index/products-food_sp@3x.jpg);
                 }
                 @media (-webkit-min-device-pixel-ratio: 3.25), (min-resolution: 3.25dppx) {
-                    background-image: url(/img/index/products-food_sp@4x.jpg);
+                    // background-image: url(/img/index/products-food_sp@4x.jpg);
                 }
             }
             &#SkinCare {
-                background-image: url(/img/index/products-care_sp.jpg);
+                background-image: url(/img/en/products-care_sp.jpg);
                 flex-direction: row-reverse;
                 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx) {
-                    background-image: url(/img/index/products-care_sp@2x.jpg);
+                    // background-image: url(/img/index/products-care_sp@2x.jpg);
                 }
                 @media (-webkit-min-device-pixel-ratio: 2.25), (min-resolution: 2.25dppx) {
-                    background-image: url(/img/index/products-care_sp@3x.jpg);
+                    // background-image: url(/img/index/products-care_sp@3x.jpg);
                 }
                 @media (-webkit-min-device-pixel-ratio: 3.25), (min-resolution: 3.25dppx) {
-                    background-image: url(/img/index/products-care_sp@4x.jpg);
+                    // background-image: url(/img/index/products-care_sp@4x.jpg);
                 }
             }
         }
