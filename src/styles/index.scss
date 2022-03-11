@@ -145,7 +145,7 @@
         // &::after {
         //     content: "";
         //     display: block;
-        //     background: url(../img/index/products-head.gif) no-repeat top center;
+        //     background: url(/img/index/products-head.gif) no-repeat top center;
         //     width: 1px;
         //     height: 80px;
         //     margin: auto;
@@ -232,14 +232,14 @@
                         content: "";
                         width: 20px;
                         height: 20px;
-                        background: url(../img/common/arrow-right.png) no-repeat center;
+                        background: url(./img/common/arrow-right.png) no-repeat center;
                         top: 0;
                         bottom: 0;
                         right: 15px;
                         margin: auto;
                     }
                     &:hover::after {
-                        background-image: url(../img/common/arrow-right_on.png);
+                        background-image: url(./img/common/arrow-right_on.png);
                     }
                 }
             }
@@ -255,10 +255,10 @@
                 height: 390px;
             }
             &#HealthyFood {
-                background-image: url(../img/index/products-food.jpg);
+                background-image: url(/img/index/products-food.jpg);
             }
             &#SkinCare {
-                background-image: url(../img/index/products-care.jpg);
+                background-image: url(/img/index/products-care.jpg);
                 flex-direction: row-reverse;
             }
         }
@@ -274,28 +274,28 @@
                 margin-top: 2rem;
             }
             &#HealthyFood {
-                background-image: url(../img/index/products-food_sp.jpg);
+                background-image: url(/img/index/products-food_sp.jpg);
                 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx) {
-                    background-image: url(../img/index/products-food_sp@2x.jpg);
+                    background-image: url(/img/index/products-food_sp@2x.jpg);
                 }
                 @media (-webkit-min-device-pixel-ratio: 2.25), (min-resolution: 2.25dppx) {
-                    background-image: url(../img/index/products-food_sp@3x.jpg);
+                    background-image: url(/img/index/products-food_sp@3x.jpg);
                 }
                 @media (-webkit-min-device-pixel-ratio: 3.25), (min-resolution: 3.25dppx) {
-                    background-image: url(../img/index/products-food_sp@4x.jpg);
+                    background-image: url(/img/index/products-food_sp@4x.jpg);
                 }
             }
             &#SkinCare {
-                background-image: url(../img/index/products-care_sp.jpg);
+                background-image: url(/img/index/products-care_sp.jpg);
                 flex-direction: row-reverse;
                 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx) {
-                    background-image: url(../img/index/products-care_sp@2x.jpg);
+                    background-image: url(/img/index/products-care_sp@2x.jpg);
                 }
                 @media (-webkit-min-device-pixel-ratio: 2.25), (min-resolution: 2.25dppx) {
-                    background-image: url(../img/index/products-care_sp@3x.jpg);
+                    background-image: url(/img/index/products-care_sp@3x.jpg);
                 }
                 @media (-webkit-min-device-pixel-ratio: 3.25), (min-resolution: 3.25dppx) {
-                    background-image: url(../img/index/products-care_sp@4x.jpg);
+                    background-image: url(/img/index/products-care_sp@4x.jpg);
                 }
             }
         }
@@ -367,7 +367,7 @@ body > footer {
                 display: block;
                 width: $image-size;
                 height: $image-size;
-                background-image: url(../img/index/foot-logo.png);
+                background-image: url(/img/index/foot-logo.png);
                 margin: auto;
                 margin-bottom: $image-margin;
             }
@@ -394,7 +394,7 @@ body > footer {
                 display: block;
                 width: 130px;
                 height: 130px;
-                background-image: url(../img/index/foot-logo.png);
+                background-image: url(/img/index/foot-logo.png);
                 margin: auto;
                 margin-right: 0;
             }

@@ -9,6 +9,7 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
     hostname: '0.0.0.0',  // The hostname to run the dev server on.
 		// port: 3000,             // The port to run the dev server on.
 	},
+	buildOptions: { site: 'https://bi-su.jp/lp_faizad/en' },
 	vite: {
     ssr: { external: ['svgo'] },
     server: { host: '0.0.0.0' },

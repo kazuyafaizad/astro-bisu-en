@@ -3,5 +3,14 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "$/*": [
+        "src/*"
+      ],
+      "@/*": [
+        "public/assets/*"
+      ]
+    }
   }
 }
