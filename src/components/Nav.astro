@@ -6,8 +6,7 @@ const { translation } = Astro.props;
 ---
 <style>
 .icon{
-    width:32px;
-    height:32px;
+    width:22px;
 }
 </style>
 <header>
@@ -29,16 +28,13 @@ const { translation } = Astro.props;
                         <div class="innerList">
                             <ul>
                                 <li>
-                                    <a href="/story">{ translation.master.nav[1][1].title }</a>
+                                    <a href={Astro.site.pathname+"story"}>{ translation.master.nav[1][1].title }</a>
                                 </li>
                                 <li>
-                                    <a href="/story/threepromises">{ translation.master.nav[1][2].title }</a>
+                                    <a href={Astro.site.pathname+"story/threepromises"}>{ translation.master.nav[1][2].title }</a>
                                 </li>
                                 <li>
-                                    <a href="/story/nestpower">{ translation.master.nav[1][3].title }</a>
-                                </li>
-                                <li>
-                                    <a href="/story/threepromises#section1">{ translation.master.nav[1][4].title }</a>
+                                    <a href={Astro.site.pathname+"story/nestpower"}>{ translation.master.nav[1][3].title }</a>
                                 </li>
                             </ul>
                         </div>
@@ -50,13 +46,13 @@ const { translation } = Astro.props;
                                 <li>
                                     <ul>
                                         <li>
-                                            <a href="./product/list">{ translation.master.nav[2][1].a}</a>
+                                            <a href={Astro.site.pathname+"products"}>{ translation.master.nav[2][1].a}</a>
                                         </li>
                                         <li>
-                                            <a href="./product/healthy_food/">{ translation.master.nav[2][1].b }</a>
+                                            <a href={Astro.site.pathname+"product#healthy_food"}>{ translation.master.nav[2][1].b }</a>
                                         </li>
                                         <li>
-                                            <a href="./product/cosmetics/">{ translation.master.nav[2][1].c }</a>
+                                            <a href={Astro.site.pathname+"product#cosmetics"}>{ translation.master.nav[2][1].c }</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -68,7 +64,7 @@ const { translation } = Astro.props;
                         <div class="innerList">
                             <ul>
                                 <li>
-                                    <a href="/mail/contact">{ translation.master.nav[3][1].title }</a>
+                                    <a href={Astro.site.pathname+"faq"}>{ translation.master.nav[3][1].title }</a>
                                 </li>
                             </ul>
                         </div>
@@ -80,13 +76,13 @@ const { translation } = Astro.props;
                                 <li>
                                     <ul>
                                         <li>
-                                            <a href="./about/about_us">{  translation.master.nav[4][2].a }</a>
+                                            <a href={Astro.site.pathname+"about/about_us"}>{  translation.master.nav[4][2].a }</a>
                                         </li>
                                         <li>
-                                            <a href="./contents/interview">{translation.master.nav[4][2].b}</a>
+                                            <a href={Astro.site.pathname+"contents/interview"}>{translation.master.nav[4][2].b}</a>
                                         </li>
                                         <li>
-                                            <a href="./about/beauty_ingredients">{translation.master.nav[4][2].c}</a>
+                                            <a href={Astro.site.pathname+"about/beauty_ingredients"}>{translation.master.nav[4][2].c}</a>
                                         </li>
                                         <li>
                                             <a href="https://miranest.jp/">{translation.master.nav[4][2].d}</a>

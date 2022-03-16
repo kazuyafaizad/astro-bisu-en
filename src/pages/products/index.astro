@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import translation from '../../locales/en.json';
+import '../../styles/tailwind.scss';
+const {lang = "en" } = Astro.props;
+
+---
+
+<style>
+        .Q::before{
+            content:"Q";
+            padding-right: 1rem;
+        }
+        .A::before{
+            content:"A";
+            padding-right: 1rem;
+        }
+
+</style>
+
+<Layout lang={lang} title="products" description="products">
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+     <section class="pt-12 lg:px-52 lg:h-[70rem]">
+     <h2 class="text-h2 lg:text-4xl  text-center mb-7  lg:px-auto">{translation.products.title}</h2>
+        <div class="grid grid-cols-3">
+
+        </div>
+     </section>
+
+</Layout>

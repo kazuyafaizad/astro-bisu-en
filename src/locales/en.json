@@ -13,9 +13,6 @@
                 "3": {
                     "title": "Power of nest"
                 },
-                "4": {
-                    "title": ""
-                },
                 "head": "Brand Story"
             },
             "2": {
@@ -35,10 +32,7 @@
             },
             "3": {
                 "1": {
-                    "title": "BI-SU Customer Centre"
-                },
-                "2": {
-                    "title": "Mail Inquiry"
+                    "title": "FAQ"
                 },
                 "head": "Q&A"
             },
@@ -378,5 +372,51 @@
                 "title2": "Swiftlets Nest Hunter"
             }
         }
+    },
+    "faq":{
+        "Q1":{
+            "Q":"What kind of bird nest that BI-SU is using?",
+            "A":"We are using the authentic swiftlet's nest from Borneo, Malaysia. It is considered as one of the highest grade of swiftlet's nest in the world."
+        },
+        "Q2":{
+            "Q":"How does BI-SU aquire their swiftlet's nests?",
+            "A":"We only aquire the nest  from the suppliers which are authorised by Malaysian government. Every bird nest is checked by our onw eyes to make sure it is qualified. "
+        },
+        "Q3": {
+            "Q": "Where is BI-SU product produced?",
+            "A": "Our products are produced in Malaysia and Japan. The manufacturing process us qualified to all national and international standard in order to make sure only the  safe and high quality product can be delivered to our customers."
+        },
+        "Q4": {
+            "Q": "What are the differences of products between BI-SU and other bird nest companies'?",
+            "A": "1. We use 100% real and authentic swiftlet's nest from Malaysia, all our suppliers are authorised by government and our CEO Mr. Inatomi attends to the gathering of nest every year in person to confirm the quality of nest and the gathering is not harm to any swiftlet.\n2. Most of the product in market use sugar to sweeten the product. But we only use sugar beet extract which is rich in natural minerals that improves your digest system and skin condition.\n3. We donate a part of our sales to help rebuild the forest in Borneo, Malaysia. It's to return the favor and respect to the mother nature who supply us everything."
+        },
+        "Q5": {
+            "Q": "What is sugar beet extract",
+            "A": "Sugar beet extract is a kind sweetener to replace sugar. It's totally nature and good to human digestion."
+        },
+        "Q6": {
+            "Q": "Can I use the product if I have allergy?",
+            "A": "All our products are tested, but you should always consult a professional doctor base on personal condition."
+        },
+        "Q7": {
+            "Q": "Why is the color of product is different from which of the swiftlet's nest?",
+            "A": "It's because we use sugar beet extract which changed the color of swiftlet's nest. It's totally normal and we don't use any artificial colorings."
+        },
+        "Q8": {
+            "Q": "How to preserve the the products?",
+            "A": "Please preserve them in the cool place or refrigerator. Finish product as soon as possible once it is opened?"
+        },
+        "Q9": {
+            "Q": "I found the color of BI-SU 16 in each bottle is slightly different and their's a slight of precipitation, is that still safe to eat?",
+            "A": "Since all the ingredients are natural, it is normal that the color is different and have a slight of precipitation. It is still safe to consume the product."
+        },
+        "Q10": {
+            "Q": "Isn't that going to hurt the swiftlet if we took their nest? Is this ethical?",
+            "A": "No, it is total safe for the swiftlet. Every nest is only used once and will never be used again by the swiftlet, we only took the nests which are abandonned by the swiftlet. Moreover, swiftlet build the new nest in the same place, so it is also helping swiftlets to clear the space to build new nest. We only harvest the nest 3 times a year to make sure we are not going to affect their natural habits. "
+        },
+        "title":"Frequently Asked Question"
+    },
+    "products":{
+        "title":"Products"
     }
 }
