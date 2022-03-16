@@ -31,12 +31,6 @@
                     "d": "Full refund service",
                     "e": "About wrapping"
                 },
-                "3": {
-                    "a": "Login",
-                    "a_link": "https://shop.bi-su.jp/ec/cart/list",
-                    "b": "Sign Up",
-                    "b_link": "https://shop.bi-su.jp/auth/regist"
-                },
                 "head": "Shop"
             },
             "3": {
@@ -254,13 +248,13 @@
             },
             "2": {
                 "1": "Most plants and cereals",
-                "2": "Dairy products,",
-                "3": "Cactus, konjac,",
-                "4": "Algae, mushrooms,",
+                "2": "Dairy products, ",
+                "3": "Cactus, konjac, ",
+                "4": "Algae, mushrooms, ",
                 "5": "cereals, plant skins, mushrooms",
-                "6": "crustacean,",
-                "7": "Milk, shark cartilage,",
-                "8": "Breast Milk,",
+                "6": "crustacean, ",
+                "7": "Milk, shark cartilage, ",
+                "8": "Breast Milk, ",
                 "head": "Main ingredient",
                 "2_nest": "Swiftlet's Nest",
                 "3_nest": "Swiftlet's Nest",

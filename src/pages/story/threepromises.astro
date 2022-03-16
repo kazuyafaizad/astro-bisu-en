@@ -11,9 +11,7 @@ const {lang = "en" } = Astro.props;
 import '../../scripts/story.ts';
 </script>
 
-<style>
-
-</style>
+<Layout lang={lang} title="threepromises" description="threepromises">
 
 <script>
 const startup = () => {
@@ -28,7 +26,6 @@ const startup = () => {
 
 </script>
 
-<Layout lang={lang} title="threepromises" description="threepromises">
 <header>
     <h2>
         <picture>
@@ -41,12 +38,11 @@ const startup = () => {
 <section id="promises">
     <header data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear" id="promises_header">
         <h3 title="Three promises">{ translation.threepromises.header.title}</h3>
-        <p class="image">
-            <picture>
-                <source srcset="/img/story/sp/threepromises-con01-sp_en.png" media="(max-width: 480px)" />
-                <img src="/img/story/threepromises-con01_en.png" alt="" />
-            </picture>
-        </p>
+          <div class="threepoints">
+            <img src="/img/story/Image 40.png" class="" />
+            <img src="/img/story/Image 41.png" class="" />
+            <img src="/img/story/Image 42.png" class="" />
+          </div>
         <ol>
             <li>{ translation.threepromises.header.list[1]}</li>
             <li>{ translation.threepromises.header.list[2]}</li>
@@ -96,8 +92,8 @@ const startup = () => {
         <p>{ translation.threepromises[3].body[3]}</p>
 
         <ul>
-            <li><img src="/img/story/threepromises-con07.jpg" alt="" /></li>
-            <li><img src="/img/story/threepromises-con08.jpg" alt="" /></li>
+            <li><img src="/img/en/threepromises-con07.jpg" alt="" /></li>
+            <li><img src="/img/en/threepromises-con08.jpg" alt="" /></li>
         </ul>
     </section>
 </section>

@@ -40,6 +40,15 @@
             margin: 2rem auto;
             text-align: center;
         }
+        .threepoints{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin:1.5rem;
+                width:30%;
+            }
+        }
         ol {
             font-size: 1.1rem;
             li {

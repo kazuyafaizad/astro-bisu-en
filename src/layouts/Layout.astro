@@ -22,15 +22,15 @@ import '../scripts/common.ts';
       name="description"
       content={translation.master.description}
     />
+    <Meta/>
 
-    <Meta>
-      <slot name="head" />
-    </Meta>
   </head>
 
   <body>
     <Nav translation={translation} />
-    <main><slot /></main>
+    <main>
+      <slot />
+    </main>
 
     <footer>
     <slot name="footer" />

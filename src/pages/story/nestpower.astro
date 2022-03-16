@@ -10,24 +10,9 @@ const {lang = "en" } = Astro.props;
 import '../../scripts/story.ts';
 import '../../scripts/story-power.ts';
 </script>
-<Fragment slot="head">
-<link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css" />
-</Fragment>
-<script>
- const startup = () => {
-        stickyItems({ main: "#power", contents: ":scope > section" });
-
-        sideNav({
-            title: "nest power",
-            target: "#power",
-            anchor: ["#section1", "#section2", "#section3"],
-        });
-    };
-    window.addEventListener("DOMContentLoaded", startup, { passive: true });
-
-</script>
 
 <Layout lang={lang} title="nestpower" description="nestpower">
+
 
 <header>
     <h2>
@@ -40,7 +25,6 @@ import '../../scripts/story-power.ts';
 
 <section id="power">
     <h3>{translation.nestpower.title}</h3>
-    <div id="contents">
     <section id="section1" data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear">
         <h4>
             {translation.nestpower[1].title[1]}
@@ -78,20 +62,23 @@ import '../../scripts/story-power.ts';
                 <tr>
                     <th>{translation.nestpower.glycan[1][2]}</th>
                     <td>
-                        {translation.nestpower.glycan[2][2]}<em>{translation.nestpower.glycan[2]["2_nest"]}</em>
+                        {translation.nestpower.glycan[2][2]}
+                        <em>{translation.nestpower.glycan[2]["2_nest"]}</em>
                     </td>
                 </tr>
                 <tr>
                     <th>{translation.nestpower.glycan[1][3]}</th>
                     <td>
-                        {translation.nestpower.glycan[2][3]}<em>{translation.nestpower.glycan[2]["3_nest"]}</em>
+                        {translation.nestpower.glycan[2][3]}
+                        <em>{translation.nestpower.glycan[2]["3_nest"]}</em>
                     </td>
                     <td rowspan="3">{translation.nestpower.glycan[3]["3_5"]}</td>
                 </tr>
                 <tr>
                     <th>{translation.nestpower.glycan[1][4]}</th>
                     <td>
-                        {translation.nestpower.glycan[2][4]}<em>{translation.nestpower.glycan[2]["4_nest"]}</em>
+                        {translation.nestpower.glycan[2][4]}
+                        <em>{translation.nestpower.glycan[2]["4_nest"]}</em>
                     </td>
                 </tr>
                 <tr>
@@ -101,26 +88,28 @@ import '../../scripts/story-power.ts';
                 <tr>
                     <th>{translation.nestpower.glycan[1][6]}</th>
                     <td>
-                        {translation.nestpower.glycan[2][6]}<em>{translation.nestpower.glycan[2]["6_nest"]}</em>
+                        {translation.nestpower.glycan[2][6]}
+                        <em>{translation.nestpower.glycan[2]["6_nest"]}</em>
                     </td>
                     <td rowspan="3">{translation.nestpower.glycan[3]["6_8"]}</td>
                 </tr>
                 <tr>
                     <th>{translation.nestpower.glycan[1][7]}</th>
                     <td>
-                        {translation.nestpower.glycan[2][7]}<em>{translation.nestpower.glycan[2]["7_nest"]}</em>
+                        {translation.nestpower.glycan[2][7]}
+                        <em>{translation.nestpower.glycan[2]["7_nest"]}</em>
                     </td>
                 </tr>
                 <tr>
                     <th>{translation.nestpower.glycan[1][8]}</th>
                     <td>
-                        {translation.nestpower.glycan[2][8]}<em>{translation.nestpower.glycan[2]["8_nest"]}</em>
+                        {translation.nestpower.glycan[2][8]}
+                        <em> Swiftlet's Nest </em>
                     </td>
                 </tr>
             </tbody>
         </table>
     </section>
-
     <section id="section3" data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear">
         <h4>{translation.nestpower[3].title}</h4>
 
@@ -129,7 +118,6 @@ import '../../scripts/story-power.ts';
             <img src="/img/story/power-img02_en.png" alt="" />
         </picture>
     </section>
-    </div>
 </section>
 
 <section id="possibility" data-sal="slide-up" data-sal-duration="1500">
@@ -145,4 +133,22 @@ import '../../scripts/story-power.ts';
         <img src="/img/story/power-img03-2.jpg" alt="" />
     </figure>
 </section>
+
+
+<link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css" />
+<script>
+ const startup = () => {
+        stickyItems({ main: "#power", contents: ":scope > section" });
+
+        sideNav({
+            title: "nest power",
+            target: "#power",
+            anchor: ["#section1", "#section2", "#section3"],
+        });
+    };
+    window.addEventListener("DOMContentLoaded", startup, { passive: true });
+
+</script>
+
+
 </Layout>
