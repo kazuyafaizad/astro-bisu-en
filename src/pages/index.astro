@@ -157,13 +157,13 @@ import '../scripts/index.ts';
         <h2>{translation.master.nav[1].head}</h2>
         <ul>
             <li>
-                <a href="/story/">{translation.master.nav[1][1].title}</a>
+                <a href={ Astro.site.pathname+"story/"}>{translation.master.nav[1][1].title}</a>
             </li>
             <li>
-                <a href="/story/threepromises">{translation.master.nav[1][2].title}</a>
+                <a href={ Astro.site.pathname+"story/threepromises"}>{translation.master.nav[1][2].title}</a>
             </li>
             <li>
-                <a href="/story/nestpower">{translation.master.nav[1][3].title}</a>
+                <a href={ Astro.site.pathname+"story/nestpower"}>{translation.master.nav[1][3].title}</a>
             </li>
         </ul>
     </div>
@@ -191,13 +191,10 @@ import '../scripts/index.ts';
 
 <ul id="policy">
     <li>
-        <a href="/mail/transaction">{translation.index.policy[1]}</a>
+        <a href={Astro.site.pathname+"contact"}>{translation.index.policy[1]}</a>
     </li>
     <li>
-        <a href="/about/privacy">{translation.index.policy[2]}</a>
-    </li>
-    <li>
-        <a href="/about/law">{translation.index.policy[3]}</a>
+        <a href={Astro.site.pathname+"privacy"}>{translation.index.policy[2]}</a>
     </li>
 </ul>
 </Fragment>

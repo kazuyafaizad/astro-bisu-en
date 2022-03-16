@@ -11,7 +11,7 @@ const { translation } = Astro.props;
 </style>
 <header>
  <h1>
-                <a href="/">
+                <a href={Astro.site.pathname}>
                     <picture>
                         <source srcset="/img/common/sp/bi-su_logo-sp.png" media="(max-width: 1000px)" />
                         <img src="/img/common/bi-su_logo-pc.png" alt="bi-su" />
@@ -43,8 +43,6 @@ const { translation } = Astro.props;
                         <h2>{ translation.master.nav[2].head }</h2>
                         <div class="innerList">
                             <ul>
-                                <li>
-                                    <ul>
                                         <li>
                                             <a href={Astro.site.pathname+"products"}>{ translation.master.nav[2][1].a}</a>
                                         </li>
@@ -54,8 +52,6 @@ const { translation } = Astro.props;
                                         <li>
                                             <a href={Astro.site.pathname+"products#cosmetics"}>{ translation.master.nav[2][1].c }</a>
                                         </li>
-                                    </ul>
-                                </li>
                             </ul>
                         </div>
                     </li>
@@ -70,27 +66,8 @@ const { translation } = Astro.props;
                         </div>
                     </li>
                     <li>
-                        <h2>{ translation.master.nav[4].head }</h2>
-                        <div class="innerList">
-                            <ul>
-                                <li>
-                                    <ul>
-                                        <li>
-                                            <a href={Astro.site.pathname+"about/about_us"}>{  translation.master.nav[4][2].a }</a>
-                                        </li>
-                                        <li>
-                                            <a href={Astro.site.pathname+"contents/interview"}>{translation.master.nav[4][2].b}</a>
-                                        </li>
-                                        <li>
-                                            <a href={Astro.site.pathname+"about/beauty_ingredients"}>{translation.master.nav[4][2].c}</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://miranest.jp/">{translation.master.nav[4][2].d}</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                        <a href={Astro.site.pathname+"contact"}><h2>{ translation.master.nav[4].head }</h2></a>
+
                     </li>
 
                     <li class="lang">

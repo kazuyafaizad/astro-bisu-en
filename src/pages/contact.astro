@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import translation from '../locales/en.json';
+import '../styles/contact.scss';
+const {lang = "en" } = Astro.props;
+
+---
+
+
+<Layout lang={lang} title="faq" description="faq">
+
+     <section class="pt-12 lg:px-52 ">
+     <h2 class="text-h2 lg:text-4xl  text-center mb-7  lg:px-auto">Contact Us</h2>
+
+      <form class="w-full max-w-4xl mt-10 lg:mt-24 mx-auto">
+
+    <div class="flex flex-col lg:flex-row w-full px-3 mb-6 md:mb-0 items-center">
+      <label class="w-full lg:w-2/6 uppercase tracking-wide mb-2" for="grid-first-name">
+        ＊Full Name
+      </label>
+      <input class="w-full lg:w-4/6 appearance-none border border-black py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="">
+    </div>
+
+    <div class="flex flex-col lg:flex-row w-full px-3 mb-6 md:mb-0 items-center">
+      <label class="w-full lg:w-2/6 uppercase tracking-wide mb-2" for="grid-email">
+        ＊Email
+      </label>
+      <input class="w-full lg:w-4/6 appearance-none border border-black py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-email" type="email" placeholder="">
+    </div>
+
+    <div class="flex flex-col lg:flex-row w-full px-3  mb-0 items-center">
+      <label class="w-full lg:w-2/6 uppercase tracking-wide mb-2" for="message">
+        ＊Message
+      </label>
+      <textarea class="w-full lg:w-4/6 no-resize appearance-none block w-full  border border-black py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message"></textarea>
+    </div>
+
+    <div class="flex flex-col lg:flex-row w-full px-3 mb-6 md:mb-0 items-center">
+      <label class="w-full lg:w-2/6 tracking-wide mb-2" for="message">
+      </label>
+      <p class="w-full lg:w-4/6  block w-full  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 resize-none text-xs" >We will respond to your inquiry within 72 hours</p>
+    </div>
+
+     <div class="flex w-full px-3 mb-6 md:mb-0 items-center">
+      <p class="w-full tracking-wide mb-2 text-xs" >
+      <input type="checkbox" class="form-checkbox" checked /> *I agree to the protection of my personal information.
+      </p>
+      </label>
+    </div>
+
+    <div class="flex w-full px-3 mb-2 md:mb-0 items-center">
+      <p class="w-full tracking-wide mb-2 text-main-gold-3 text-sm" >Protection of Personal Information *Customer’s personal information will be handled in accordance with the personal information protection policy specified by our company. This is a promise between the customer and our company regarding the handling of personal information disclosed by our company.
+      </p>
+    </div>
+
+  <div class="flex items-center justify-center mt-12 mb-10">
+      <button class="w-3/4 lg:w-1/2 text-center shadow bg-main-gold-3 hover:bg-golden focus:shadow-outline focus:outline-none text-white py-2 px-4 block" type="button">
+        Send
+      </button>
+  </div>
+</form>
+     </section>
+
+</Layout>
