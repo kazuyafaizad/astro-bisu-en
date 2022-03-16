@@ -77,12 +77,7 @@
         text-align: center;
         line-height: 1.5;
         margin: 2rem auto;
-        &::before {
             font-size: 1.5rem;
-            font-family: var(--main-font-latin);
-            content: attr(title);
-            display: block;
-        }
     }
     ul {
         display: flex;
@@ -98,20 +93,20 @@
                     margin-top: 1em;
                     line-height: 1.5;
                     font-size: 0.9rem;
-                    &::before {
-                        content: "美巣bi-su";
-                        display: block;
-                        text-transform: uppercase;
-                    }
-                    &:lang(en)::before {
-                        content: "bi-su";
-                    }
-                    &:lang(zh-TW)::before {
-                        content: "美巢燕窩";
-                    }
-                    &:lang(zh-CN)::before {
-                        content: "美巢燕窝";
-                    }
+                    // &::before {
+                    //     content: "美巣bi-su";
+                    //     display: block;
+                    //     text-transform: uppercase;
+                    // }
+                    // &:lang(en)::before {
+                    //     content: "bi-su";
+                    // }
+                    // &:lang(zh-TW)::before {
+                    //     content: "美巢燕窩";
+                    // }
+                    // &:lang(zh-CN)::before {
+                    //     content: "美巢燕窝";
+                    // }
                 }
             }
         }

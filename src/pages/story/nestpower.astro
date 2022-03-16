@@ -2,6 +2,9 @@
 import '../../styles/story-power.scss';
 import Layout from '../../layouts/Layout.astro';
 import translation from '../../locales/en.json';
+import StoryHeaderSp from '../../img/en/PC/story-headimg02_en.jpg';
+import StoryHeader from '../../img/en/PC/story-headimg01_en.jpg';
+import ThreePromises from '../../img/en/power-img03_en.jpg';
 const {lang = "en" } = Astro.props;
 
 ---
@@ -17,8 +20,8 @@ import '../../scripts/story-power.ts';
 <header>
     <h2>
         <picture>
-            <source srcset="/img/en/SP/power-header-sp_en.jpg" media="(max-width: 480px)" />
-            <img src="/img/en/PC/story-headimg01_en.jpg" alt={translation.nestpower.title} />
+            <source srcset=≈{StoryHeaderSp} media="(max-width: 480px)" />
+            <img src={StoryHeader} alt={translation.nestpower.title} />
         </picture>
     </h2>
 </header>
@@ -124,7 +127,7 @@ import '../../scripts/story-power.ts';
     <header>
         <h3 title="Three promises">{translation.nestpower.possibility.title}</h3>
         <figure>
-            <img src="/img/en/power-img03_en.jpg" alt="" />
+            <img src={ThreePromises} alt="" />
         </figure>
     </header>
 

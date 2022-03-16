@@ -2,6 +2,9 @@
 import Layout from '../../layouts/Layout.astro';
 import translation from '../../locales/en.json';
 import '../../styles/products.scss';
+
+import HealthyHeader from '../../img/en/bi-su-categories_pic02-en.jpg'
+import CosmeticHeader from '../../img/en/bi-su-categories_pic02-en.jpg'
 const {lang = "en" } = Astro.props;
 
 ---
@@ -10,10 +13,10 @@ const {lang = "en" } = Astro.props;
     <h1 class="lg:text-[2rem] text-center mt-12">{translation.products.title}</h1>
     <div class="flex lg:px-52 gap-5 mt-8">
         <a href="#healthy">
-        <img src="/img/en/bi-su-categories_pic02-en.jpg">
+        <img src={HealthyHeader}>
         </a>
         <a href="#cosmetics">
-        <img src="/img/en/bi-su-categories_pic01-en.jpg">
+        <img src={CosmeticHeader}>
         </a>
     </div>
      <section class="pt-12 lg:px-52 mt-32 relative" >

@@ -2,6 +2,8 @@
 import '../../styles/story.scss';
 import Layout from '../../layouts/Layout.astro';
 import translation from '../../locales/en.json';
+import StoryHeaderSP from '../../img/en/SP/story-header-sp_en.jpg'
+import StoryHeader from '../../img/en/PC/story-headimg02_en.jpg'
 const {lang = "en" } = Astro.props;
 
 ---
@@ -27,8 +29,8 @@ window.addEventListener("DOMContentLoaded", startup, { passive: true });
 <header>
     <h2>
         <picture>
-            <source srcset="/img/en/SP/story-header-sp_en.jpg" media="(max-width: 480px)" />
-            <img src="/img/en/PC/story-headimg02_en.jpg" class="w-100" alt={translation.story.title} />
+            <source srcset={StoryHeaderSP} media="(max-width: 480px)" />
+            <img src={StoryHeader} class="w-100" alt={translation.story.title} />
         </picture>
     </h2>
 </header>

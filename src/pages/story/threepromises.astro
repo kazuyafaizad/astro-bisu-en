@@ -2,6 +2,10 @@
 import '../../styles/story-promises.scss';
 import Layout from '../../layouts/Layout.astro';
 import translation from '../../locales/en.json';
+import PromiseHeaderSP from '../../img/en/SP/3promise-header-sp_en.jpg';
+import PromiseHeader from '../../img/en/PC/story-headimg03_en.jpg';
+import ThreePromises2 from '../../img/en/threepromises-con07.jpg';
+import ThreePromises3 from '../../img/en/threepromises-con08.jpg';
 
 const {lang = "en" } = Astro.props;
 
@@ -29,8 +33,8 @@ const startup = () => {
 <header>
     <h2>
         <picture>
-            <source srcset="/img/en/SP/3promise-header-sp_en.jpg" media="(max-width: 480px)" />
-            <img src="/img/en/PC/story-headimg03_en.jpg" alt={translation.threepromises.title} />
+            <source srcset={PromiseHeaderSP} media="(max-width: 480px)" />
+            <img src={PromiseHeader} alt={translation.threepromises.title} />
         </picture>
     </h2>
 </header>
@@ -92,8 +96,8 @@ const startup = () => {
         <p>{ translation.threepromises[3].body[3]}</p>
 
         <ul>
-            <li><img src="/img/en/threepromises-con07.jpg" alt="" /></li>
-            <li><img src="/img/en/threepromises-con08.jpg" alt="" /></li>
+            <li><img src={ThreePromises2} alt="" /></li>
+            <li><img src={ThreePromises3} alt="" /></li>
         </ul>
     </section>
 </section>
