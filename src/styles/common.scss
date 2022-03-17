@@ -46,6 +46,9 @@ body {
     }
     color: var(--color-main-font);
     -webkit-font-smoothing: antialiased;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 // -------------------------------------------------
