@@ -1,7 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import translation from '../../locales/en.json';
-import '../../styles/items.scss';
 import amazon from '../../img/Amazon-logo.png';
 
 export async function getStaticPaths() {
@@ -19,8 +18,13 @@ const { item ,lang = "en"} = Astro.props as Props
 
 ---
 
+<script type="module" hoist>
+import '../../scripts/product.min.js';
+</script>
+
 <Layout lang={lang} title="faq" description="faq">
-     <section class="pt-12 mb-12 lg:px-52 ">
+<link rel="stylesheet" href={Astro.site.pathname+"css/item.css"}>
+     <section class="pt-12 mb-12 px-3 ">
      <section id="item">
           <figure id="item-images"><img src={item.imgUrl} style="opacity: 1; height: 266px;" alt="">
             <ul>
@@ -43,7 +47,7 @@ const { item ,lang = "en"} = Astro.props as Props
                <h3>{item.name}</h3>
                <p>Contents: {item.size}</p>
           </header>
-               <p>{item.intro}</p>
+               <p class="mb-3">{item.intro}</p>
 
           <div id="item-buy">
                <form action="/ec/cart/add/14" method="post" name="normal_product_form" novalidate="novalidate">
@@ -71,7 +75,7 @@ const { item ,lang = "en"} = Astro.props as Props
 
                           <ul id="item-detail">
                               <li><details> <summary>Product Features</summary>
-                                             <p>{item.feature}</p>
+                                             <p style="max-width:fit-content;">{item.feature}</p>
                               </details></li>
 
                               </ul>

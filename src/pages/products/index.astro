@@ -11,7 +11,7 @@ const {lang = "en" } = Astro.props;
 
 <Layout lang={lang} title="products" description="products">
     <h1 class="lg:text-[2rem] text-center mt-12">{translation.products.title}</h1>
-    <div class="flex lg:px-52 gap-5 mt-8">
+    <div class="flex flex-col lg:flex-row px-3 lg:px-52 gap-5 mt-8">
         <a href="#healthy">
         <img src={HealthyHeader}>
         </a>
@@ -22,10 +22,10 @@ const {lang = "en" } = Astro.props;
      <section class="pt-12 lg:px-52 mt-32 relative" >
     <span id="healthy"></span>
      <h2 class="text-h2 lg:text-[3em]  text-center mb-7 text-main-gold-3 uppercase  lg:px-auto">{translation.products.healthy.title}</h2>
-        <div class="grid grid-cols-3 border-t border-main-gold-3 pt-12">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 border-t border-main-gold-3 pt-12">
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/bisu16"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.bisu16.imgUrl} alt={translation.products.items.bisu16.title} data-src={translation.products.items.bisu16.imgUrl} alt={translation.products.items.bisu16.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.bisu16.title}</h3>
@@ -39,7 +39,7 @@ const {lang = "en" } = Astro.props;
 
           <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/bisu16n"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.bisu16n.imgUrl} alt={translation.products.items.bisu16n.title} data-src={translation.products.items.bisu16n.imgUrl} alt={translation.products.items.bisu16n.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.bisu16n.title}</h3>
@@ -51,7 +51,7 @@ const {lang = "en" } = Astro.props;
 
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/jelly"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.jelly.imgUrl} alt={translation.products.items.jelly.title} data-src={translation.products.items.jelly.imgUrl} alt={translation.products.items.jelly.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.jelly.title}</h3>
@@ -63,7 +63,7 @@ const {lang = "en" } = Astro.props;
 
            <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/jelly"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.jellyrose.imgUrl} alt={translation.products.items.jellyrose.title} data-src={translation.products.items.jellyrose.imgUrl} alt={translation.products.items.jellyrose.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.jellyrose.title}</h3>
@@ -75,7 +75,7 @@ const {lang = "en" } = Astro.props;
 
            <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/threeset"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.threeset.imgUrl} alt={translation.products.items.threeset.title} data-src={translation.products.items.threeset.imgUrl} alt={translation.products.items.threeset.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.threeset.title}</h3>
@@ -87,7 +87,7 @@ const {lang = "en" } = Astro.props;
 
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/enzyme"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.enzyme.imgUrl} alt={translation.products.items.enzyme.title} data-src={translation.products.items.enzyme.imgUrl} alt={translation.products.items.enzyme.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.enzyme.title}</h3>
@@ -99,7 +99,7 @@ const {lang = "en" } = Astro.props;
 
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/jelly"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.drink.imgUrl} alt={translation.products.items.drink.title} data-src={translation.products.items.drink.imgUrl} alt={translation.products.items.drink.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.drink.title}</h3>
@@ -111,7 +111,7 @@ const {lang = "en" } = Astro.props;
 
              <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/powder"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.powder.imgUrl} alt={translation.products.items.powder.title} data-src={translation.products.items.powder.imgUrl} alt={translation.products.items.powder.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.powder.title}</h3>
@@ -123,7 +123,7 @@ const {lang = "en" } = Astro.props;
 
              <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/candy"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.candy.imgUrl} alt={translation.products.items.candy.title} data-src={translation.products.items.candy.imgUrl} alt={translation.products.items.candy.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.candy.title}</h3>
@@ -137,10 +137,10 @@ const {lang = "en" } = Astro.props;
      <section class="pt-12 lg:px-52 relative" >
     <span id="cosmetics"></span>
      <h2 class="text-h2 lg:text-[3em]  text-center mb-7 text-main-gold-3 uppercase  lg:px-auto">{translation.products.cosmetics.title}</h2>
-        <div class="grid grid-cols-3 border-t border-main-gold-3 pt-12">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 border-t border-main-gold-3 pt-12">
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/facecream"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.facecream.imgUrl} alt={translation.products.items.facecream.title} data-src={translation.products.items.facecream.imgUrl} alt={translation.products.items.facecream.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.facecream.title}</h3>
@@ -154,7 +154,7 @@ const {lang = "en" } = Astro.props;
 
           <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/facemask"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.facemask.imgUrl} alt={translation.products.items.facemask.title} data-src={translation.products.items.facemask.imgUrl} alt={translation.products.items.facemask.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.facemask.title}</h3>
@@ -166,7 +166,7 @@ const {lang = "en" } = Astro.props;
 
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/lotion"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.lotion.imgUrl} alt={translation.products.items.lotion.title} data-src={translation.products.items.lotion.imgUrl} alt={translation.products.items.lotion.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.lotion.title}</h3>
@@ -178,7 +178,7 @@ const {lang = "en" } = Astro.props;
 
            <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/serum"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.serum.imgUrl} alt={translation.products.items.serum.title} data-src={translation.products.items.serum.imgUrl} alt={translation.products.items.serum.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.serum.title}</h3>
@@ -190,7 +190,7 @@ const {lang = "en" } = Astro.props;
 
            <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/milk"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.milk.imgUrl} alt={translation.products.items.milk.title} data-src={translation.products.items.milk.imgUrl} alt={translation.products.items.milk.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.milk.title}</h3>
@@ -202,7 +202,7 @@ const {lang = "en" } = Astro.props;
 
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/handcream"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.handcream.imgUrl} alt={translation.products.items.handcream.title} data-src={translation.products.items.handcream.imgUrl} alt={translation.products.items.handcream.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.handcream.title}</h3>
@@ -214,7 +214,7 @@ const {lang = "en" } = Astro.props;
 
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/handcreamrose"}>
-            <figure class="px-[10px] overflow-hidden h-80">
+            <figure class="px-[10px] overflow-hidden lg:h-80">
                 <img src={translation.products.items.handcreamrose.imgUrl} alt={translation.products.items.handcreamrose.title} data-src={translation.products.items.handcreamrose.imgUrl} alt={translation.products.items.handcreamrose.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.handcreamrose.title}</h3>

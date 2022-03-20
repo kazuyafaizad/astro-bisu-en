@@ -161,7 +161,7 @@ main {
         margin: 2rem auto;
         font-feature-settings: "halt";
         @include max-screen($breakpoint-sp-horizontal) {
-            font-size: 2.5rem;
+            font-size: 7vw;
             width: 100%;
         }
     }

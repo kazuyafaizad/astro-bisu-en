@@ -49,6 +49,7 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 100vh;
 }
 
 // -------------------------------------------------
@@ -92,6 +93,10 @@ body > header {
             margin: auto;
         }
     }
+}
+
+main>header>h2>picture>img{
+    width:100%;
 }
 
 // -------------------------------------------------

@@ -43,9 +43,9 @@ const startup = () => {
     <header data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear" id="promises_header">
         <h3 title="Three promises">{ translation.threepromises.header.title}</h3>
           <div class="threepoints">
-            <img src="/img/story/Image 40.png" class="" />
-            <img src="/img/story/Image 41.png" class="" />
-            <img src="/img/story/Image 42.png" class="" />
+            <img src={Astro.site.pathname+"img/story/Image 40.png"} class="" />
+            <img src={Astro.site.pathname+"img/story/Image 41.png"} class="" />
+            <img src={Astro.site.pathname+"img/story/Image 42.png"} class="" />
           </div>
         <ol>
             <li>{ translation.threepromises.header.list[1]}</li>

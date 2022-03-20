@@ -15,6 +15,20 @@ import '../../scripts/story-power.ts';
 </script>
 
 <Layout lang={lang} title="nestpower" description="nestpower">
+<link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css" />
+<script>
+ const startup = () => {
+        stickyItems({ main: "#power", contents: ":scope > section" });
+
+        sideNav({
+            title: "nest power",
+            target: "#power",
+            anchor: ["#section1", "#section2", "#section3"],
+        });
+    };
+    window.addEventListener("DOMContentLoaded", startup, { passive: true });
+
+</script>
 
 
 <header>
@@ -138,20 +152,6 @@ import '../../scripts/story-power.ts';
 </section>
 
 
-<link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css" />
-<script>
- const startup = () => {
-        stickyItems({ main: "#power", contents: ":scope > section" });
-
-        sideNav({
-            title: "nest power",
-            target: "#power",
-            anchor: ["#section1", "#section2", "#section3"],
-        });
-    };
-    window.addEventListener("DOMContentLoaded", startup, { passive: true });
-
-</script>
 
 
 </Layout>
