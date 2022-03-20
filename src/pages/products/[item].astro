@@ -1,0 +1,83 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import translation from '../../locales/en.json';
+import '../../styles/items.scss';
+import amazon from '../../img/Amazon-logo.png';
+
+export async function getStaticPaths() {
+
+      let arr =  [];
+     for (let [key, value] of Object.entries(translation.products.items)) {
+          arr.push({ params: { item: key },props: { item: value  }})
+     }
+     return arr;
+
+}
+
+
+const { item ,lang = "en"} = Astro.props as Props
+
+---
+
+<Layout lang={lang} title="faq" description="faq">
+     <section class="pt-12 mb-12 lg:px-52 ">
+     <section id="item">
+          <figure id="item-images"><img src={item.imgUrl} style="opacity: 1; height: 266px;" alt="">
+            <ul>
+                <li class="">
+                <img src={item.imgUrl} data-src={item.imgUrl} alt="Bi-Su Facial Soap">
+            </li>
+                    <li class="show">
+                <img src={item.imgUrl} data-src={item.imgUrl} alt="Bi-Su Facial Soap">
+                </li></ul>
+          </figure>
+
+          <figure id="item-images-carousel" style="display: none;">
+                        <img src={item.imgUrl} data-src={item.imgUrl} alt="Bi-Su Facial Soap">
+                        <img src={item.imgUrl1} data-src={item.imgUrl1} alt="Bi-Su Facial Soap">
+          </figure>
+
+        <div id="right-item">
+        <section id="item-main">
+          <header>
+               <h3>{item.name}</h3>
+               <p>Contents: {item.size}</p>
+          </header>
+               <p>{item.intro}</p>
+
+          <div id="item-buy">
+               <form action="/ec/cart/add/14" method="post" name="normal_product_form" novalidate="novalidate">
+               <div class="price-1">
+                  <div class="price-name">Price</div>
+                  <div class="price-number">
+                      <p class="price">
+                        <span class="value"><span class="txt-product-price">{item.price}</span> </span>
+                      </p>
+                  </div>
+              </div>
+
+              <div class="price-2">
+              <div class="product_item">
+                  <div class="buy_btn">
+                    <a href={item.amazon} target="_blank">
+                        <div>BUY NOW</div>
+                        <div><img src={amazon}></div>
+                    </a>
+                </div>
+                </div>
+            </div>
+            </form></div>
+        </section>
+
+                          <ul id="item-detail">
+                              <li><details> <summary>Product Features</summary>
+                                             <p>{item.feature}</p>
+                              </details></li>
+
+                              </ul>
+                  </div>
+
+</section>
+     </section>
+
+</Layout>

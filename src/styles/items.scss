@@ -1,0 +1,710 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#item {
+    display: grid;
+    grid-template-areas: "a b" "c b" "d d";
+    grid-template-rows: -webkit-min-content 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-column-gap: 5rem
+}
+
+#item #item-images {
+    grid-area: a
+}
+
+#item #right-item {
+    grid-area: b
+}
+
+#item #item-images img {
+    padding: 0 20px
+}
+
+#item>h2 {
+    width: 100%;
+    -ms-flex-order: 0;
+    order: 0;
+    margin-bottom: 50px
+}
+
+#item-images ul {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 10px;
+    margin: 1rem 0
+}
+
+#item-images ul li {
+    margin: 0 10px;
+    border: 1px solid #ccc
+}
+
+#item-images ul li .show {
+    box-shadow: 0 0 1px 0 #ccc
+}
+
+#item-main header {
+    margin-bottom: 2rem;
+    font-weight: 600
+}
+
+#item-main header h3 {
+    font-size: 1.5rem;
+    line-height: 1.5rem
+}
+
+#item .ranking_list {
+    display: block;
+    height: 300px;
+    padding: 10px 20px 42px;
+    border: 1px solid #ccc;
+    margin: 0 20px;
+    text-align: left
+}
+
+#item .ranking_list .block_body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100% - 84px)
+}
+
+#item .ranking_list .block_body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    border-radius: 10px;
+    background-color: #f5f5f5
+}
+
+#item .ranking_list .block_body::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f5f5f5
+}
+
+#item .ranking_list .block_body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #e2e2e2
+}
+
+#item .ranking_list .product_item {
+    display: -ms-inline-flexbox;
+    display: inline-flex
+}
+
+#item #inline-frame_rank .clearfix {
+    width: 460px
+}
+
+#item .ranking_list .block_body .productImage {
+    width: 80%;
+    float: left
+}
+
+#item .ranking_list .block_body h3 {
+    word-break: keep-all;
+    padding-top: 20px;
+    font-size: .9rem
+}
+
+#item .ranking_list .block_body p {
+    display: flow-root
+}
+
+#item .ranking_list .block_body span.price {
+    width: 230px;
+    display: block;
+    white-space: nowrap;
+}
+
+#item .ranking_list .block_body .rank {
+    font-size: .8rem;
+    font-weight: 400;
+    color: #333;
+    float: left
+}
+
+#item .ranking_list h2.ck_ranking {
+    z-index: 1;
+    border-top: none;
+    color: #ae9e88;
+    font-size: 1.5rem;
+    font-family: Cormorant Infant,serif;
+    text-align: center;
+    letter-spacing: .1em;
+    font-weight: 400;
+    border: none;
+    padding: 20px 0 0;
+    margin: 0
+}
+
+#item .ranking_list h3.re_ranking {
+    font-size: .8rem;
+    font-weight: 400;
+    text-align: center;
+    color: #111;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 0 0 16px
+}
+
+#item-detail {
+    grid-area: e;
+    margin-top: 2rem;
+    width: 100%;
+    border-bottom: 1px solid #000
+}
+
+#item-detail>li {
+    border-top: 1px solid #000
+}
+
+#item-detail>li details summary {
+    padding: 1rem 3rem;
+    position: relative;
+    display: block;
+    background: #fff;
+    cursor: pointer;
+    z-index: 2
+}
+
+#item-detail>li details summary::-webkit-details-marker {
+    display: none
+}
+
+#item-detail>li details summary:after {
+    position: absolute;
+    right: 2rem;
+    bottom: calc(50% - 25px);
+    content: "+";
+    font-size: 25px;
+    padding: 0 5px 0 10px;
+    margin-top: -5px
+}
+
+#item-detail>li details summary.change:after {
+    transform: rotate(45deg);
+    transition: transform .3s ease-in-out
+}
+
+#item-detail>li details summary:after {
+    transform: rotate(0);
+    transition: transform .3s ease-in-out
+}
+
+#item-detail>li details div {
+    overflow: hidden;
+    padding: 5px 0
+}
+
+#item-detail>li details p {
+    padding: 0 3rem 1rem;
+    position: relative;
+    z-index: 1
+}
+
+#item-detail>li details p img {
+    width: auto;
+    max-width: 100%
+}
+
+#item-detail>li details h3 {
+    padding: 0 3rem 1rem;
+    font-size: 1.2rem
+}
+
+#item-detail>li details table {
+    border-collapse: collapse;
+    margin: 0 3rem 1rem
+}
+
+#item-detail>li details table colgroup.title {
+    width: 70px
+}
+
+#item-detail>li details table colgroup.detail {
+    width: 150px
+}
+
+#item-detail>li details table td,#item-detail>li details table th {
+    padding: 3px 5px
+}
+
+#item-detail>li details table th {
+    white-space: pre
+}
+
+#item-detail>li details>div ol,#item-detail>li details>div ul,#item-detail>li details>ol,#item-detail>li details>ul {
+    padding: 0 3rem 1rem
+}
+
+#item-detail>li details>div ol li,#item-detail>li details>div ul li,#item-detail>li details>ol li,#item-detail>li details>ul li {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside
+}
+
+#item-detail>li details>div ol.procedure,#item-detail>li details>div ul.procedure,#item-detail>li details>ol.procedure,#item-detail>li details>ul.procedure {
+    display: -ms-flexbox;
+    display: flex
+}
+
+#item-detail>li details>div ol.procedure li,#item-detail>li details>div ul.procedure li,#item-detail>li details>ol.procedure li,#item-detail>li details>ul.procedure li {
+    display: block
+}
+
+#item-detail>li details>div ol li,#item-detail>li details>ol li {
+    list-style-type: decimal
+}
+
+#item-detail>li details .button {
+    background-color: #a4967d;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    padding: 0
+}
+
+#item-detail>li details .button:hover {
+    background-color: #c4baaa
+}
+
+#item-main #item-buy table.tbl_inventory_type {
+    width: auto;
+    margin: 15px auto 20px 0;
+    text-align: center
+}
+
+#item-main #item-buy table {
+    margin: 15px auto 20px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left
+}
+
+#item-main #item-buy table th {
+    color: #333;
+    background-color: #f0f0f0;
+    font-weight: 400;
+    font-size: .5rem;
+    font-size: 1rem;
+    white-space: nowrap
+}
+
+#item-main #item-buy table td,#item-main #item-buy table th {
+    padding: 8px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc
+}
+
+#item-main #item-buy table td {
+    background-color: #fff
+}
+
+#item-main #item-buy .price-1 {
+    display: -ms-flexbox;
+    display: flex
+}
+
+#item-main #item-buy .price-name {
+    width: 40%;
+    border: 1px solid #e2e2e2;
+    padding: 15px;
+    background-color: #f0f0f0
+}
+
+#item-main #item-buy .price-number {
+    width: 60%;
+    border-top: 1px solid #e2e2e2;
+    background-color: #fff
+}
+
+#item-main #item-buy .price-2,#item-main #item-buy .price-number {
+    border-right: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 15px
+}
+
+#item-main #item-buy .price-2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-left: 1px solid #e2e2e2
+}
+
+#item-main #item-buy .price-2 .quantity {
+    width: 30%
+}
+
+#item-main #item-buy .price-2 .quantity p {
+    display: inline
+}
+
+#item-main #item-buy .price-2 select {
+    border: 1px solid #b7b7b7;
+    background-color: #fff;
+    padding: 4px 6px;
+    padding-right: 23px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(https://cart.bi-su.jp/user_data/packages/raku2pc/img/icon/121_arr_hoso.png);
+    background-repeat: no-repeat,repeat;
+    background-position: right .7em top 50%,0 0;
+    background-size: .65em auto,100%;
+    border-radius: 4px;
+    color: #353535;
+    font-size: 90%;
+    width: 40%
+}
+
+#item-main #item-buy .price-2 .add-cart {
+    width: 370px;
+    background-color: #c06;
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center
+}
+
+@media screen and (max-width: 480px) {
+    #item,#item-detail>li details>div ul.procedure,#item-detail>li details>div ul.procedure li,#item-detail>li details>ul.procedure,#item-detail>li details>ul.procedure li,#item-main #item-buy .price-2 {
+        display:block
+    }
+
+    #item-main #item-buy .price-2 .add-cart {
+        width: 100%
+    }
+
+    #item-main #item-buy .price-2 select {
+        width: 120%;
+        margin-bottom: 1rem
+    }
+
+    #item .ranking_list {
+        margin: 0
+    }
+}
+
+#item .mod-select-sku {
+    font-size: 1rem
+}
+
+#item .mod-select-sku2 {
+    margin: 1.2rem 0
+}
+
+#item .mod-select-sku2 select {
+    background-image: linear-gradient(45deg,transparent 50%,gray 0),linear-gradient(135deg,gray 50%,transparent 0),linear-gradient(90deg,#ccc,#ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px),calc(100% - 15px) calc(1em + 2px),calc(100% - 2.5em) .5em;
+    background-size: 5px 5px,5px 5px,1px 1.5em;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border: thin solid #aaa;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: .5em 3.5em .5em 1em;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none
+}
+
+#RelatedProducts {
+    grid-area: d;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-top: 10rem
+}
+
+#RelatedProducts>p.button a {
+    max-width: 280px;
+    text-align: center;
+    display: block;
+    height: 100%;
+    padding: 7px
+}
+
+#RelatedProducts figure {
+    overflow: hidden
+}
+
+#RelatedProducts figure img {
+    transition: transform .8s ease-in-out
+}
+
+#RelatedProducts section:hover figure img {
+    transform: scale(1.1)
+}
+
+#RelatedProducts h2 {
+    width: 100%
+}
+
+#RelatedProducts section {
+    width: 25%;
+    margin-bottom: 2rem
+}
+
+#RelatedProducts section a {
+    display: block;
+    display: grid;
+    padding: 0 10px
+}
+
+#RelatedProducts section a figure {
+    padding: 10px 0
+}
+
+#RelatedProducts p.button {
+    overflow: hidden;
+    width: 100%
+}
+
+#RelatedProducts p.button a {
+    background-color: #a4967d;
+    color: #fff;
+    transition: all .2s ease-in-out
+}
+
+#RelatedProducts p.button a:hover {
+    background-color: #c4baaa
+}
+
+#RelatedProducts p.button a {
+    width: 80%;
+    max-width: 250px;
+    margin: auto
+}
+
+#RelatedProducts .recommend-wrapper {
+    padding: 100px 0 140px
+}
+
+#RelatedProducts .re_recommen_box {
+    display: block;
+    width: 100%;
+    margin-bottom: 5em
+}
+
+#RelatedProducts .re_recommen_box h2.rec_item {
+    border-top: none;
+    color: #333;
+    font-size: 2.5rem;
+    font-family: Cormorant Infant,serif;
+    text-align: center;
+    letter-spacing: .1em;
+    padding-bottom: 0
+}
+
+#RelatedProducts .re_recommen_box h3.rec_checked {
+    z-index: 1;
+    font-size: .8rem;
+    color: #111;
+    font-weight: 400;
+    border-bottom: 1px solid #333;
+    margin: auto;
+    line-height: 3em;
+    text-align: center;
+    width: 50%
+}
+
+#RelatedProducts #recommend-carousel {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+@media screen and (max-width: 480px) {
+    #RelatedProducts>section {
+        width:50%
+    }
+
+    #RelatedProducts .re_recommen_box h2.rec_item {
+        font-size: 7.4vw
+    }
+
+    #RelatedProducts .re_recommen_box h3.rec_checked {
+        position: relative;
+        margin-top: 5px;
+        padding: 0;
+        background-color: transparent;
+        font-size: 3vw;
+        line-height: 2em;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        color: #907950;
+        border-bottom: none;
+    }
+
+    #RelatedProducts .re_recommen_box {
+        margin-bottom: 1rem
+    }
+
+    footer section{
+        display:block;
+    }
+    footer section:before, footer section:after {
+        display: none;
+    }
+    footer section #story ul{
+        display:block;
+    }
+
+    body>footer{
+        width:100%;
+    }
+
+    #item .ranking_list .block_body span.price {
+        width: 30%;
+        display: block;
+        white-space: nowrap;
+    }
+    #item .ranking_list .block_body{
+        height: calc(100% - 111px);
+    }
+    #item .ranking_list{
+        padding:0;
+    }
+}
+
+#gotoItem {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 130px;
+    height: 130px;
+    z-index: 3;
+    background-color: rgba(200,20,20,.85);
+    border-radius: 50%;
+    opacity: 1
+}
+
+#gotoItem a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #fff
+}
+
+#gotoItem a:before {
+    display: block;
+    font-family: icomoon;
+    content: "\f07a";
+    font-size: 28px;
+    line-height: 28px
+}
+
+#gotoItem:hover {
+    opacity: .8
+}
+
+#gotoItem+#gotop {
+    right: 58px
+}
+
+@media screen and (max-width: 480px) {
+    #gotoItem {
+        width:80px;
+        height: 80px;
+        font-size: .8rem
+    }
+
+    #gotoItem a:before {
+        font-size: 15px;
+        line-height: 23px
+    }
+
+    #gotoItem:hover {
+        opacity: 1
+    }
+
+    #gotoItem+#gotop {
+        right: 33px
+    }
+}
+
+header#masthead>nav nav>ul>li a {
+    display: unset;
+    width: 100%;
+    height: 100%
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 27px;
+    color: #fff;
+    font-family: Open Sans,sans-serif;
+    z-index: 4;
+    text-shadow: 0 1px 2px rgba(0,0,0,.33),-1px 0 2px hsla(0,0%,100%,0)
+}
+
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+    background: #fff
+}
+
+.bx-controls-direction a {
+    display: none
+}
+
+.product_item .buy_btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+}
+
+.product_item .buy_btn a div:first-child {
+    background: #cc0066;
+    color:white;
+    font-size: 1.3rem;
+    padding: 12px 80px;
+    white-space: nowrap;
+    border-radius: 100px 0 0 100px;
+    position: relative;
+}
+.product_item .buy_btn a div:first-child::after {
+    position: absolute;
+    content: '';
+    background: url(../images/arrow.png);
+    top: 37%;
+    right: 11%;
+    width: 35px;
+    height: 9px;
+}
+.product_item .buy_btn a div:last-child {
+    background: #fff;
+    border-radius: 0 100px 100px 0;
+    border: 1px solid #613c33;
+    padding: 12px 20px;
+}

@@ -441,91 +441,173 @@
     },
     "products":{
         "title":"All Items",
-        "healthy":{
-            "title": "Healthy Foods",
-            "bisu16":{
-                "title": "BI-SU 16",
-                "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/62cab00686c327eebc0293d56dc58fb2e7be00a2.jpeg"
-            },
-            "bisu16nonsugar": {
-                "title": "BI-SU 16 Sugar Free",
-                "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/00bec9379137523954be33fa686ddcecf9ecde80.jpeg"
-            },
-            "jelly": {
-                "title": "Jelly",
-                "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/6de513ad9091cc4c0f583ed7d5d6032735fd4c3b.jpeg"
-            },
-            "jellyrose": {
-                "title": "Jelly (Rose)",
-                "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/77f2efcdaa1b567c8d9dfcef2d4354b3ab11d9d6.jpeg"
-            },
-            "threeset": {
-                "title": "3 Set",
-                "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/cd25c5ae14dcde4688b019bbced502de4fa2ad55.jpeg"
-            },
-            "drink": {
-                "title": "Drink",
-                "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/7fc5c25ff4d7b18ef263342ff7c0e31b2e25fb82.jpeg"
-            },
-            "powder": {
-                "title": "Powder",
-                "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/c53c98ce155c099920c804f326c5304ba622faa0.jpeg"
-            },
-            "candy": {
-                "title": "Candy",
-                "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/7225840ed2a19daec1b2e35a62c19a0fec470c9a.jpeg"
-            },
-            "enzyme": {
-                "title": "Enzyme",
-                "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/fd7fa714508722aba4b1a47116731d80b2418ec5.jpeg"
-            }
-        },
-        "cosmetics":{
-            "title": "Cosmetics",
+        "items":{
             "facecream": {
+                "name": "Bird's Nest Essence Rejuvenating Moisturizing Cream",
+                "size": "6.63 oz/bottle",
+                "intro": "A premium moisturizing cream contains argan oil and swiftlet's nest extract.",
+                "feature": "This moisturize cream contains rich swiftlet's nest extract, argan oil and various ingredients which hydrated and soothing aging skin. The moisturize long-last to the next morning. A perfect cream to build your silky touch and youthful looking skin.",
                 "title": "Face Cream",
                 "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/7a1f211a138e07b5695ef5d74a52b7790efcf6b2.jpeg"
+                "amazon":"https://www.amazon.com/dp/B09VNSJB3J?ref=myi_title_dp",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/10181603_616d1c2a8f1.jpg"
             },
             "facemask": {
+                "name": "Bird's Nest Essence Efficient Moisturizing Mask",
+                "size": "4pcs/pack",
+                "intro": "A premium facial mask contains essence abundant skincare ingredients including swiftlet's nest extract and EGF to nourish and hydrate your skin",
+                "feature": "Each mask contains 27ml beauty essence made with rich swiftlet's nest extract, argan oil, collagen and 53 kinds of ingredients which provides extraordinary hydration and comfort to the skin.",
                 "title": "Face Mask",
                 "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/89462d5ace12239a9682dc3e28230fa71db32007.jpeg"
+                "amazon":"https://www.amazon.com/dp/B09T36Y25B?ref=myi_title_dp",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/06101321_5ee05fe3bf2.jpg"
             },
             "lotion": {
+                "name": "Bird's Nest Essence Moisturizing Lotion",
+                "size": "6.32oz/bottle",
+                "intro": "A premium facial mask contains essence abundant skincare ingredients including swiftlet's nest extract and EGF to nourish and hydrate your skin",
+                "feature": "Deliver an instant boost of hydration to your skin after washing your face. The swfitlet's nest extract helps to repair and moisturise aging skin.",
                 "title": "Lotion",
                 "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/5c5b24cd5f8f3e0e958723bc46b8ea7482c23fec.jpeg"
+                "amazon":"https://www.amazon.com/dp/B09VNSJB3J?ref=myi_title_dp",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/06011114_5ed4648d836.jpg"
             },
             "serum": {
+                "name": "Bird's Nest Essence Serum",
+                "size": "2.12oz/bottle",
+                "intro": "A premium serum made with authentic swiftlet's nest extract to repair and moisturize aging skin.",
+                "feature": "The serum designed to repair and build a smoother, plumper, dewier skin. The high contains of swiftlet's nest extract and EGF can effectly keep the radiant and hydration of your skin.",
                 "title": "Serum",
                 "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/524980984d305edd0a26edb7b2c0e4b66aee267b.jpeg"
+                "amazon":"https://www.amazon.com/dp/B09VMWSSLY?ref=myi_title_dp",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/06011113_5ed4643eb58.jpg"
             },
             "milk": {
+                "name": "Bird's Nest Essence Facial Milk",
+                "size": "3.10oz/bottle",
+                "intro": "A premium facial milky cream made with authentic swiftlet's nest extract to provide outstanding moisturization.",
+                "feature": "The richly contains of swiftlet's nest extract and Argan oil helps building a silky and dewy skin. The light texture keep a refreshing using experience and create ideal oil and water balance.",
                 "title": "Milk",
                 "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/e787543dfda186fb06a661f8d38db793880e3f20.jpeg"
+                "amazon":"https://www.amazon.com/dp/B09T378NZ3?ref=myi_title_dp",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/06011115_5ed464c9452.jpg"
             },
             "handcream": {
+                "name": "Bird's Nest Essence Hand Cream (Lavander)",
+                "size": "2.12oz/bottle",
+                "intro": "A premium hand cream with natural swiftlet's nest extract and EGF to keep you hand hydrated and repair from daily damages.",
+                "feature": "This hand cream contains rich swiftlet's nest essence, EGF and collagen which helps you repair the damage of hand and keep it moisturized. The relaxing aroma with natural lavender essence make it a pleasure everytime when you apply it.",
                 "title": "Hand Cream",
                 "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/5226c2797483a4681b90fc20cd886af6438bf807.jpeg"
+                "amazon":"https://www.amazon.com/dp/B09T37399M?ref=myi_title_dp",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/03011020_603c4164c55.jpg"
             },
             "handcreamrose": {
+                "name": "Bird's Nest Essence Hand Cream (Rose)",
+                "size": "2.12oz/bottle",
+                "intro": "A premium hand cream with natural swiftlet's nest extract and EGF to keep you hand hydrated and repair from daily damages.",
+                "feature": "This hand cream contains rich swiftlet's nest essence, EGF and collagen which helps you repair the damage of hand and keep it moisturized. The relaxing aroma with natural rose essence make it a pleasure everytime when you apply it.",
                 "title": "Hand Cream (Rose)",
                 "price": "$100",
-                "imgUrl": "https://shop.bi-su.jp/uploads/media/f4b5d2f45c36c0d9bed1b78f031bb0e9915ad58c.jpeg"
+                "amazon":"https://www.amazon.com/dp/B09T3BHCT6?ref=myi_title_dp",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/03011019_603c4119a4f.jpg"
+            },
+            "bisu16": {
+                "name": "BISU 16 Natural Instant Bird's Nest ",
+                "size": "0.98g/bottle \n 5 bottles/pack",
+                "intro": "Pure bird nest soup with authenic swiftlet's bird nest from Malaysia. ",
+                "feature": "Made with the authentic natural swiftlet nest from Malaysia. The natural, simple and pure ingredients make it the best superfood for our body. And because of simplicity, texture of the fresh swiftlet nest stands out. It does not use any artificial sweetener, preservative or colouring.",
+                "title": "BI-SU 16",
+                "price": "$100",
+                "amazon":"",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/01061041_61d648b6a6f.jpg"
+            },
+            "bisu16n": {
+                "name": "BISU 16 Natural Instant Bird's Nest (Sugar-Free) ",
+                "size": "0.98g/bottle \n 5 bottles/pack",
+                "intro": "Pure bird nest soup with authenic swiftlet's bird nest from Malaysia.(without sugar)",
+                "feature": "Made with the authentic natural swiftlet nest from Malaysia. The natural, simple and pure ingredients make it the best superfood for our body. And because of simplicity, texture of the fresh swiftlet nest stands out. It does not use any artificial sweetener, preservative or colouring.",
+                "title": "BI-SU 16 Sugar Free",
+                "price": "$100",
+                "amazon":"",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/02281008_621c20ab391.jpg"
+            },
+            "jelly": {
+                "name": "BISU Bird's Nest Collagen Beauty Essence Jelly (Pineapple Flavor)",
+                "size": "0.42oz/pc \n 7 pcs/pack & 30 pcs/pack",
+                "intro": "Jelly with swiftlet's bird nest extract and collagen.",
+                "feature": "The swiftlet's nest extract are complemented by a moisturizing white mushroom essence and 4 lemons’ worth of vitamin C, all packaged in portable stick sachets. The delicious pineapple flavor of the product not only nourishes your skin, but also your body.",
+                "title": "Jelly",
+                "price": "$100",
+                "amazon":"https://www.amazon.com/dp/B09SWWZVQH?ref=myi_title_dp",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/12131053_61b6a7a1043.jpg"
+            },
+            "jellyrose": {
+                "name": "BISU Bird's Nest Collagen Beauty Essence Jelly (Rose Flavor) ",
+                "size": "0.42oz/pc \n 7 pcs/pack & 30 pcs/pack",
+                "intro": "Jelly with swiftlet's bird nest extract, collagen and real rose extract.",
+                "feature": "Formulated using natural Swiftlet's nest and rose essence, the product is rich in collagen, white mushroom essence, and vitamin C. A sachet contains multiple nutrients essential for beauty care to let you emanate youth and vitality from within.",
+                "title": "Jelly (Rose)",
+                "price": "$100",
+                "amazon":"https://www.amazon.com/dp/B09T3BDBC5?ref=myi_title_dp",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/01071309_5ff6895f697.jpg"
+            },
+            "threeset": {
+                "name": "BISU Bird's Nest Essence Deluxe Set (3 Flavors)",
+                "size": "30pcs/pack",
+                "intro": "A luxury set of jelly and enzyme.",
+                "feature": "contains 2 different jelly and enzyme stick which designed to enhance the translucency and tautness of your skin.",
+                "title": "3 Set",
+                "price": "$100",
+                "amazon":"https://www.amazon.com/dp/B09SWYW54Q?ref=myi_title_dp",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/12131005_61b69c7651a.jpg"
+            },
+            "drink": {
+                "name": "BISU E-3000 Bird's Nest Collagen Peptide Essence Drink",
+                "size": "1.01oz/bottle\n5 bottles/pack",
+                "intro": "Drink designed for a quick replenish nutrition and beauty effect.",
+                "feature": "A drink contains swfitlet's nest extract and collagen to improve your skin condition from inside, make it radiant and firm and bright. ",
+                "title": "Drink",
+                "price": "$100",
+                "amazon":"",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/02281546_621c6fc9a67.jpg"
+            },
+            "powder": {
+                "name": "BISU Bird's Nest Essence Concentrated Powder",
+                "size": "0.42oz/pc\n30 pcs/pack",
+                "intro": "Authentic swiftlet's nest powder and oligosaccharide helps improve your inner health.",
+                "feature": "This product is designed for those who prefer other type of supplement than pill. Powder is easier to mix with water or other drinks that make it easy to improve our health from inside. ",
+                "title": "Powder",
+                "price": "$100",
+                "amazon":"",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/03101634_5e674316a4f.jpg"
+            },
+            "candy": {
+                "name": "BISU Bird's Nest Essence Fruity Candy (Pineapple Flavor)",
+                "size": "10pcs/pack & 30pcs/pack",
+                "intro": "The candy is made by crushing nutrient-rich, natural bird’s nest.",
+                "feature": "It's a whole new delicious way to take the benefit of swiftlet's nest. The high contains of natural nutrition and sweet flavour make it loved by both children and adults.",
+                "title": "Candy",
+                "price": "$100",
+                "amazon":"https://www.amazon.com/dp/B09T5R5RXN?ref=myi_title_dp",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/09161100_5f6171d41bf.jpg"
+            },
+            "enzyme": {
+                "name": "BISU Bird's Nest Essence Enzyme",
+                "size": "0.14g/pack\n5 pcs/pack & 30 pcs/pack",
+                "intro": "Fermented natural swiflets nest extract and 42 types of natural ingredients from Japan.",
+                "feature": "This Enzyme is made with Japanese craftmanship. With highest grade of authentic swfitlet's nest extract and 42 different local botanic ingredients. It helps you to take care inner digest and strengthen immue system",
+                "title": "Enzyme",
+                "price": "$100",
+                "amazon":"",
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/04211342_607fad45069.jpg"
             }
+        },
+        "healthy":{
+            "title": "Healthy Foods"
+        },
+        "cosmetics":{
+            "title": "Cosmetics"
         }
     }
 }
