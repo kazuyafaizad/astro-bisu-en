@@ -11,7 +11,7 @@ const {lang = "en" } = Astro.props;
 
 <Layout lang={lang} title="products" description="products">
     <h1 class="lg:text-[2rem] text-center mt-12">{translation.products.title}</h1>
-    <div class="flex flex-col lg:flex-row px-3 lg:px-52 gap-5 mt-8">
+    <div class="flex flex-col lg:flex-row px-3 gap-5 mt-8">
         <a href="#healthy">
         <img src={HealthyHeader}>
         </a>
@@ -19,7 +19,7 @@ const {lang = "en" } = Astro.props;
         <img src={CosmeticHeader}>
         </a>
     </div>
-     <section class="pt-12 lg:px-52 mt-32 relative" >
+     <section class="pt-12 px-3 mt-32 relative" >
     <span id="healthy"></span>
      <h2 class="text-h2 lg:text-[3em]  text-center mb-7 text-main-gold-3 uppercase  lg:px-auto">{translation.products.healthy.title}</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 border-t border-main-gold-3 pt-12">
@@ -134,7 +134,7 @@ const {lang = "en" } = Astro.props;
             </div>
         </div>
      </section>
-     <section class="pt-12 lg:px-52 relative" >
+     <section class="pt-12 px-3 relative" >
     <span id="cosmetics"></span>
      <h2 class="text-h2 lg:text-[3em]  text-center mb-7 text-main-gold-3 uppercase  lg:px-auto">{translation.products.cosmetics.title}</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 border-t border-main-gold-3 pt-12">

@@ -1,4 +1,5 @@
 ---
+// import '../../styles/items.scss';
 import Layout from '../../layouts/Layout.astro';
 import translation from '../../locales/en.json';
 import amazon from '../../img/Amazon-logo.png';
@@ -72,13 +73,64 @@ import '../../scripts/product.min.js';
             </div>
             </form></div>
         </section>
+            <ul id="item-detail">
+                <li>
+                    <details>
+                    <summary>Product Features</summary>
+                    <p style="max-width:fit-content;">{item.feature}</p>
+                    </details>
+                </li>
+                <li>
+                    <details >
+                    <summary>Ingredients &amp; Nutrients List</summary>
+                    <p style="max-width:fit-content;">Ingredients: lactose, swiftlets nest extract, galacto-oligosaccharide, swiftlets nest powder / lactoferrin, (including some milk components)</p>
+                        <p style="max-width:fit-content;">Expiry Date: Stated underneath the frame</p>
+                        <table style="max-width:fit-content;"><colgroup class="title"> </colgroup><colgroup class="detail"> </colgroup>
+                        <thead>
+                        <tr style="max-width:fit-content;"><th colspan="2">Nutrients Component in 1 Stick (per 1g)</th></tr>
+                        </thead>
+                        <tbody style="max-width:fit-content;">
+                        <tr><th>Energy</th>
+                        <td>3.92kcal</td>
+                        </tr>
+                        <tr><th>Carbohydrate</th>
+                        <td>0.92g</td>
+                        </tr>
+                        <tr><th>Protein</th>
+                        <td>0.05g</td>
+                        </tr>
+                        <tr><th>Salt Equivalent</th>
+                        <td>0〜0.01g</td>
+                        </tr>
+                        <tr><th>Lipid</th>
+                        <td>0〜0.01g</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    </details></li>
+<li><details> <summary>How to Consume</summary>
+<ul style="max-width:fit-content;">
+<li>Granule powder type that dissolves easily with cold or hot water.</li>
+<li>Enjoy it with smoothies, miso soup, or any of your favourite drinks and foods.</li>
+</ul>
+<p style="max-width:fit-content;">※ Please be careful not to overheat, because it will disrupt the nutrients. Please avoid from boiling it in a pot.</p>
+</details></li>
+<li><details> <summary>Storage</summary>
+<p style="max-width:fit-content;">Please keep in a cool place or refrigerator and avoid hot and humid place or direct sunlight.</p>
+</details></li>
+<li><details> <summary>Caution Items</summary>
+<ul style="max-width:fit-content;">
+<li>Please open slowly so that contents does not scattered.</li>
+<li>Consume immediately once opened</li>
+<li>※ Because we are using only natural materials, colours of contents may differ or sediments may be generated, however, there is no problem on the quality.</li>
+<li>If your body constitution does not suit due to ingestion of this product, please stop taking it.</li>
+<li>After confirming the raw materials, those who have food allergy, please do not use.</li>
+<li>If you are taking medication or are in the hospital, please consult your doctor or expert.</li>
+<li>※ Please be careful not to overheat, because it will disrupt the nutrients. Please avoid from boiling it in a pot.</li>
+</ul>
+</details></li>
+</ul>
 
-                          <ul id="item-detail">
-                              <li><details> <summary>Product Features</summary>
-                                             <p style="max-width:fit-content;">{item.feature}</p>
-                              </details></li>
-
-                              </ul>
                   </div>
 
 </section>
