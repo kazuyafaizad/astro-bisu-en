@@ -1,5 +1,5 @@
 ---
-// import '../../styles/items.scss';
+import '../../styles/items.scss';
 import Layout from '../../layouts/Layout.astro';
 import translation from '../../locales/en.json';
 import amazon from '../../img/Amazon-logo.png';
@@ -24,7 +24,10 @@ import '../../scripts/product.min.js';
 </script>
 
 <Layout lang={lang} title="faq" description="faq">
-<link rel="stylesheet" href={Astro.site.pathname+"css/item.css"}>
+
+<Fragment slot="header">
+<link rel="stylesheet" href={Astro.site.pathname+"css/item3.css"}>
+</Fragment>
      <section class="pt-12 mb-12 px-3 ">
      <section id="item">
           <figure id="item-images"><img src={item.imgUrl} style="opacity: 1; height: 266px;" alt="">

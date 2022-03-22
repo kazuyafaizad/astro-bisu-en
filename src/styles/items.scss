@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import "./modules/variables";
 main {
 	width: 95%;
 	max-width: 1024px;
@@ -469,6 +469,9 @@ header#masthead {
 					white-space: nowrap;
 					border-radius: 100px 0 0 100px;
 					position: relative;
+					@include max-screen($breakpoint-sp-vertical) {
+					padding: 12px 12%;
+					}
 					&::after {
 						position: absolute;
 						content: '';
@@ -483,6 +486,11 @@ header#masthead {
 					border-radius: 0 100px 100px 0;
 					border: 1px solid #613c33;
 					padding: 16px 20px;
+
+						@include max-screen($breakpoint-sp-vertical) {
+									padding: 16px 4%;
+
+						}
 					img {
 						margin: 6px 0 0 0;
 						width: 50px;
