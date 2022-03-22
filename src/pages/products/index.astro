@@ -12,10 +12,10 @@ const {lang = "en" } = Astro.props;
 <Layout lang={lang} title="products" description="products">
     <h1 class="lg:text-[2rem] text-center mt-12">{translation.products.title}</h1>
     <div class="flex flex-col lg:flex-row px-3 gap-5 mt-8">
-        <a href="#healthy">
+        <a href="#healthy" class="hover:opacity-90">
         <img src={HealthyHeader}>
         </a>
-        <a href="#cosmetics">
+        <a href="#cosmetics" class="hover:opacity-90">
         <img src={CosmeticHeader}>
         </a>
     </div>

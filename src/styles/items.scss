@@ -235,6 +235,9 @@ main {
 	>li {
 		border-top: 1px solid #000;
 		details {
+			&[open] summary:after {
+						transform: rotate(45deg);
+				}
 			summary {
 				padding: 1rem 3rem;
 				position: relative;
@@ -245,6 +248,7 @@ main {
 				&::-webkit-details-marker {
 					display: none;
 				}
+
 				&:after {
 					position: absolute;
 					right: 2rem;

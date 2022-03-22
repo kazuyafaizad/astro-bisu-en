@@ -13,10 +13,14 @@ export async function getStaticPaths() {
      return arr;
 
 }
+const {
+    item ,
+    lang = "en",
+    li1 =  item.imgUrl1 ?  `<li class=""><img src="${item.imgUrl1}" data-src="${item.imgUrl1}" alt="${item.name}"></li>` : "",
+    li2 =  item.imgUrl2 ?  `<li class=""><img src="${item.imgUrl2}" data-src="${item.imgUrl2}" alt="${item.name}"></li>` : "",
 
 
-const { item ,lang = "en"} = Astro.props as Props
-
+} = Astro.props as Props
 ---
 
 <script type="module" hoist>
@@ -26,23 +30,20 @@ import '../../scripts/product.min.js';
 <Layout lang={lang} title="faq" description="faq">
 
 <Fragment slot="header">
-<link rel="stylesheet" href={Astro.site.pathname+"css/item3.css"}>
+<link rel="stylesheet" href={Astro.site.pathname+"css/item.css?5"}>
 </Fragment>
-     <section class="pt-12 mb-12 px-3 ">
+     <section class="pt-12 mb-12 px-3 min-h-[80vh]">
      <section id="item">
           <figure id="item-images"><img src={item.imgUrl} style="opacity: 1; height: 266px;" alt="">
             <ul>
-                <li class="">
-                <img src={item.imgUrl} data-src={item.imgUrl} alt="Bi-Su Facial Soap">
-            </li>
-                    <li class="show">
-                <img src={item.imgUrl} data-src={item.imgUrl} alt="Bi-Su Facial Soap">
-                </li></ul>
+            <Fragment set:html={li1}>
+            <Fragment set:html={li2}>
+            </ul>
           </figure>
 
           <figure id="item-images-carousel" style="display: none;">
-                        <img src={item.imgUrl} data-src={item.imgUrl} alt="Bi-Su Facial Soap">
-                        <img src={item.imgUrl1} data-src={item.imgUrl1} alt="Bi-Su Facial Soap">
+                        <img src={item.imgUrl} data-src={item.imgUrl} alt={item.name}>
+                        <img src={item.imgUrl1} data-src={item.imgUrl1} alt={item.name}>
           </figure>
 
         <div id="right-item">
