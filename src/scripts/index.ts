@@ -5,9 +5,9 @@ import { campaignBanner } from "./utils/campaignBanner";
 
 const startup = (): void => {
     slider.indexSlider();
-    whatsNew(".tns-outer");
-    searchBox();
-    campaignBanner("#items > h2");
+    // whatsNew(".tns-outer");
+    // searchBox();
+    // campaignBanner("#items > h2");
 };
 
 window.addEventListener("DOMContentLoaded", startup, { passive: true });

@@ -9,13 +9,15 @@ main {
 }
 #item {
 	display: grid;
-	grid-template-areas: "a b" "c b" "d d";
+	grid-template-areas: "a b" "a b";
 	grid-template-rows: min-content 1fr;
 	grid-column-gap: 5rem;
 	#item-images {
 		grid-area: a;
 		img {
 			padding: 0 20px;
+			margin:auto;
+			width:100%;
 		}
 	}
 	#right-item {

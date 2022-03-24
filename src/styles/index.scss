@@ -1,6 +1,14 @@
 @use "sass:math";
 @import "./modules/variables";
-
+main>.slider{
+    position: relative;
+    li{
+        position:absolute;
+        &:first-child{
+            position: relative;
+        }
+    }
+}
 #search {
     width: 95%;
     margin: 1rem auto 0;
@@ -84,8 +92,8 @@
         justify-content: space-between;
         margin-top: 2rem;
         li {
-            // width: (100% / 4 - 2);
-            width: (math.div(100%, 4) -2);
+            width: (100% / 4 - 2);
+            // width: (math.div(100%, 4) -2);
             a {
                 display: flex;
                 flex-direction: column-reverse;
@@ -126,6 +134,49 @@
     .campaign {
         + .campaign {
             margin-top: 1rem;
+        }
+    }
+}
+
+#media {
+    margin: 4rem auto 6rem;
+    width: 100%;
+    max-width: $breakpoint-pc;
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        line-height: 1.5;
+        margin: 2rem auto;
+            font-size: 1.5rem;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        li {
+            width: (100%/5) - 2;//(math.div(100%, 5) -2);
+            a {
+                display: flex;
+                flex-direction: column-reverse;
+                h3 {
+                    margin-top: 1em;
+                    line-height: 1.5;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        @include max-screen($breakpoint-sp-horizontal) {
+            flex-wrap: wrap;
+            padding:0 1rem;
+            li {
+                width: 45%;
+                text-align: center;
+                h3 {
+                    margin-bottom: 2rem;
+                    text-align: left;
+                }
+            }
         }
     }
 }
@@ -227,14 +278,14 @@
                         content: "";
                         width: 20px;
                         height: 20px;
-                        background: url(./img/common/arrow-right.png) no-repeat center;
+                        background: url(https://bi-su.jp/img/common/arrow-right.png) no-repeat center;
                         top: 0;
                         bottom: 0;
                         right: 15px;
                         margin: auto;
                     }
                     &:hover::after {
-                        background-image: url(./img/common/arrow-right_on.png);
+                        background-image: url(https://bi-su.jp/img/common/arrow-right_on.png);
                     }
                 }
             }

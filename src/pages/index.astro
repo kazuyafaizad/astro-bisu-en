@@ -12,21 +12,13 @@ import '../scripts/index.ts';
 </script>
 
 <style>
-    main > .slider {
-        position: relative;
-    }
-    main > .slider li {
-        position: absolute;
-    }
-    main > .slider li:first-child {
-        position: relative;
-    }
+
 </style>
 
 <Layout lang={lang} title="index" description="index">
 <ul class="slider">
     <li>
-        <a href="/story/nestpower">
+        <a href={Astro.site.pathname+"story/nestpower"}>
             <picture>
                 <source srcset="/img/index/sp/headimg01-sp_en.jpg" media="(max-width: 480px)" />
                 <img src="/img/index/headimg01_en.jpg" width="1920" height="800" alt="" />
@@ -34,7 +26,7 @@ import '../scripts/index.ts';
         </a>
     </li>
     <li>
-        <a href="/story/">
+        <a href={Astro.site.pathname+"story/"}>
             <picture>
                 <source srcset="/img/index/sp/headimg02-sp_en.jpg" media="(max-width: 480px)" />
                 <img src="/img/index/headimg02_en.jpg" width="1920" height="800" alt="" />
@@ -42,7 +34,7 @@ import '../scripts/index.ts';
         </a>
     </li>
     <li>
-        <a href="/story/threepromises">
+        <a href={Astro.site.pathname+"story/threepromises"}>
             <picture>
                 <source srcset="/img/index/sp/headimg03-sp_en.jpg" media="(max-width: 480px)" />
                 <img src="/img/index/headimg03_en.jpg" width="1920" height="800" alt="" />
@@ -80,39 +72,29 @@ import '../scripts/index.ts';
         </li>
     </ul>
 </section>
-<section id="items">
+<section id="media">
     <h2 title="Season Item">{ translation.index.mediareview.title }</h2>
     <ul>
         <li>
-            <a href="https://info.bi-su.jp/media/2022-02-wwd/">
                 <h3>{ translation.index.mediareview[1].title }</h3>
                 <p><img src={ translation.index.mediareview[1].imgUrl } alt="" /></p>
-            </a>
         </li>
         <li>
-            <a href="https://info.bi-su.jp/media/2022-01-numero/">
                 <h3>{ translation.index.mediareview[2].title }</h3>
                 <p><img src={ translation.index.mediareview[2].imgUrl } alt="" /></p>
-            </a>
         </li>
         <li>
-            <a href="https://info.bi-su.jp/media/2022-01-rayli/">
                 <h3>{ translation.index.mediareview[3].title }</h3>
 
                 <p><img src={ translation.index.mediareview[3].imgUrl } alt="" /></p>
-            </a>
         </li>
         <li>
-            <a href="https://info.bi-su.jp/media/2022-01-rayli/">
                 <h3>{ translation.index.mediareview[4].title }</h3>
                 <p><img src={ translation.index.mediareview[4].imgUrl } alt="" /></p>
-            </a>
         </li>
          <li>
-            <a href="https://info.bi-su.jp/media/2021-04-marisol/">
                 <h3>{ translation.index.mediareview[5].title }</h3>
                 <p><img src={ translation.index.mediareview[5].imgUrl } alt="" /></p>
-            </a>
         </li>
     </ul>
 </section>
@@ -129,7 +111,7 @@ import '../scripts/index.ts';
         <div data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear" data-sal-delay="1000">
             <p>{translation.index.food.body}</p>
             <p class="button">
-                <a href="/products#healthy">{translation.index.category.button}</a>
+                <a href=Astro.site.pathname+"products#healthy"}>{translation.index.category.button}</a>
             </p>
         </div>
     </section>
@@ -146,7 +128,7 @@ import '../scripts/index.ts';
         <div data-sal="slide-up" data-sal-duration="1500" data-sal-easing="linear" data-sal-delay="1000">
             <p>{translation.index.care.body}</p>
             <p class="button">
-                <a href="/products#cosmetics">{translation.index.category.button}</a>
+                <a href={Astro.site.pathname+"products#cosmetics"}>{translation.index.category.button}</a>
             </p>
         </div>
     </section>

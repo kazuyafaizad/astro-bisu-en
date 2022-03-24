@@ -7,6 +7,9 @@ const indexSlider = (): TinySlider.TinySliderInstance => {
         speed: 1000,
         controls: false,
         mouseDrag: true,
+        autoplay:true,
+        autoplayButtonOutput:false
+
     });
     return Slider;
 };

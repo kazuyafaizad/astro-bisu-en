@@ -5,7 +5,38 @@ import '../../styles/products.scss';
 
 import HealthyHeader from '../../img/en/bi-su-categories_pic02-en.jpg'
 import CosmeticHeader from '../../img/en/bi-su-categories_pic01-en.jpg'
-const {lang = "en" } = Astro.props;
+const {
+    lang = "en",
+    bisu16 = translation.products.items.bisu16.amazon? 'block' : 'hidden',
+    bisu16n = translation.products.items.bisu16n.amazon? 'block' : 'hidden',
+    jelly = translation.products.items.jelly.amazon? 'block' : 'hidden',
+    jellyrose = translation.products.items.jellyrose.amazon? 'block' : 'hidden',
+    threeset = translation.products.items.threeset.amazon? 'block' : 'hidden',
+    enzyme = translation.products.items.enzyme.amazon? 'block' : 'hidden',
+    drink = translation.products.items.drink.amazon? 'block' : 'hidden',
+    powder = translation.products.items.powder.amazon? 'block' : 'hidden',
+    candy = translation.products.items.candy.amazon? 'block' : 'hidden',
+    facecream = translation.products.items.facecream.amazon? 'block' : 'hidden',
+    facemask = translation.products.items.facemask.amazon? 'block' : 'hidden',
+    lotion = translation.products.items.lotion.amazon? 'block' : 'hidden',
+    serum = translation.products.items.serum.amazon? 'block' : 'hidden',
+    milk = translation.products.items.milk.amazon? 'block' : 'hidden',
+    handcream = translation.products.items.handcream.amazon? 'block' : 'hidden',
+    handcreamrose = translation.products.items.handcreamrose.amazon? 'block' : 'hidden',
+    } = Astro.props;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
@@ -23,6 +54,7 @@ const {lang = "en" } = Astro.props;
     <span id="healthy"></span>
      <h2 class="text-h2 lg:text-[3em]  text-center mb-7 text-main-gold-3 uppercase  lg:px-auto">{translation.products.healthy.title}</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 border-t border-main-gold-3 pt-12">
+        <div class={bisu16}>
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/bisu16"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
@@ -34,10 +66,11 @@ const {lang = "en" } = Astro.props;
                 </a>
                 </p>
             </div>
+        </div>
 
 
-
-          <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
+        <div class={bisu16n}>
+          <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly" >
             <a class="" href={Astro.site.pathname+"products/bisu16n"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
                 <img src={translation.products.items.bisu16n.imgUrl} alt={translation.products.items.bisu16n.title} data-src={translation.products.items.bisu16n.imgUrl} alt={translation.products.items.bisu16n.title} class="transition ease-in-out hover:scale-110 duration-300">
@@ -48,7 +81,9 @@ const {lang = "en" } = Astro.props;
                 </a>
                 </p>
             </div>
+        </div>
 
+        <div class={jelly}>
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/jelly"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
@@ -60,19 +95,23 @@ const {lang = "en" } = Astro.props;
                 </a>
                 </p>
             </div>
+        </div>
 
+        <div class={jellyrose}>
            <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
-            <a class="" href={Astro.site.pathname+"products/jelly"}>
+            <a class="" href={Astro.site.pathname+"products/jellyrose"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
                 <img src={translation.products.items.jellyrose.imgUrl} alt={translation.products.items.jellyrose.title} data-src={translation.products.items.jellyrose.imgUrl} alt={translation.products.items.jellyrose.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.jellyrose.title}</h3>
-            </a><p class="price text-center"><a href={Astro.site.pathname+"products/jelly"}>
+            </a><p class="price text-center"><a href={Astro.site.pathname+"products/jellyrose"}>
                     {translation.products.items.jellyrose.price}
                 </a>
                 </p>
             </div>
+        </div>
 
+        <div class={threeset}>
            <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/threeset"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
@@ -84,7 +123,9 @@ const {lang = "en" } = Astro.props;
                 </a>
                 </p>
             </div>
+        </div>
 
+        <div class={enzyme}>
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/enzyme"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
@@ -96,19 +137,23 @@ const {lang = "en" } = Astro.props;
                 </a>
                 </p>
             </div>
+        </div>
 
+        <div class={drink}>
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
-            <a class="" href={Astro.site.pathname+"products/jelly"}>
+            <a class="" href={Astro.site.pathname+"products/drink"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
                 <img src={translation.products.items.drink.imgUrl} alt={translation.products.items.drink.title} data-src={translation.products.items.drink.imgUrl} alt={translation.products.items.drink.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
             <h3 class="text-center">{translation.products.items.drink.title}</h3>
-            </a><p class="price text-center"><a href={Astro.site.pathname+"products/jelly"}>
+            </a><p class="price text-center"><a href={Astro.site.pathname+"products/drink"}>
                     {translation.products.items.drink.price}
                 </a>
                 </p>
             </div>
+            </div>
 
+            <div class={powder}>
              <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/powder"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
@@ -120,7 +165,9 @@ const {lang = "en" } = Astro.props;
                 </a>
                 </p>
             </div>
+            </div>
 
+            <div class={candy}>
              <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/candy"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
@@ -132,12 +179,15 @@ const {lang = "en" } = Astro.props;
                 </a>
                 </p>
             </div>
+            </div>
         </div>
      </section>
      <section class="pt-12 px-3 relative" >
     <span id="cosmetics"></span>
      <h2 class="text-h2 lg:text-[3em]  text-center mb-7 text-main-gold-3 uppercase  lg:px-auto">{translation.products.cosmetics.title}</h2>
+
         <div class="grid md:grid-cols-2 lg:grid-cols-3 border-t border-main-gold-3 pt-12">
+          <div class={facecream}>
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/facecream"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
@@ -149,9 +199,10 @@ const {lang = "en" } = Astro.props;
                 </a>
                 </p>
             </div>
+        </div>
 
 
-
+        <div class={facemask}>
           <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/facemask"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
@@ -163,7 +214,8 @@ const {lang = "en" } = Astro.props;
                 </a>
                 </p>
             </div>
-
+        </div>
+        <div class={lotion}>
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/lotion"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
@@ -175,7 +227,9 @@ const {lang = "en" } = Astro.props;
                 </a>
                 </p>
             </div>
+        </div>
 
+        <div class={serum}>
            <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/serum"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
@@ -187,7 +241,9 @@ const {lang = "en" } = Astro.props;
                 </a>
                 </p>
             </div>
+        </div>
 
+        <div class={milk}>
            <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/milk"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
@@ -199,7 +255,9 @@ const {lang = "en" } = Astro.props;
                 </a>
                 </p>
             </div>
+        </div>
 
+            <div class={handcream}>
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/handcream"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
@@ -211,7 +269,9 @@ const {lang = "en" } = Astro.props;
                 </a>
                 </p>
             </div>
+            </div>
 
+            <div class={handcreamrose}>
             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
             <a class="" href={Astro.site.pathname+"products/handcreamrose"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
@@ -222,6 +282,7 @@ const {lang = "en" } = Astro.props;
                     {translation.products.items.handcreamrose.price}
                 </a>
                 </p>
+            </div>
             </div>
         </div>
      </section>

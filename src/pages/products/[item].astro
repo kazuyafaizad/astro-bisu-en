@@ -31,10 +31,10 @@ import '../../scripts/product.min.js';
 
 <Fragment slot="header">
 <link rel="stylesheet" href={Astro.site.pathname+"css/item.css?5"}>
+
 </Fragment>
-     <section class="pt-12 mb-12 px-3 min-h-[80vh]">
-     <section id="item">
-          <figure id="item-images"><img src={item.imgUrl} style="opacity: 1; height: 266px;" alt="">
+     <section id="item" class="pt-12 mb-12 px-3 min-h-[80vh]">
+          <figure id="item-images"><img src={item.imgUrl} style="opacity: 1;" alt="">
             <ul>
             <Fragment set:html={li1}>
             <Fragment set:html={li2}>
@@ -138,6 +138,5 @@ import '../../scripts/product.min.js';
                   </div>
 
 </section>
-     </section>
 
 </Layout>
