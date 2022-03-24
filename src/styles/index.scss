@@ -112,7 +112,7 @@
         }
         @include max-screen($breakpoint-sp-horizontal) {
             flex-wrap: wrap;
-            justify-content: space-around;
+            padding:0 1rem;
             li {
                 width: 45%;
                 text-align: center;
