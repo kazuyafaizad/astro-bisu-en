@@ -155,7 +155,7 @@ main>.slider{
         justify-content: space-between;
         margin-top: 2rem;
         li {
-            width: (100%/5) - 2;//(math.div(100%, 5) -2);
+            width: (100%/5 - 2);//(math.div(100%, 5) -2);
             a {
                 display: flex;
                 flex-direction: column-reverse;

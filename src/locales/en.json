@@ -450,7 +450,9 @@
                 "title": "Moisturizing Cream",
                 "price": "$160.00",
                 "amazon":"https://www.amazon.com/dp/B09VNSJB3J?ref=myi_title_dp",
-                "imgUrl": "https://cart.bi-su.jp/upload/save_image/10181603_616d1c2a8f1.jpg"
+                "imgUrl": "https://cart.bi-su.jp/upload/save_image/10181603_616d1c2a8f1.jpg",
+                "imgUrl1":"./img/en/facecream/facecream02.jpg",
+                "imgUrl2": "./img/en/facecream/facecream03.jpg"
             },
             "facemask": {
                 "name": "BI-SU Bird's Nest Essence Efficient Moisturizing Mask",
@@ -569,9 +571,9 @@
                 "title": "Essence Jelly (Rose Flavor)",
                 "price": "$170.00",
                 "amazon":"https://www.amazon.com/dp/B09T3BDBC5?ref=myi_title_dp",
-                "imgUrl": "https://cart.bi-su.jp/upload/save_image/01071309_5ff6895f697.jpg",
-                "imgUrl1":"https://cart.bi-su.jp/upload/save_image/03101550_5e6738aa0ec.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12031438_5de5f4c7aa0.jpg"
+                "imgUrl": "https://bi-su.jp/lp_faizad/en/img/en/jellyrose/jelly-r-n.jpg",
+                "imgUrl1":"https://bi-su.jp/lp_faizad/en/img/en/jellyrose/jelly-r-n1.jpg",
+                "imgUrl2":"https://bi-su.jp/lp_faizad/en/img/en/jellyrose/jelly-r-n2.jpg"
             },
             "threeset": {
                 "name": "Bird's Nest Essence Deluxe Set (3 Flavors)",

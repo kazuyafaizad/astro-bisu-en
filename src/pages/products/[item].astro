@@ -16,8 +16,8 @@ export async function getStaticPaths() {
 const {
     item ,
     lang = "en",
-    li1 =  item.imgUrl1 ?  `<li class=""><img src="${item.imgUrl1}" data-src="${item.imgUrl1}" alt="${item.name}"></li>` : "",
-    li2 =  item.imgUrl2 ?  `<li class=""><img src="${item.imgUrl2}" data-src="${item.imgUrl2}" alt="${item.name}"></li>` : "",
+    li1 =  item.imgUrl1 ?  `<li class=""><a href="${item.imgUrl1}" data-lightbox="product" data-title="${item.name}"><img src="${item.imgUrl1}" data-src="${item.imgUrl1}" alt="${item.name}" /></a></li>` : "",
+    li2 =  item.imgUrl2 ?  `<li class=""><a href="${item.imgUrl2}" data-lightbox="product" data-title="${item.name}"><img src="${item.imgUrl2}" data-src="${item.imgUrl2}" alt="${item.name}" /></a></li>` : "",
 
 
 } = Astro.props as Props
@@ -30,20 +30,24 @@ import '../../scripts/product.min.js';
 <Layout lang={lang} title="faq" description="faq">
 
 <Fragment slot="header">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js" defer></script>
+
 <link rel="stylesheet" href={Astro.site.pathname+"css/item.css?5"}>
 
 </Fragment>
      <section id="item" class="pt-12 mb-12 px-3 min-h-[80vh]">
-          <figure id="item-images"><img src={item.imgUrl} style="opacity: 1;" alt="">
+          <figure id="item-images"><img src={item.imgUrl} style="opacity: 1;height:20rem;" alt="">
             <ul>
             <Fragment set:html={li1}>
             <Fragment set:html={li2}>
             </ul>
           </figure>
 
-          <figure id="item-images-carousel" style="display: none;">
+          <figure id="item-images-carousel" style="display:none;">
                         <img src={item.imgUrl} data-src={item.imgUrl} alt={item.name}>
                         <img src={item.imgUrl1} data-src={item.imgUrl1} alt={item.name}>
+                        <img src={item.imgUrl2} data-src={item.imgUrl2} alt={item.name}>
           </figure>
 
         <div id="right-item">
