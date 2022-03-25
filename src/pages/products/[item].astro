@@ -18,7 +18,7 @@ const {
     lang = "en",
     li1 =  item.imgUrl1 ?  `<li class=""><a href="${item.imgUrl1}" data-lightbox="product" data-title="${item.name}"><img src="${item.imgUrl1}" data-src="${item.imgUrl1}" alt="${item.name}" /></a></li>` : "",
     li2 =  item.imgUrl2 ?  `<li class=""><a href="${item.imgUrl2}" data-lightbox="product" data-title="${item.name}"><img src="${item.imgUrl2}" data-src="${item.imgUrl2}" alt="${item.name}" /></a></li>` : "",
-
+    price2 = item.amazon2 ? `<div class="price-1 mt-5"><div class="price-name">Price</div><div class="price-number"><p class="price"><span class="value"><span class="txt-product-price">${item.price2}</span> </span></p></div></div><div class="price-2"><div class="product_item"><div class="buy_btn"><a href=${item.amazon2} target="_blank"><div>BUY NOW</div><div><img src=${amazon}></div></a></div></div></div>` : ""
 
 } = Astro.props as Props
 ---
@@ -33,7 +33,7 @@ import '../../scripts/product.min.js';
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js" defer></script>
 
-<link rel="stylesheet" href={Astro.site.pathname+"css/item.css?5"}>
+<link rel="stylesheet" href={Astro.site.pathname+"css/item.css?6"}>
 
 </Fragment>
      <section id="item" class="pt-12 mb-12 px-3 min-h-[80vh]">
@@ -59,7 +59,7 @@ import '../../scripts/product.min.js';
                <p class="mb-3">{item.intro}</p>
 
           <div id="item-buy">
-               <form action="/ec/cart/add/14" method="post" name="normal_product_form" novalidate="novalidate">
+
                <div class="price-1">
                   <div class="price-name">Price</div>
                   <div class="price-number">
@@ -78,8 +78,10 @@ import '../../scripts/product.min.js';
                     </a>
                 </div>
                 </div>
+
             </div>
-            </form></div>
+             <Fragment set:html={price2}>
+            </div>
         </section>
             <ul id="item-detail">
                 <li>

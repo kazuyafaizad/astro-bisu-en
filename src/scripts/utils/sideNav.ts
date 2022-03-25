@@ -4,7 +4,7 @@ interface ISidenav {
     anchor: string[];
 }
 
-const current = 1;
+const current = "1";
 
 const sideNav = (config: ISidenav): void => {
     //Target to section parent div
@@ -33,7 +33,7 @@ const sideNav = (config: ISidenav): void => {
 
     const sidenavCurrent = document.createElement("span");
     sidenavCurrent.classList.add("js-current");
-    sidenavCurrent.textContent = current.toString();
+    sidenavCurrent.textContent = current;
     sidenavPaging.append(sidenavCurrent);
     sidenavPrev.append(sidenavPaging);
 
