@@ -160,6 +160,7 @@ main {
         text-align: center;
         margin: 2rem auto;
         font-feature-settings: "halt";
+        white-space: nowrap;
         @include max-screen($breakpoint-sp-horizontal) {
             font-size: 7vw;
             width: 100%;

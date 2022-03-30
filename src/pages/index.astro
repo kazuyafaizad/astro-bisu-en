@@ -3,6 +3,7 @@ import '../styles/index.scss';
 import '../styles/slider.scss';
 import Layout from '../layouts/Layout.astro';
 import translation from '../locales/en.json';
+import { Icon } from 'astro-icon';
 const {lang = "en" } = Astro.props;
 
 ---
@@ -15,29 +16,29 @@ import '../scripts/index.ts';
 
 </style>
 
-<Layout lang={lang} title="index" description="index">
+<Layout lang={lang} title="Website" description="Bi-su Official Website">
 <ul class="slider">
     <li>
         <a href={Astro.site.pathname+"story/nestpower"}>
             <picture>
-                <source srcset="/img/index/sp/headimg01-sp_en.jpg" media="(max-width: 480px)" />
-                <img src="/img/index/headimg01_en.jpg" width="1920" height="800" alt="" />
+                <source srcset={Astro.site.pathname+"img/index/sp/headimg01-sp_en.jpg"} media="(max-width: 480px)" />
+                <img src={Astro.site.pathname+"img/index/headimg01_en.jpg"} width="1920" height="800" alt="" />
             </picture>
         </a>
     </li>
     <li>
         <a href={Astro.site.pathname+"story/"}>
             <picture>
-                <source srcset="/img/index/sp/headimg02-sp_en.jpg" media="(max-width: 480px)" />
-                <img src="/img/index/headimg02_en.jpg" width="1920" height="800" alt="" />
+                <source srcset={Astro.site.pathname+"img/index/sp/headimg02-sp_en.jpg"} media="(max-width: 480px)" />
+                <img src={Astro.site.pathname+"img/index/headimg02_en.jpg"} width="1920" height="800" alt="" />
             </picture>
         </a>
     </li>
     <li>
         <a href={Astro.site.pathname+"story/threepromises"}>
             <picture>
-                <source srcset="/img/index/sp/headimg03-sp_en.jpg" media="(max-width: 480px)" />
-                <img src="/img/index/headimg03_en.jpg" width="1920" height="800" alt="" />
+                <source srcset={Astro.site.pathname+"img/index/sp/headimg03-sp_en.jpg"} media="(max-width: 480px)" />
+                <img src={Astro.site.pathname+"img/index/headimg03_en.jpg"} width="1920" height="800" alt="" />
             </picture>
         </a>
     </li>
@@ -58,7 +59,7 @@ import '../scripts/index.ts';
             </a>
         </li>
         <li>
-            <a href={ Astro.site.pathname+"products/lotion/"}>
+            <a href={ Astro.site.pathname+"products/jelly/"}>
                 <h3>{ translation.index.items[2].title }</h3>
 
                 <p><img src="/img/index/product/product02.jpg" alt="" /></p>
@@ -153,8 +154,8 @@ import '../scripts/index.ts';
     <aside>
         <ul id="sns">
             <li>
-                <a href={translation.index.nav.sns[1].link}>
-                    {translation.index.nav.sns[1].title}
+                <a href={translation.index.nav.sns[1].link} style="font-size:2.3rem;">
+                    <Icon name="bi:globe" style="width:3rem;">
                 </a>
             </li>
             <li>

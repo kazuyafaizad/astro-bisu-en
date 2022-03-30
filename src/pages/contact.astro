@@ -7,18 +7,18 @@ const {lang = "en" } = Astro.props;
 ---
 
 
-<Layout lang={lang} title="faq" description="faq">
+<Layout lang={lang} title="Contact Us" description="contact form">
 
      <section class="pt-12 lg:px-52 ">
      <h2 class="text-h2 lg:text-4xl  text-center mb-7  lg:px-auto">Contact Us</h2>
 
-      <form class="w-full max-w-4xl mt-10 lg:mt-24 mx-auto">
+      <form class="w-full max-w-4xl mt-10 lg:mt-24 mx-auto" id="contactus">
 
     <div class="flex flex-col lg:flex-row w-full px-3 mb-6 md:mb-0 items-center">
       <label class="w-full lg:w-2/6 uppercase tracking-wide mb-2" for="grid-first-name">
         ＊Full Name
       </label>
-      <input class="w-full lg:w-4/6 appearance-none border border-black py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="">
+      <input id="fullname" class="w-full lg:w-4/6 appearance-none border border-black py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="">
     </div>
 
     <div class="flex flex-col lg:flex-row w-full px-3 mb-6 md:mb-0 items-center">
@@ -32,7 +32,7 @@ const {lang = "en" } = Astro.props;
       <label class="w-full lg:w-2/6 uppercase tracking-wide mb-2" for="message">
         ＊Message
       </label>
-      <textarea class="w-full lg:w-4/6 no-resize appearance-none block w-full  border border-black py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message"></textarea>
+      <textarea id="message" class="w-full lg:w-4/6 no-resize appearance-none block w-full  border border-black py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message"></textarea>
     </div>
 
     <div class="flex flex-col lg:flex-row w-full px-3 mb-6 md:mb-0 items-center">
@@ -54,11 +54,23 @@ const {lang = "en" } = Astro.props;
     </div>
 
   <div class="flex items-center justify-center mt-12 mb-10">
-      <button class="w-3/4 lg:w-1/2 text-center shadow bg-main-gold-3 hover:bg-golden focus:shadow-outline focus:outline-none text-white py-2 px-4 block" type="button">
+      <a id="send" class="w-3/4 lg:w-1/2 text-center shadow bg-main-gold-3 hover:bg-golden focus:shadow-outline focus:outline-none text-white py-2 px-4 block" type="button">
         Send
-      </button>
+      </a>
   </div>
 </form>
      </section>
+<script>
+let form = document.getElementById("contactus");
 
+form.addEventListener("input", function () {
+let btn = document.querySelector('#send');
+let fullname = document.querySelector("#fullname").value;
+let message = document.querySelector("#message").value;
+btn.href = "mailto:info@bisu-us.com?subject="+fullname+"&body="+message;
+});
+
+
+
+</script>
 </Layout>

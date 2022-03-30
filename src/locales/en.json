@@ -67,7 +67,7 @@
                 "title": "Face Cream"
             },
             "2": {
-                "title": "Lotion"
+                "title": "Jelly"
             },
             "3": {
                 "title": "Hand Cream (Rose)"
@@ -104,15 +104,15 @@
         "nav": {
             "sns": {
                 "1": {
-                    "link": "https://twitter.com/BiSuOfficialEn1",
-                    "title": "twitter"
+                    "link": "www.bisu-global.com",
+                    "title": "sphere"
                 },
                 "2": {
-                    "link": "https://www.facebook.com/bisueng2018",
+                    "link": "https://www.facebook.com/en.bisu.jp",
                     "title": "facebook"
                 },
                 "3": {
-                    "link": "https://www.instagram.com/bi_su_official_english/",
+                    "link": "https://www.instagram.com/bi_su_official_us/",
                     "title": "instagram"
                 }
             }
@@ -184,7 +184,7 @@
         },
         "title": "BI-SU Story",
         "stories": {
-            "title": "~Encounter with the natural swiftlet's nest~"
+            "title": "Encounter with the natural swiftlet's nest"
         },
         "motto": "Risking life to ensure the genuineness of the product",
         "goal": {
@@ -452,7 +452,20 @@
                 "amazon":"https://www.amazon.com/dp/B09VNSJB3J?ref=myi_title_dp",
                 "imgUrl": "https://cart.bi-su.jp/upload/save_image/10181603_616d1c2a8f1.jpg",
                 "imgUrl1":"https://bi-su.jp/lp_faizad/en/img/en/facecream/facecream02.jpg",
-                "imgUrl2": "https://bi-su.jp/lp_faizad/en/img/en/facecream/facecream03.jpg"
+                "imgUrl2": "https://bi-su.jp/lp_faizad/en/img/en/facecream/facecream03.jpg",
+                "recommend": {
+                    "1": "facemask",
+                    "2": "serum",
+                    "3": "lotion",
+                    "4": "milk"
+                },
+                "ingredient":{
+                    "title":"Ingredient List",
+                    "type":"list",
+                    "list":"Ingredients: Water, argania spinosa kernel oil, BG, hydrolyzed swallow's nest extract, glycerin, glyceryl stearate, hydrogenated lecithin, pentylene glycol, propanediol, water-soluble proteoglycan, hydrolyzed collagen, water-soluble collagen, succinoyl atelocollagen, white fungus polysaccharide. body, Enterococcus faecalis, ceramide NP, ceramide AP, ceramide EOP, tocopherol, brown sugar extract, cyanocobalamin, phytosphingosine, ascorbyl glucoside, glucosyl hesperidin, arginine, yellowfin bark extract, sodium dilauroyl glutamate lysine, and Cetyl palmitate, cetearyl alcohol, sodium lauroyl lactylate, 5Na pentetoate, stearic acid, behenyl alcohol, cholesterol, dimethicone, carbomer, xanthan gum, fragrance, phenoxyethanol"
+                },
+                "consume":"<div style='max-width:fit-content'><h3>Caution</h3><p>※&nbsp;If you notice any abnormalities such as redness, swelling, itching, irritation, loss of color (white spots etc.) or dark spots on your skin during or after use, we recommend discontinuing use and consult a dermatologist.</p><p>※&nbsp;If you notice any skin irritation, stop using it and consult a dermatologist.</p><p>※&nbsp;Do not use on areas with wounds, boils, eczema, or other abnormalities.</p></div>",
+                "storage":"<div style='max-width:fit-content'><ul><li>Please do not store in extremely hot or cold places or place exposed to direct sunlight.</li><li>Since natural ingredients are used, discoloration, precipitation, etc. may occur, but there is no problem to the quality.</li><li>Please close the cap tightly after use.</li><li>Please keep out of reach of children.</li></ul></div>"
             },
             "facemask": {
                 "name": "BI-SU Bird's Nest Essence Efficient Moisturizing Mask",
@@ -464,7 +477,23 @@
                 "amazon":"https://www.amazon.com/dp/B09T36Y25B?ref=myi_title_dp",
                 "imgUrl": "https://cart.bi-su.jp/upload/save_image/06101321_5ee05fe3bf2.jpg",
                 "imgUrl1":"https://cart.bi-su.jp/upload/save_image/06101355_5ee067dd4fe.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/03101520_5e6731c5399.jpg"
+                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/03101520_5e6731c5399.jpg",
+                "recommend": {
+                    "1": "facecream",
+                    "2": "serum",
+                    "3": "lotion",
+                    "4": "milk"
+                },
+                "ingredient": {
+                    "title":"Ingredient List",
+                    "type": "list",
+                    "list": "Ingredient: water, propanediol, glycerin, hydrolized swiftlet nest extract, pentylene glycol, white jelly fungus, polysaccharide, shea butter, betain, rose myrtlefruit extract, ceramide 3, allantoin, glycyrrhizin 2K, artichoke leaf extract, sphinogomonas extract, saxrifage stoloneifera extract, scutellaria root extract, rosa multiflora fruit extract, wild thyme extract, lemongrass leaf/ stlak extract, silver vine fruit extract, succinoyl atekocollagen, yhoshino cherry, aloe verra leaf extract, rose myrtle fruit extrtact, processed prune, soybean extract, mandarin orange peel extract, plum fruit extract, lavender oil, sodium acetylated hyaluronate, sodium hyaluronate, hydrosed hyaluronic acid, tocopherol, ascorbyl tetrahexyldecanoate, vitamin A oil, lanolin, glyceryl glucoside, phytosteryl/ octyldodecyl lauroyl glutamate, hydrogenated lecithin, PEG 60 hydrogenated castor oil, (styrene/VP)copolymer, sebacic acid, 1,10-decanediol, triethylhexanoin, BG, diphenyl dimethicone, xanthan gum, hydroxyethyl cellulose, ethylhexyl glycerin, glyceryl caprylate, sodium cytrate, polyglyceryl-10 myristate, citric acid, 10-hydroxydecanoic acid <br><br>* Tested for patch test and stinging test"
+                },
+                "consume": {
+                    "title":"How to Use",
+                    "content":"<div style='max-width:fit-content'><ul><li>After face cleansing, remove the mask from the package and spread it.</li><li>Adjust the mask's chin part and paste them by aligning the center line of the mask to the center line of the face.</li><li>Lightly hold the mask with your palm and stick them to the face.</li><li>Remove the mask after approximately 10 to 15 minutes.</li><li>Rub the remaining essence on your face with your hands.</li></ul><h3>Caution</h3><p>※ In case of contact with eyes, rinse with clean water immediately without rubbing.</p><p>※ Please discontinue usage if you have any skin scratches, swelling, dampness, rash, etc.,</p><p>※ Please use while observing any abnormality on your skin.</p><p>※ When abnormalities such as redness, swelling, itching, irritation, color loss (white group etc.) and darkening appear, discontinue usage and consult with dermatologists.</p><p>※ Please do not use the mask for a long time or sleep while using mask.</p><p>※ For hygiene purpose, please do not re-use the mask.</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Do not flush the mask with water as it is not soluble in water.</li><li>Please keep it out of reach of children.</li></ul></div>"
             },
             "lotion": {
                 "name": "Bird's Nest Essence Moisturizing Lotion",
@@ -476,7 +505,23 @@
                 "amazon":"https://www.amazon.com/dp/B09VNSJB3J?ref=myi_title_dp",
                 "imgUrl": "https://cart.bi-su.jp/upload/save_image/06011114_5ed4648d836.jpg",
                 "imgUrl1":"https://cart.bi-su.jp/upload/save_image/06011114_5ed46494264.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/03271411_5e7d8aec93d.jpg"
+                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/03271411_5e7d8aec93d.jpg",
+                "recommend": {
+                    "1": "facecream",
+                    "2": "serum",
+                    "3": "lotion",
+                    "4": "milk"
+                },
+                "ingredient": {
+                    "title": "Ingredient List",
+                    "type": "list",
+                    "list": "Water, BG, glycerin, pentylene glycol, hydrolyzed swallow's nest extract, trehalose, propanediol, white jellyfish polysaccharide, water-soluble proteoglycan, sodium hyaluronate, yellowfin bark extract, hydrolyzed collagen, ascorbyl glucoside, glucosyl hesperidin, water solution Collagen, succinoyl atelocollagen, sodium dilauroyl glutamate lysine, inositol, lavender oil, diglycerin, tocopherol, erythritol, cyclohexan-1,4-dicarboxylic acid bisethoxydiglycol, glyceryl glucoside, PEG-60 hydrogenated castor oil. PCA-Na, PCA-Na, dihydroxypropylarginine HCl, Na citrate, citric acid, bio saccharide gum-1, hydrogenated lecithin, phenoxyethanol."
+                },
+                "consume": {
+                    "title":"How to Use",
+                    "content":"<div style='max-width:fit-content'><p>After washing your face, take an appropriate amount in your hand and gently blend it into your face.</p><h3>Caution</h3><p>※ If you notice any abnormalities such as redness, swelling, itching, irritation, loss of color (white spots etc.) or dark spots on your skin during or after use, we recommend discontinuing use and consult a dermatologist.</p><p>※ If you notice any skin irritation, stop using it and consult a dermatologist.</p><p>※ Do not use on areas with wounds, boils, eczema, or other abnormalities.</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Please do not store in extremely hot or cold places or place exposed to direct sunlight.</li><li>Since natural ingredients are used, discoloration, precipitation, etc. may occur, but there is no problem to the quality.</li><li>Please close the cap tightly after use.</li><li>Please keep out of reach of children.</li></ul></div>"
             },
             "serum": {
                 "name": "Bird's Nest Essence Serum",
@@ -488,7 +533,24 @@
                 "amazon":"https://www.amazon.com/dp/B09VMWSSLY?ref=myi_title_dp",
                 "imgUrl": "https://cart.bi-su.jp/upload/save_image/06011113_5ed4643eb58.jpg",
                 "imgUrl1":"https://cart.bi-su.jp/upload/save_image/06011113_5ed4644d180.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/04091546_5e8ec4b5357.jpg"
+                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/04091546_5e8ec4b5357.jpg",
+                "recommend": {
+                    "1": "facecream",
+                    "2": "facemask",
+                    "3": "serum",
+                    "4": "lotion"
+                },
+
+                "ingredient": {
+                    "title": "Ingredient List",
+                    "type": "list",
+                    "list": "Ingredients: Water, BG, glycerin, pentylene glycol, hydrolyzed swallow's nest extract, propanediol, glycosyl trehalose, hydrolyzed starch, trehalose, water-soluble proteoglycans, hydrolyzed collagen, water-soluble collagen, succinoyl atelocollagen, 2 glycyrrhizic acid. K, sodium hyaluronate, lavender oil, white jellyfish polysaccharide, yellowfin bark extract, ascorbyl glucoside, glucosyl hesperidin, hydrogenated lecithin, tocopherol, sodium dilauroyl glutamate, PEG-60 hydrogenated castor oil, carbomer, xanthan gum, sucretium gum. K hydroxide and phenoxyethanol"
+                },
+                "consume": {
+                    "title":"How to Use",
+                    "content":"<div style='max-width:fit-content'><p>After washing your face, take an appropriate amount in your hand and gently blend it into your face.</p><h3>Caution</h3><p>※ If you notice any abnormalities such as redness, swelling, itching, irritation, loss of color (white spots etc.) or dark spots on your skin during or after use, we recommend discontinuing use and consult a dermatologist.</p><p>※ If you notice any skin irritation, stop using it and consult a dermatologist.</p><p>※ Do not use on areas with wounds, boils, eczema, or other abnormalities.</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Please do not store in extremely hot or cold places or place exposed to direct sunlight.</li><li>Since natural ingredients are used, discoloration, precipitation, etc. may occur, but there is no problem to the quality.</li><li>* Please close the cap tightly after use.</li><li>*Please keep out of reach of children.</li></ul></div>"
             },
             "milk": {
                 "name": "Bird's Nest Essence Facial Milk",
@@ -500,7 +562,23 @@
                 "amazon":"https://www.amazon.com/dp/B09T378NZ3?ref=myi_title_dp",
                 "imgUrl": "https://cart.bi-su.jp/upload/save_image/06011115_5ed464c9452.jpg",
                 "imgUrl1":"https://cart.bi-su.jp/upload/save_image/06011115_5ed464cf231.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/06241153_5ef2c038815.jpg"
+                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/06241153_5ef2c038815.jpg",
+                "recommend": {
+                    "1": "facecream",
+                    "2": "facemask",
+                    "3": "lotion",
+                    "4": "serum"
+                },
+                "ingredient": {
+                    "title": "Ingredient List",
+                    "type": "list",
+                    "list": "Ingredients:Water, glycerin, BG, argania spinosa kernel oil, pentylene glycol, hydrolyzed swallow's nest extract, diglycerin, propanediol, glucosyl hesperidin, squalane, white fungus polysaccharide, water-soluble collagen, hydrolyzed collagen, succinoyl atelocollagen, and Ascorbyl glucoside, Enterococcus faecalis, ceramide NP, ceramide AP, ceramide EOP, phytosphingosine, water-soluble proteoglycan, brown sugar extract, yellowfin bark extract, 2K glycyrrhizic acid, lavender oil, tocopherol, sodium dilauroyl glutamate lysine. Hydrogenated lecithin, sodium lauroyl lactylate, cholesterol, EDTA-2Na, (hydroxyethyl acrylate / sodium acryloyl dimethyl taurine) copolymer, sorbitan isostearate, polysorbate 60, carbomer, xanthan gum, phenoxyethanol."
+                },
+                "consume": {
+                    "title": "How to Use",
+                    "content": "<div style='max-width:fit-content'><p>After conditioning the skin with the serum, take a moderate amount of the serum in your hand and gently apply it to your face.</p><h3>Caution</h3><p>※&nbsp;If you notice any abnormalities such as redness, swelling, itching, irritation, loss of color (white spots etc.) or dark spots on your skin during or after use, we recommend discontinuing use and consult a dermatologist.</p><p>※&nbsp;If you notice any skin irritation, stop using it and consult a dermatologist.</p><p>※&nbsp;Do not use on areas with wounds, boils, eczema, or other abnormalities.</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Please do not store in extremely hot or cold places or place exposed to direct sunlight.</li><li>Since natural ingredients are used, discoloration, precipitation, etc. may occur, but there is no problem to the quality.</li><li>* Please close the cap tightly after use.</li><li>*Please keep out of reach of children.</li></ul></div>"
 
             },
             "handcream": {
@@ -513,7 +591,23 @@
                 "amazon":"https://www.amazon.com/dp/B09T37399M?ref=myi_title_dp",
                 "imgUrl": "https://cart.bi-su.jp/upload/save_image/03011020_603c4164c55.jpg",
                 "imgUrl1":"https://cart.bi-su.jp/upload/save_image/12031802_5de62488b31.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12031802_5de624901ac.jpg"
+                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12031802_5de624901ac.jpg",
+                "recommend": {
+                    "1": "facecream",
+                    "2": "serum",
+                    "3": "lotion",
+                    "4": "milk"
+                },
+                "ingredient": {
+                    "title": "Ingredient List",
+                    "type": "list",
+                    "list": "Ingredients: Water, glycerin, isopropyl palmitate, cetearyl alcohol, BG, stearic acid, pentylene glycol, hydrolyzed swiftlet nest extract, glyceryl stearate (SE), cetyl palmitate, propanediol, white jelly mushroom polysaccharide, rose myrtle fruit extract, aloe vera leaf extract, yoshino cherry leaf extract, glycyrrhizin 2K, ceramide NP, tocopherol, ascorbyl tetrahexyldecanoate, lanolin, amor cork tree bark extract, shea butter, lavender oil, vitamin A oil, tea, simethicone, polusorbate 60, hydrogenated lecithin, sodium lauroyl glutamate, phenoxyethanol."
+                },
+                "consume": {
+                    "title": "How to Use",
+                    "content": "<div style='max-width:fit-content'><p>Take an appropriate amount and apply it to your skin.</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Do not store in extremely hot or cold places or exposed to direct sunlight.</li><li>Since natural ingredients are blended, discoloration may occur, but there is no problem to the quality.</li><li>Please close the cap tightly after use.</li><li>Please keep it out of reach of infants and children.</li></ul></div>"
             },
             "handcreamrose": {
                 "name": "Bird's Nest Essence Hand Cream (Rose)",
@@ -525,7 +619,23 @@
                 "amazon":"https://www.amazon.com/dp/B09T3BHCT6?ref=myi_title_dp",
                 "imgUrl": "https://cart.bi-su.jp/upload/save_image/03011019_603c4119a4f.jpg",
                 "imgUrl1":"https://cart.bi-su.jp/upload/save_image/12031803_5de624dc543.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12031803_5de624e3d4c.jpg"
+                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12031803_5de624e3d4c.jpg",
+                "recommend": {
+                    "1": "facecream",
+                    "2": "serum",
+                    "3": "lotion",
+                    "4": "milk"
+                },
+                "ingredient": {
+                    "title": "Ingredient List",
+                    "type": "list",
+                    "list": "Ingredients: Water, glycerin, isopropyl palmitate, cetearyl alcohol, BG, stearic acid, pentylene glycol, hydrolyzed swiftlet nest extract, glyceryl stearate (SE), cetyl palmitate, propanediol, white jelly mushroom polysaccharide, rose myrtle fruit extract, aloe vera leaf extract, yoshino cherry leaf extract, glycyrrhizin 2K, ceramide NP, damask rose flower oil, hohoba seed oil, tocopherol, ascorbyl tetrahexyldecanoate, lanolin, shea butter, cyanocobalamin, vitamin A oil, tea, simethicone, polusorbate 60, hydrogenated lecithin, sodium lauroyl glutamate, phenoxyethanol."
+                },
+                "consume": {
+                    "title": "How to Use",
+                    "content": "<div style='max-width:fit-content'><p>Take an appropriate amount and apply it to your skin.</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Do not store in extremely hot or cold places or exposed to direct sunlight.</li><li>Since natural ingredients are blended, discoloration may occur, but there is no problem to the quality.</li><li>Please close the cap tightly after use.</li><li>Please keep it out of reach of infants and children.</li></ul></div>"
             },
             "bisu16": {
                 "name": "BI-SU 16 Natural Instant Bird's Nest",
@@ -537,7 +647,23 @@
                 "amazon":"",
                 "imgUrl": "https://cart.bi-su.jp/upload/save_image/01061041_61d648b6a6f.jpg",
                 "imgUrl1":"https://cart.bi-su.jp/upload/save_image/01061040_61d648a4b1e.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12031523_5de5ff5d44d.jpg"
+                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12031523_5de5ff5d44d.jpg",
+                "recommend": {
+                    "1": "jelly",
+                    "2": "threeset",
+                    "3": "drink",
+                    "4": "candy30"
+                },
+                "ingredient": {
+                    "title": "Ingredients · Nutrition ingredient display",
+                    "type": "table",
+                    "table": "<div style='max-width:fit-content'><p>Ingredients: Swiftlet Nest · Sugarbeet · White Jelly Fungus Extract · Collagen Peptide (Gelatin) ※ No artificial sweetener, preservative or colouring agent</p><p>Expiry date: 2 years</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>1 bottle nutritional component (per 28 g)</th></tr></thead><tbody><tr><th>Energy</th><td>19kcal</td></tr><tr><th>Carbohydrate</th><td>3.3g</td></tr><tr><th>Protein</th><td>1.48g</td></tr><tr><th>Sodium</th><td>0.05g</td></tr><tr><th>Lipid</th><td>0.03g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                },
+                "consume": {
+                    "title": "How to Consume",
+                    "content": "<div style='max-width:fit-content'><p>You can enjoy it as it is as a dessert. You can also enjoy it deliciously by adding to yoghurt or smoothies. We recommend you to eat every day for the first week. After that, please enjoy at your favourite pace, such as 1 bottle every 1 or 2 days. You may consume at your favorite time such as breakfast or before going to bed.</p><h3>How to consume it properly</h3><ul><li>Serve it as a dessert to your guest, it will surely be a good topic to talk about.</li><li>It is secretly popular as a surprise gift, celebration gifts and as presents to loved ones.</li></ul><h3>How to take it out properly</h3><ul class='procedure'><li><img src='https://shop.bi-su.jp/resources/assets/img/16-howto-eat1-en.jpg' alt=''></li><li><img src='https://shop.bi-su.jp/resources/assets/img/16-howto-eat2-en.jpg' alt=''></li><li><img src='https://shop.bi-su.jp/resources/assets/img/16-howto-eat3-en.jpg' alt=''></li></ul></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Please avoid direct sunlight and store at room temperature or refrigerator.</li><li>Because no preservatives were used, please consume as soon as possible after opening.</li><li>※ Because we are using only natural materials, colours of contents may differ or sediments may be generated, however, there is no problem on the quality.</li><li>※ The golden pigment is the original color of sugarbeet. It is not from a colouring.</li></ul></div>"
             },
             "bisu16n": {
                 "name": "BI-SU 16 Natural Instant Bird's Nest (Sugar-Free)",
@@ -549,31 +675,135 @@
                 "amazon":"",
                 "imgUrl": "https://cart.bi-su.jp/upload/save_image/02281008_621c20ab391.jpg",
                 "imgUrl1":"https://cart.bi-su.jp/upload/save_image/02281007_621c206b3e3.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12031550_5de605b53bd.jpg"
+                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12031550_5de605b53bd.jpg",
+                "recommend": {
+                    "1": "jelly",
+                    "2": "threeset",
+                    "3": "drink",
+                    "4": "candy30"
+                },
+                "ingredient": {
+                    "title": "Ingredients · Nutrition ingredient display",
+                    "type": "table",
+                    "table": "<div style='max-width:fit-content'><p>Ingredients: Swiftlet Nest · White Jelly Fungus Extract · Collagen Peptide (Gelatin) ※ No sweetener, preservative or colouring used</p><p>Expiry date: 2 years</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component of 1 bottle (per 28 g)</th></tr></thead><tbody><tr><th>Energy</th><td>7.84kcal</td></tr><tr><th>Carbohydrate</th><td>0.36g</td></tr><tr><th>Protein</th><td>1.56g</td></tr><tr><th>Sodium</th><td>0.01g</td></tr><tr><th>Lipid</th><td>0.02g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                },
+                "consume": {
+                    "title": "How to Consume",
+                    "content": "<div style='max-width:fit-content'><p>You can arrange and enjoy it in various dishes. Add it to your favorite recipe such as smoothies, salads, soup etc.</p><p>We recommend you to consume every day for the first week. After that, please enjoy at your favorite pace, such as 1 bottle every 1 or 2 days. Please consume at your favorite time such as breakfast and dinner.</p><h3>How to consume it properly</h3><ul><li>Serve it as a dessert to your guest, it will surely be a good topic to talk about.</li><li>It is secretly popular as a surprise gift, celebration gifts and as presents to loved ones.</li></ul><h3>How to take it out properly</h3><ul class='procedure'><li><img src='https://shop.bi-su.jp/resources/assets/img/16-howto-eat1-en.jpg' alt=''></li><li><img src='https://shop.bi-su.jp/resources/assets/img/16-howto-eat2-en.jpg' alt=''></li><li><img src='https://shop.bi-su.jp/resources/assets/img/16-howto-eat3-en.jpg' alt=''></li></ul></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Please avoid direct sunlight and store at room temperature or refrigerator.</li><li>Because no preservatives were used, please consume as soon as possible after opening.</li><li>※ Because we are using only natural materials, colours of contents may differ or sediments may be generated, however, there is no problem on the quality.</li></ul></div>"
             },
             "jelly": {
-                "name": "Bird's Nest Collagen Beauty Essence Jelly (Pineapple Flavor)",
-                "size": "0.42oz/pc \n 7 pcs/pack & 30 pcs/pack",
+                "name": "Bird's Nest Collagen Beauty Essence Jelly (Pineapple Flavor) 30pcs",
+                "size": "0.42oz/pc",
                 "intro": "Jelly with swiftlet's bird nest extract and collagen.",
                 "feature": "The swiftlet's nest extract are complemented by a moisturizing white mushroom essence and 4 lemons’ worth of vitamin C, all packaged in portable stick sachets. The delicious pineapple flavor of the product not only nourishes your skin, but also your body.",
-                "title": "Essence Jelly (Pineapple Flavor)",
+                "title": "Essence Jelly (Pineapple Flavor) 30pcs",
                 "price": "$145.00",
                 "amazon":"https://www.amazon.com/dp/B09SWWZVQH?ref=myi_title_dp",
                 "imgUrl": "https://cart.bi-su.jp/upload/save_image/12131053_61b6a7a1043.jpg",
                 "imgUrl1":"https://cart.bi-su.jp/upload/save_image/12130924_61b692bf2b6.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12130924_61b692b383a.jpg"
+                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12130924_61b692b383a.jpg",
+                "recommend":{
+                    "1":"jellyrose",
+                    "2":"threeset",
+                    "3":"drink",
+                    "4":"candy30"
+                },
+                "ingredient": {
+                    "title": "Ingredients · Nutrition ingredient display",
+                    "type": "table",
+                    "table": "<div style='max-width:fit-content'><p>Ingredients: Beetroot sugar, pineapple fruit juice, swiftlet nest extract, fish collagen peptide (gelatin), white jelly mushroom extract, fermented wild grass extract , acidulant, Vitamin C, thickening agent (polysaccharide thickener), flavorings</p><p>Shelf life: 1 year from the manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component of 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>10.9kcal</td></tr><tr><th>Carbohydrate</th><td>2.15g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Sodium</th><td>0.04g</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                },
+                "consume": {
+                    "title": "How to Consume",
+                    "content": "<div style='max-width:fit-content'><p>As a guide please consume 1 stick per day. You can consume it directly as a snack or desserts. Refrigerate to make it taste even better. Convenience size to bring it on the go. Please enjoy it in your favorite place at your favorite time.</p><h3>Caution</h3><p>※ Please check the raw materials and refrain usage if you have allergy.</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Store in a cool area away from high temperature and direct sunlight or keep it refrigerated.</li><li>Open the packet carefully not to scatter the contents.</li><li>Please consume immediately once opened.</li><li>※ Because you are using all natural materials, the contents may discolour, but there is no problem on the quality.</li></ul></div>"
+            },
+            "jelly7": {
+                "name": "Bird's Nest Collagen Beauty Essence Jelly (Pineapple Flavor) 7pcs",
+                "size": "0.42oz/pc",
+                "intro": "Jelly with swiftlet's bird nest extract and collagen.",
+                "feature": "The swiftlet's nest extract are complemented by a moisturizing white mushroom essence and 4 lemons’ worth of vitamin C, all packaged in portable stick sachets. The delicious pineapple flavor of the product not only nourishes your skin, but also your body.",
+                "title": "Essence Jelly (Pineapple Flavor) 7pcs",
+                "price": "$35.00",
+                "amazon": "https://www.amazon.com/dp/B09SWXYPQ7?ref=myi_title_dp",
+                "imgUrl": "https://bi-su.jp/lp_faizad/en/img/7pcs-p.jpg",
+                "imgUrl1": "https://cart.bi-su.jp/upload/save_image/12130924_61b692bf2b6.jpg",
+                "imgUrl2": "https://cart.bi-su.jp/upload/save_image/12130924_61b692b383a.jpg",
+                "recommend": {
+                    "1": "jellyrose7",
+                    "2": "threeset",
+                    "3": "drink",
+                    "4": "candy30"
+                },
+                "ingredient": {
+                    "title": "Ingredients · Nutrition ingredient display",
+                    "type": "table",
+                    "table": "<div style='max-width:fit-content'><p>Ingredients: Beetroot sugar, pineapple fruit juice, swiftlet nest extract, fish collagen peptide (gelatin), white jelly mushroom extract, fermented wild grass extract , acidulant, Vitamin C, thickening agent (polysaccharide thickener), flavorings</p><p>Shelf life: 1 year from the manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component of 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>10.9kcal</td></tr><tr><th>Carbohydrate</th><td>2.15g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Sodium</th><td>0.04g</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                },
+                "consume": {
+                    "title": "How to Consume",
+                    "content": "<div style='max-width:fit-content'><p>As a guide please consume 1 stick per day. You can consume it directly as a snack or desserts. Refrigerate to make it taste even better. Convenience size to bring it on the go. Please enjoy it in your favorite place at your favorite time.</p><h3>Caution</h3><p>※ Please check the raw materials and refrain usage if you have allergy.</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Store in a cool area away from high temperature and direct sunlight or keep it refrigerated.</li><li>Open the packet carefully not to scatter the contents.</li><li>Please consume immediately once opened.</li><li>※ Because you are using all natural materials, the contents may discolour, but there is no problem on the quality.</li></ul></div>"
             },
             "jellyrose": {
-                "name": "Bird's Nest Collagen Beauty Essence Jelly (Rose Flavor)",
-                "size": "0.42oz/pc \n 7 pcs/pack & 30 pcs/pack",
+                "name": "Bird's Nest Collagen Beauty Essence Jelly (Rose Flavor) 30pcs",
+                "size": "0.42oz/pc",
                 "intro": "Jelly with swiftlet's bird nest extract, collagen and real rose extract.",
                 "feature": "Formulated using natural Swiftlet's nest and rose essence, the product is rich in collagen, white mushroom essence, and vitamin C. A sachet contains multiple nutrients essential for beauty care to let you emanate youth and vitality from within.",
-                "title": "Essence Jelly (Rose Flavor)",
+                "title": "Essence Jelly (Rose Flavor) 30pcs",
                 "price": "$180.00",
                 "amazon":"https://www.amazon.com/dp/B09T3BDBC5?ref=myi_title_dp",
                 "imgUrl": "https://bi-su.jp/lp_faizad/en/img/en/jellyrose/jelly-r-n1.jpg",
                 "imgUrl1":"https://bi-su.jp/lp_faizad/en/img/en/jellyrose/jelly-r-n.jpg",
-                "imgUrl2":"https://bi-su.jp/lp_faizad/en/img/en/jellyrose/jelly-r-n2.jpg"
+                "imgUrl2":"https://bi-su.jp/lp_faizad/en/img/en/jellyrose/jelly-r-n2.jpg",
+                "recommend": {
+                    "1": "jelly",
+                    "2": "threeset",
+                    "3": "drink",
+                    "4": "candy30"
+                },
+                "ingredient": {
+                    "title": "Ingredients · Nutrition ingredient display",
+                    "type": "table",
+                    "table": "<div style='max-width:fit-content'><p>Ingredients name: Rose flower extract (manufactured in Japan), Beetroot sugar, Swiftlets Nest Extract, Fish Collagen Peptide (including gelatin), White Jelly Fungus Extract, Wild Grass Fermented Extract / thickening agent (polysaccharide thickener), Vitamin C, Citric Acid</p><p>Shelf life: 1 year from manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component for 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>11.5kcal</td></tr><tr><th>Carbohydrate</th><td>2.53g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Salt Equivalent</th><td>0.01ｇ</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                },
+                "consume": {
+                    "title": "How to Consume",
+                    "content": "<div style='max-width:fit-content'><p>As a guide please consume 1 stick per day. You can consume it directly as a snack or desserts. Refrigerate to make it taste even better. Convenience size to bring it on the go. Please enjoy it in your favorite place at your favorite time.</p><h3>Caution</h3><p>※ Please check the ingredient and refrain usage if you have any allergies.</p><p>※ For those who are pregnant or on breast feeding, please consult your doctor before consuming</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Store in a cool area away from high temperature and direct sunlight or keep it refrigerated.</li><li>Open the packet carefully not to scatter the contents.</li><li>Please consume immediately once opened</li><li>※ Because you are using all natural materials, the contents may discolour, but there is no problem on the quality.</li></ul></div>"
+            },
+            "jellyrose7": {
+                "name": "Bird's Nest Collagen Beauty Essence Jelly (Rose Flavor) 7pcs",
+                "size": "0.42oz/pc",
+                "intro": "Jelly with swiftlet's bird nest extract, collagen and real rose extract.",
+                "feature": "Formulated using natural Swiftlet's nest and rose essence, the product is rich in collagen, white mushroom essence, and vitamin C. A sachet contains multiple nutrients essential for beauty care to let you emanate youth and vitality from within.",
+                "title": "Essence Jelly (Rose Flavor) 7pcs",
+                "price": "$45.00",
+                "amazon": "https://www.amazon.com/dp/B09SWYKM1V?ref=myi_title_dp",
+                "imgUrl": "https://bi-su.jp/lp_faizad/en/img/7pcs-r.jpg",
+                "imgUrl1": "https://bi-su.jp/lp_faizad/en/img/en/jellyrose/jelly-r-n.jpg",
+                "imgUrl2": "https://bi-su.jp/lp_faizad/en/img/en/jellyrose/jelly-r-n2.jpg",
+                "recommend": {
+                    "1": "jelly7",
+                    "2": "threeset",
+                    "3": "drink",
+                    "4": "candy30"
+                },
+                "ingredient": {
+                    "title": "Ingredients · Nutrition ingredient display",
+                    "type": "table",
+                    "table": "<div style='max-width:fit-content'><p>Ingredients name: Rose flower extract (manufactured in Japan), Beetroot sugar, Swiftlets Nest Extract, Fish Collagen Peptide (including gelatin), White Jelly Fungus Extract, Wild Grass Fermented Extract / thickening agent (polysaccharide thickener), Vitamin C, Citric Acid</p><p>Shelf life: 1 year from manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component for 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>11.5kcal</td></tr><tr><th>Carbohydrate</th><td>2.53g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Salt Equivalent</th><td>0.01ｇ</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                },
+                "consume": {
+                    "title": "How to Consume",
+                    "content": "<div style='max-width:fit-content'><p>As a guide please consume 1 stick per day. You can consume it directly as a snack or desserts. Refrigerate to make it taste even better. Convenience size to bring it on the go. Please enjoy it in your favorite place at your favorite time.</p><h3>Caution</h3><p>※ Please check the ingredient and refrain usage if you have any allergies.</p><p>※ For those who are pregnant or on breast feeding, please consult your doctor before consuming</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Store in a cool area away from high temperature and direct sunlight or keep it refrigerated.</li><li>Open the packet carefully not to scatter the contents.</li><li>Please consume immediately once opened</li><li>※ Because you are using all natural materials, the contents may discolour, but there is no problem on the quality.</li></ul></div>"
             },
             "threeset": {
                 "name": "Bird's Nest Essence Deluxe Set (3 Flavors)",
@@ -585,7 +815,23 @@
                 "amazon":"https://www.amazon.com/dp/B09SWYW54Q?ref=myi_title_dp",
                 "imgUrl": "https://cart.bi-su.jp/upload/save_image/12131005_61b69c7651a.jpg",
                 "imgUrl1":"https://cart.bi-su.jp/upload/save_image/12131006_61b69c7d021.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12031720_5de61ad7987.jpg"
+                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12031720_5de61ad7987.jpg",
+                "recommend": {
+                    "1": "jelly",
+                    "2": "threeset",
+                    "3": "drink",
+                    "4": "candy30"
+                },
+                "ingredient": {
+                    "title": "Ingredients · Nutrition ingredient display",
+                    "type": "table",
+                    "table": "<div style='max-width:fit-content'><p>Ingredients: Beetroot sugar, pineapple fruit juice, swiftlet nest extract, fish collagen peptide (gelatin), white jelly mushroom extract, fermented wild grass extract , acidulant, Vitamin C, thickening agent (polysaccharide thickener), flavorings</p><p>Shelf life: 1 year from the manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component of 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>10.9kcal</td></tr><tr><th>Carbohydrate</th><td>2.15g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Sodium</th><td>0.04g</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                },
+                "consume": {
+                    "title": "How to Consume",
+                    "content": "<div style='max-width:fit-content'><p>As a guide please consume 1 stick per day. You can consume it directly as a snack or desserts. Refrigerate to make it taste even better. Convenience size to bring it on the go. Please enjoy it in your favorite place at your favorite time.</p><h3>Caution</h3><p>※ Please check the raw materials and refrain usage if you have allergy.</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Store in a cool area away from high temperature and direct sunlight or keep it refrigerated.</li><li>Open the packet carefully not to scatter the contents.</li><li>Please consume immediately once opened.</li><li>※ Because you are using all natural materials, the contents may discolour, but there is no problem on the quality.</li></ul></div>"
             },
             "drink": {
                 "name": "E-3000 Bird's Nest Collagen Peptide Essence Drink",
@@ -597,7 +843,23 @@
                 "amazon":"https://www.amazon.com/dp/B09SX1N1G6?ref=myi_title_dp",
                 "imgUrl": "https://cart.bi-su.jp/upload/save_image/02281546_621c6fc9a67.jpg",
                 "imgUrl1":"https://cart.bi-su.jp/upload/save_image/03101617_5e673efa4ff.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/02281546_621c6fb8398.jpg"
+                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/02281546_621c6fb8398.jpg",
+                "recommend": {
+                    "1": "jelly",
+                    "2": "jellyrose",
+                    "3": "drink",
+                    "4": "candy30"
+                },
+                "ingredient": {
+                    "title": "Ingredients · Nutrition ingredient display",
+                    "type": "table",
+                    "table": "<div style='max-width:fit-content'><p>Ingredients: swiflets nest extract · concentrated muscat fruit juice · sugarbeet· fish collagen peptide (including gelatin) · white jelly fungus, acidulant · fragrance</p><p>Shelf life: 1 year and a half</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component per bottle (per 30 ml)</th></tr></thead><tbody><tr><th>Energy</th><td>17.1kcal</td></tr><tr><th>Carbohydrate</th><td>3.81g</td></tr><tr><th>Protein</th><td>0.45g</td></tr><tr><th>Sodium</th><td>0.01g</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                },
+                "consume": {
+                    "title": "How to Consume",
+                    "content": "<div style='max-width:fit-content'><ul><li>Consume a bottle a day and shake well before consume.</li><li>Refrigerate the product to make it taste even better for consuming.</li><li>Please drink at your favorite time such as in the morning or before going to bed.</li></ul><h3>Caution</h3><p>* Because it uses natural materials, there may be some change in taste and colour, but there is no problem in quality.</p><p>※ If you have food allergy, please check the raw materials before purchase.</p><p>※ Please refrain from eating if it does not suit your constitution</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Avoid hot and humid area and direct sunlight, please save in the cool area or refrigerated.</li><li>Please be careful not to get injured by the cap cuts and protrusions.</li><li>Please consume as soon as possible after opening.</li></ul></div>"
             },
             "powder": {
                 "name": "Bird's Nest Essence Concentrated Powder",
@@ -609,21 +871,79 @@
                 "amazon":"",
                 "imgUrl": "https://cart.bi-su.jp/upload/save_image/03101634_5e674316a4f.jpg",
                 "imgUrl1":"https://cart.bi-su.jp/upload/save_image/03101635_5e67434079a.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/03101635_5e67434ab6e.jpg"
+                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/03101635_5e67434ab6e.jpg",
+                "recommend": {
+                    "1": "jelly",
+                    "2": "jellyrose",
+                    "3": "threeset",
+                    "4": "candy30"
+                },
+                "ingredient": {
+                    "title": "Ingredients · Nutrition ingredient display",
+                    "type": "table",
+                    "table": "<div style='max-width:fit-content'><p>Ingredients: sugar, starch syrup, pineapple fruit juice, swiflets nest powder, white jelly fungus polysaccharide, acidulant, fragrance</p><p>※ This product is made using the same process as the product made from egg, milk, wheat, peanut.</p><p>Shlef Life: 1 Year</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional amount of each piece (per 3.6g)</th></tr></thead><tbody><tr><th>Energy</th><td>14.2kcal</td></tr><tr><th>Carbohydrate</th><td>3.5g</td></tr><tr><th>Protein</th><td>0.01g</td></tr><tr><th>Salt equivalent amount</th><td>0〜0.01g</td></tr><tr><th>Lipid</th><td>0.01g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                },
+                "consume": {
+                    "title": "How to Consume",
+                    "content": "<div style='max-width:fit-content'><p>Precautions: Please consume it slowly and be carefull not to choke</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Please save in a cool place avoiding hot and humidity and direct sunlight.</li><li>Please consume immediately once opened</li></ul></div>"
             },
-            "candy": {
+            "candy10": {
                 "name": "Bird's Nest Essence Fruity Candy (Pineapple Flavor)",
-                "size": "10pcs/pack & 30pcs/pack",
+                "size": "10pcs/pack",
+                "intro": "The candy is made by crushing nutrient-rich, natural bird’s nest.",
+                "feature": "It's a whole new delicious way to take the benefit of swiftlet's nest. The high contains of natural nutrition and sweet flavour make it loved by both children and adults.",
+                "title": "Essence Fruity Candy (Pineapple Flavor)",
+                "price": "10pcs $12.00",
+                "amazon":"https: //www.amazon.com/dp/B09WHZG8NF?ref=myi_title_dp",
+                "imgUrl": "https://bi-su.jp/lp_faizad/en/img/en/Candy10pcs.jpg",
+                "imgUrl1":"https://cart.bi-su.jp/upload/save_image/12051638_5de8b3ea01b.jpg",
+                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12051638_5de8b3f2a5b.jpg",
+                "recommend": {
+                    "1": "jelly",
+                    "2": "jellyrose",
+                    "3": "threeset",
+                    "4": "drink"
+                },
+                "ingredient": {
+                    "title": "Ingredients · Nutrition ingredient display",
+                    "type": "table",
+                    "table": "<div style='max-width:fit-content'><p>Ingredients: sugar, starch syrup, pineapple fruit juice, swiflets nest powder, white jelly fungus polysaccharide, acidulant, fragrance</p><p>※ This product is made using the same process as the product made from egg, milk, wheat, peanut.</p><p>Shlef Life: 1 Year</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional amount of each piece (per 3.6g)</th></tr></thead><tbody><tr><th>Energy</th><td>14.2kcal</td></tr><tr><th>Carbohydrate</th><td>3.5g</td></tr><tr><th>Protein</th><td>0.01g</td></tr><tr><th>Salt equivalent amount</th><td>0〜0.01g</td></tr><tr><th>Lipid</th><td>0.01g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                },
+                "consume": {
+                    "title": "How to Consume",
+                    "content": "<div style='max-width:fit-content'><p>Precautions: Please consume it slowly and be carefull not to choke</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Please save in a cool place avoiding hot and humidity and direct sunlight.</li><li>Please consume immediately once opened</li></ul></div>"
+            },
+            "candy30": {
+                "name": "Bird's Nest Essence Fruity Candy (Pineapple Flavor)",
+                "size": "30pcs/pack",
                 "intro": "The candy is made by crushing nutrient-rich, natural bird’s nest.",
                 "feature": "It's a whole new delicious way to take the benefit of swiftlet's nest. The high contains of natural nutrition and sweet flavour make it loved by both children and adults.",
                 "title": "Essence Fruity Candy (Pineapple Flavor)",
                 "price": "30pcs $32.00",
-                "amazon":"https://www.amazon.com/dp/B09T5R5RXN?ref=myi_title_dp",
-                "price2":"10pc $12.00",
-                "amazon2": "https://www.amazon.com/dp/B09T3B7YPN?ref=myi_title_dp",
-                "imgUrl": "https://cart.bi-su.jp/upload/save_image/09161100_5f6171d41bf.jpg",
-                "imgUrl1":"https://cart.bi-su.jp/upload/save_image/12051638_5de8b3ea01b.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12051638_5de8b3f2a5b.jpg"
+                "amazon": "https://www.amazon.com/dp/B09WHYYTZX?ref=myi_title_dp",
+                "imgUrl": "https://bi-su.jp/lp_faizad/en/img/en/Candy30pcs.jpg",
+                "imgUrl1": "https://cart.bi-su.jp/upload/save_image/12051638_5de8b3ea01b.jpg",
+                "imgUrl2": "https://cart.bi-su.jp/upload/save_image/12051638_5de8b3f2a5b.jpg",
+                "recommend": {
+                    "1": "jelly",
+                    "2": "jellyrose",
+                    "3": "threeset",
+                    "4": "drink"
+                },
+                "ingredient": {
+                    "title": "Ingredients · Nutrition ingredient display",
+                    "type": "table",
+                    "table": "<div style='max-width:fit-content'><p>Ingredients: sugar, starch syrup, pineapple fruit juice, swiflets nest powder, white jelly fungus polysaccharide, acidulant, fragrance</p><p>※ This product is made using the same process as the product made from egg, milk, wheat, peanut.</p><p>Shlef Life: 1 Year</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional amount of each piece (per 3.6g)</th></tr></thead><tbody><tr><th>Energy</th><td>14.2kcal</td></tr><tr><th>Carbohydrate</th><td>3.5g</td></tr><tr><th>Protein</th><td>0.01g</td></tr><tr><th>Salt equivalent amount</th><td>0〜0.01g</td></tr><tr><th>Lipid</th><td>0.01g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                },
+                "consume": {
+                    "title": "How to Consume",
+                    "content": "<div style='max-width:fit-content'><p>Precautions: Please consume it slowly and be carefull not to choke</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Please save in a cool place avoiding hot and humidity and direct sunlight.</li><li>Please consume immediately once opened</li></ul></div>"
             },
             "enzyme": {
                 "name": "Bird's Nest Essence Enzyme",
@@ -635,8 +955,23 @@
                 "amazon":"",
                 "imgUrl": "https://cart.bi-su.jp/upload/save_image/04211342_607fad45069.jpg",
                 "imgUrl1":"https://cart.bi-su.jp/upload/save_image/03101600_5e673b07bde.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/03101600_5e673b0e5fe.jpg"
-
+                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/03101600_5e673b0e5fe.jpg",
+                "recommend": {
+                    "1": "jelly",
+                    "2": "threeset",
+                    "3": "drink",
+                    "4": "candy30"
+                },
+                "ingredient": {
+                    "title": "Ingredients · Nutrition ingredient display",
+                    "type": "table",
+                    "table": "<div style='max-width:fit-content'><p>Ingredients: Prune Extract, fermented swiftlets nest extract, sugarbeet, eleutherococcus senticosus extract * No flavoring, colouring or preservative used</p><p>Contents of fermented swiflets nest extract: swiflets nest, angelica keiskei, guava leaf, curmuca zedoaria, aloe leaf, artemisia princeps, polygonatum odoratum, imonome, turmeric, plantago aisatica, houttuynia cordata, rumex japonicus, clerodendrum trichotomum leaf, arrowroot stalk and leaf, mulberry leaf, yakushima bamboo, lily bulb, araliaelata, glucyrrizha, japanese thistle, unicorn plant, giant butterbur, shiso, daikon, soy bean, cabbage, garlic, citrus ponkan, citrus tankan, fig, plum Chinese quince, cumquat, bitter orange, blueberry, passion fruits, papaya, loquat, polypore (bracket fungus), kelp, brown sugar, white sugar (swiflets nest are from Malaysia, all other materials are from Japan)</p><p>Shelf life: 1 year</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>1 nutritional component (per 3.9 g)</th></tr></thead><tbody><tr><th>Energy</th><td>9.0kcal</td></tr><tr><th>Carbohydrate</th><td>2.15g</td></tr><tr><th>Protein</th><td>0.09g</td></tr><tr><th>Sodium</th><td>0~0.01g</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                },
+                "consume": {
+                    "title": "How to Consume",
+                    "content": "<div style='max-width:fit-content'><p>Recomended to consume one stick per day. It shall taste better after refrigerated. Please eat at your favorite time such as in the morning or before going to bed.</p><h3>Caution</h3><p>※ Please check the raw materials, and please refrain in case if you have certain elergy. Refrain eating if the products does not match your body constitution.</p></div>"
+                },
+                "storage": "<div style='max-width:fit-content'><ul><li>Please keep in a cool place or refrigerator and avoid hot and humid place or direct sunlight.</li><li>When unpacking the package, open it from the slit.</li><li>Please open slowly so that contents does not scattered.</li><li>Consume immediately once opened</li></ul></div>"
             }
         },
         "healthy":{

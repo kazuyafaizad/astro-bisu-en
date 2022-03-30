@@ -10,12 +10,15 @@ const {
     bisu16 = translation.products.items.bisu16.amazon? 'block' : 'hidden',
     bisu16n = translation.products.items.bisu16n.amazon? 'block' : 'hidden',
     jelly = translation.products.items.jelly.amazon? 'block' : 'hidden',
+    jelly7 = translation.products.items.jelly7.amazon? 'block' : 'hidden',
     jellyrose = translation.products.items.jellyrose.amazon? 'block' : 'hidden',
+    jellyrose7 = translation.products.items.jellyrose7.amazon? 'block' : 'hidden',
     threeset = translation.products.items.threeset.amazon? 'block' : 'hidden',
     enzyme = translation.products.items.enzyme.amazon? 'block' : 'hidden',
     drink = translation.products.items.drink.amazon? 'block' : 'hidden',
     powder = translation.products.items.powder.amazon? 'block' : 'hidden',
-    candy = translation.products.items.candy.amazon? 'block' : 'hidden',
+    candy10 = translation.products.items.candy10.amazon? 'block' : 'hidden',
+    candy30 = translation.products.items.candy30.amazon? 'block' : 'hidden',
     facecream = translation.products.items.facecream.amazon? 'block' : 'hidden',
     facemask = translation.products.items.facemask.amazon? 'block' : 'hidden',
     lotion = translation.products.items.lotion.amazon? 'block' : 'hidden',
@@ -40,7 +43,7 @@ const {
 
 ---
 
-<Layout lang={lang} title="products" description="products">
+<Layout lang={lang} title={translation.products.title}  description={translation.products.title} >
     <h1 class="lg:text-[2rem] text-center mt-12">{translation.products.title}</h1>
     <div class="flex flex-col lg:flex-row px-3 gap-5 mt-8">
         <a href="#healthy" class="hover:opacity-90">
@@ -96,6 +99,19 @@ const {
                 </p>
             </div>
         </div>
+         <div class={jelly7}>
+            <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
+            <a class="" href={Astro.site.pathname+"products/jelly7"}>
+            <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
+                <img src={translation.products.items.jelly7.imgUrl} alt={translation.products.items.jelly7.title} data-src={translation.products.items.jelly7.imgUrl} alt={translation.products.items.jelly7.title} class="transition ease-in-out hover:scale-110 duration-300">
+            </figure>
+            <h3 class="text-center">{translation.products.items.jelly7.title}</h3>
+            </a><p class="price text-center"><a href={Astro.site.pathname+"products/jelly7"}>
+                    {translation.products.items.jelly7.price}
+                </a>
+                </p>
+            </div>
+        </div>
 
         <div class={jellyrose}>
            <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
@@ -106,6 +122,19 @@ const {
             <h3 class="text-center">{translation.products.items.jellyrose.title}</h3>
             </a><p class="price text-center"><a href={Astro.site.pathname+"products/jellyrose"}>
                     {translation.products.items.jellyrose.price}
+                </a>
+                </p>
+            </div>
+        </div>
+         <div class={jellyrose7}>
+           <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
+            <a class="" href={Astro.site.pathname+"products/jellyrose7"}>
+            <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
+                <img src={translation.products.items.jellyrose7.imgUrl} alt={translation.products.items.jellyrose7.title} data-src={translation.products.items.jellyrose7.imgUrl} alt={translation.products.items.jellyrose7.title} class="transition ease-in-out hover:scale-110 duration-300">
+            </figure>
+            <h3 class="text-center">{translation.products.items.jellyrose7.title}</h3>
+            </a><p class="price text-center"><a href={Astro.site.pathname+"products/jellyrose7"}>
+                    {translation.products.items.jellyrose7.price}
                 </a>
                 </p>
             </div>
@@ -167,16 +196,29 @@ const {
             </div>
             </div>
 
-            <div class={candy}>
+            <div class={candy10}>
              <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
-            <a class="" href={Astro.site.pathname+"products/candy"}>
+            <a class="" href={Astro.site.pathname+"products/candy10"}>
             <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
-                <img src={translation.products.items.candy.imgUrl} alt={translation.products.items.candy.title} data-src={translation.products.items.candy.imgUrl} alt={translation.products.items.candy.title} class="transition ease-in-out hover:scale-110 duration-300">
+                <img src={translation.products.items.candy10.imgUrl} alt={translation.products.items.candy10.title} data-src={translation.products.items.candy10.imgUrl} alt={translation.products.items.candy10.title} class="transition ease-in-out hover:scale-110 duration-300">
             </figure>
-            <h3 class="text-center">{translation.products.items.candy.title}</h3>
-            </a><p class="price text-center"><a href={Astro.site.pathname+"products/candy"}>
-                    {translation.products.items.candy.price}<br>
-                    {translation.products.items.candy.price2}
+            <h3 class="text-center">{translation.products.items.candy10.title}</h3>
+            </a><p class="price text-center"><a href={Astro.site.pathname+"products/candy10"}>
+                    {translation.products.items.candy10.price}
+                </a>
+                </p>
+            </div>
+            </div>
+
+            <div class={candy30}>
+             <div class="mb-8 grid text-center py-[10px] grid-cols-1 justify-evenly">
+            <a class="" href={Astro.site.pathname+"products/candy30"}>
+            <figure class="px-[10px] overflow-hidden lg:h-80 w-[85%] lg:w-auto mx-auto">
+                <img src={translation.products.items.candy30.imgUrl} alt={translation.products.items.candy30.title} data-src={translation.products.items.candy30.imgUrl} alt={translation.products.items.candy30.title} class="transition ease-in-out hover:scale-110 duration-300">
+            </figure>
+            <h3 class="text-center">{translation.products.items.candy30.title}</h3>
+            </a><p class="price text-center"><a href={Astro.site.pathname+"products/candy30"}>
+                    {translation.products.items.candy30.price}
                 </a>
                 </p>
             </div>

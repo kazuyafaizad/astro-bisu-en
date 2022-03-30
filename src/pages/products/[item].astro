@@ -18,7 +18,9 @@ const {
     lang = "en",
     li1 =  item.imgUrl1 ?  `<li class=""><a href="${item.imgUrl1}" data-lightbox="product" data-title="${item.name}"><img src="${item.imgUrl1}" data-src="${item.imgUrl1}" alt="${item.name}" /></a></li>` : "",
     li2 =  item.imgUrl2 ?  `<li class=""><a href="${item.imgUrl2}" data-lightbox="product" data-title="${item.name}"><img src="${item.imgUrl2}" data-src="${item.imgUrl2}" alt="${item.name}" /></a></li>` : "",
-    price2 = item.amazon2 ? `<div class="price-1 mt-5"><div class="price-name">Price</div><div class="price-number"><p class="price"><span class="value"><span class="txt-product-price">${item.price2}</span> </span></p></div></div><div class="price-2"><div class="product_item"><div class="buy_btn"><a href=${item.amazon2} target="_blank"><div>BUY NOW</div><div><img src=${amazon}></div></a></div></div></div>` : ""
+    price2 = item.amazon2 ? `<div class="price-1 mt-5"><div class="price-name">Price</div><div class="price-number"><p class="price"><span class="value"><span class="txt-product-price">${item.price2}</span> </span></p></div></div><div class="price-2"><div class="product_item"><div class="buy_btn"><a href=${item.amazon2} target="_blank"><div>BUY NOW</div><div><img src=${amazon}></div></a></div></div></div>` : "",
+    ingredients = item.ingredient.type == "table" ? item.ingredient.table : `<p style="max-width:fit-content;">${item.ingredient.list}</p>`,
+    caution = item.caution ? "block" : "hidden"
 
 } = Astro.props as Props
 ---
@@ -27,13 +29,13 @@ const {
 import '../../scripts/product.min.js';
 </script>
 
-<Layout lang={lang} title="faq" description="faq">
+<Layout lang={lang} title={item.title}  description={item.title} >
 
 <Fragment slot="header">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js" defer></script>
 
-<link rel="stylesheet" href={Astro.site.pathname+"css/item.css?6"}>
+<link rel="stylesheet" href={Astro.site.pathname+"css/item.css?7"}>
 
 </Fragment>
      <section id="item" class="pt-12 mb-12 px-3 min-h-[80vh]">
@@ -92,57 +94,64 @@ import '../../scripts/product.min.js';
                 </li>
                 <li>
                     <details >
-                    <summary>Ingredients &amp; Nutrients List</summary>
-                    <p style="max-width:fit-content;">Ingredients: lactose, swiftlets nest extract, galacto-oligosaccharide, swiftlets nest powder / lactoferrin, (including some milk components)</p>
-                        <p style="max-width:fit-content;">Expiry Date: Stated underneath the frame</p>
-                        <table style="max-width:fit-content;"><colgroup class="title"> </colgroup><colgroup class="detail"> </colgroup>
-                        <thead>
-                        <tr style="max-width:fit-content;"><th colspan="2">Nutrients Component in 1 Stick (per 1g)</th></tr>
-                        </thead>
-                        <tbody style="max-width:fit-content;">
-                        <tr><th>Energy</th>
-                        <td>3.92kcal</td>
-                        </tr>
-                        <tr><th>Carbohydrate</th>
-                        <td>0.92g</td>
-                        </tr>
-                        <tr><th>Protein</th>
-                        <td>0.05g</td>
-                        </tr>
-                        <tr><th>Salt Equivalent</th>
-                        <td>0〜0.01g</td>
-                        </tr>
-                        <tr><th>Lipid</th>
-                        <td>0〜0.01g</td>
-                        </tr>
-                        </tbody>
-                        </table>
-                    </details></li>
-<li><details> <summary>How to Consume</summary>
-<ul style="max-width:fit-content;">
-<li>Granule powder type that dissolves easily with cold or hot water.</li>
-<li>Enjoy it with smoothies, miso soup, or any of your favourite drinks and foods.</li>
-</ul>
-<p style="max-width:fit-content;">※ Please be careful not to overheat, because it will disrupt the nutrients. Please avoid from boiling it in a pot.</p>
-</details></li>
-<li><details> <summary>Storage</summary>
-<p style="max-width:fit-content;">Please keep in a cool place or refrigerator and avoid hot and humid place or direct sunlight.</p>
-</details></li>
-<li><details> <summary>Caution Items</summary>
-<ul style="max-width:fit-content;">
-<li>Please open slowly so that contents does not scattered.</li>
-<li>Consume immediately once opened</li>
-<li>※ Because we are using only natural materials, colours of contents may differ or sediments may be generated, however, there is no problem on the quality.</li>
-<li>If your body constitution does not suit due to ingestion of this product, please stop taking it.</li>
-<li>After confirming the raw materials, those who have food allergy, please do not use.</li>
-<li>If you are taking medication or are in the hospital, please consult your doctor or expert.</li>
-<li>※ Please be careful not to overheat, because it will disrupt the nutrients. Please avoid from boiling it in a pot.</li>
-</ul>
-</details></li>
-</ul>
+                    <summary>{item.ingredient.title}</summary>
+                        <p style="max-width:fit-content;">{item.ingredient.expiry}</p>
+                       <Fragment set:html={ingredients}>
+                    </details>
+                </li>
+                <li><details> <summary>{item.consume.title}</summary>
+                <Fragment set:html={item.consume.content}>
+                </details>
+                </li>
+                <li><details> <summary>Storage</summary>
+                <Fragment set:html={item.storage}>
+                </details>
+                </li>
+                <li class={caution}><details> <summary>Caution Items</summary>
+                <Fragment set:html={item.caution}>
+                </details>
+                </li>
+                </ul>
 
                   </div>
 
 </section>
+<section class="mt-32">
 
+<h2 class="rec_item text-4xl text-center">RECOMMENDATIONS</h2>
+<div class="grid grid-cols-4 gap-5">
+
+<a href={Astro.site.pathname+"products/"+item.recommend[1]}>
+<div>
+<img src={translation.products.items[item.recommend[1]].imgUrl}/>
+<p>{translation.products.items[item.recommend[1]].title}</p>
+<p>{translation.products.items[item.recommend[1]].price}</p>
+</div>
+</a>
+
+<a href={Astro.site.pathname+"products/"+item.recommend[2]}>
+<div>
+<img src={translation.products.items[item.recommend[2]].imgUrl}/>
+<p>{translation.products.items[item.recommend[2]].title}</p>
+<p>{translation.products.items[item.recommend[2]].price}</p>
+</div>
+</a>
+
+<a href={Astro.site.pathname+"products/"+item.recommend[3]}>
+<div>
+<img src={translation.products.items[item.recommend[3]].imgUrl}/>
+<p>{translation.products.items[item.recommend[3]].title}</p>
+<p>{translation.products.items[item.recommend[3]].price}</p>
+</div>
+</a>
+
+<a href={Astro.site.pathname+"products/"+item.recommend[4]}>
+<div>
+<img src={translation.products.items[item.recommend[4]].imgUrl}/>
+<p>{translation.products.items[item.recommend[4]].title}</p>
+<p>{translation.products.items[item.recommend[4]].price}</p>
+</div>
+</a>
+</div>
+</section>
 </Layout>
