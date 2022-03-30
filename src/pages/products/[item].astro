@@ -34,8 +34,12 @@ import '../../scripts/product.min.js';
 <Fragment slot="header">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js" defer></script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
 
-<link rel="stylesheet" href={Astro.site.pathname+"css/item.css?7"}>
+<link rel="stylesheet" href={Astro.site.pathname+"css/item.css?8"}>
 
 </Fragment>
      <section id="item" class="pt-12 mb-12 px-3 min-h-[80vh]">
@@ -116,10 +120,56 @@ import '../../scripts/product.min.js';
                   </div>
 
 </section>
-<section class="mt-32">
+<section class="mt-8">
 
 <h2 class="rec_item text-4xl text-center">RECOMMENDATIONS</h2>
-<div class="grid grid-cols-4 gap-5">
+<!-- Slider main container -->
+<div class="block lg:hidden swiper">
+  <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide flex">
+        <a href={Astro.site.pathname+"products/"+item.recommend[1]} >
+            <div class="text-center pb-3">
+            <img src={translation.products.items[item.recommend[1]].imgUrl}/>
+            <p>{translation.products.items[item.recommend[1]].title}</p>
+            <p>{translation.products.items[item.recommend[1]].price}</p>
+            </div>
+        </a>
+
+        <a href={Astro.site.pathname+"products/"+item.recommend[2]} >
+            <div class="text-center pb-3">
+            <img src={translation.products.items[item.recommend[2]].imgUrl}/>
+            <p>{translation.products.items[item.recommend[2]].title}</p>
+            <p>{translation.products.items[item.recommend[2]].price}</p>
+            </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide flex">
+        <a href={Astro.site.pathname+"products/"+item.recommend[3]} >
+            <div class="text-center pb-3">
+            <img src={translation.products.items[item.recommend[3]].imgUrl}/>
+            <p>{translation.products.items[item.recommend[3]].title}</p>
+            <p>{translation.products.items[item.recommend[3]].price}</p>
+            </div>
+        </a>
+
+        <a href={Astro.site.pathname+"products/"+item.recommend[4]} >
+            <div class="text-center pb-3 ">
+            <img src={translation.products.items[item.recommend[4]].imgUrl}/>
+            <p>{translation.products.items[item.recommend[4]].title}</p>
+            <p>{translation.products.items[item.recommend[4]].price}</p>
+            </div>
+        </a>
+        </div>
+    </div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+<div class="hidden lg:grid grid-cols-4 gap-5">
 
 <a href={Astro.site.pathname+"products/"+item.recommend[1]}>
 <div>
@@ -154,4 +204,7 @@ import '../../scripts/product.min.js';
 </a>
 </div>
 </section>
+<script>
+
+</script>
 </Layout>

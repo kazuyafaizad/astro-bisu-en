@@ -44,9 +44,10 @@
             display:flex;
             justify-content: center;
             align-items: center;
+            gap:1rem;
+            margin:1rem auto;
             img{
-                margin:1.5rem;
-                width:30%;
+                width:27%;
             }
         }
         ol {
@@ -71,6 +72,11 @@
                     padding-top: 1rem;
                 }
             }
+            .threepoints{
+                img{
+                    width:37%;
+                }
+            }
         }
     }
 
@@ -86,9 +92,12 @@
             border-bottom: 1px solid var(--color-gold);
         }
         max-width: $breakpoint-tablet;
-        width: 95%;
+        width: 100%;
         margin: 4rem auto;
         @include max-screen($breakpoint-sp-vertical) {
+
+            margin: 0rem auto;
+            padding-top:2rem;
             padding-left: 40px;
             padding-right: 40px;
             h4 {
@@ -195,7 +204,7 @@
             ul {
                 margin-top: 2rem;
                 padding-bottom: 50vw;
-                max-width: auto;
+                max-width: 100%;
             }
         }
     }

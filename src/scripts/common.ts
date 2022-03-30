@@ -11,7 +11,9 @@ const startup = (): void => {
     //typekitClient("hgl3hna");
     setMenu();
     //stickyHader();
-    sal();
+    sal({
+        threshold: 0.2,
+    });
 };
 
 window.addEventListener("DOMContentLoaded", startup, { passive: true });
