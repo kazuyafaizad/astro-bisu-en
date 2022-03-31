@@ -407,7 +407,7 @@
         },
         "Q3": {
             "Q": "Where is BI-SU product produced?",
-            "A": "Our products are produced in Malaysia and Japan. The manufacturing process us qualified to all national and international standard in order to make sure only the  safe and high quality product can be delivered to our customers."
+            "A": "Our products are produced in Malaysia and Japan. The manufacturing process is qualified to all national and international standard in order to make sure only the  safe and high quality product can be delivered to our customers."
         },
         "Q4": {
             "Q": "What are the differences of products between BI-SU and other bird nest companies'?",
@@ -464,7 +464,10 @@
                     "type":"list",
                     "list":"Ingredients: Water, argania spinosa kernel oil, BG, hydrolyzed swallow's nest extract, glycerin, glyceryl stearate, hydrogenated lecithin, pentylene glycol, propanediol, water-soluble proteoglycan, hydrolyzed collagen, water-soluble collagen, succinoyl atelocollagen, white fungus polysaccharide. body, Enterococcus faecalis, ceramide NP, ceramide AP, ceramide EOP, tocopherol, brown sugar extract, cyanocobalamin, phytosphingosine, ascorbyl glucoside, glucosyl hesperidin, arginine, yellowfin bark extract, sodium dilauroyl glutamate lysine, and Cetyl palmitate, cetearyl alcohol, sodium lauroyl lactylate, 5Na pentetoate, stearic acid, behenyl alcohol, cholesterol, dimethicone, carbomer, xanthan gum, fragrance, phenoxyethanol"
                 },
-                "consume":"<div style='max-width:fit-content'><h3>Caution</h3><p>※&nbsp;If you notice any abnormalities such as redness, swelling, itching, irritation, loss of color (white spots etc.) or dark spots on your skin during or after use, we recommend discontinuing use and consult a dermatologist.</p><p>※&nbsp;If you notice any skin irritation, stop using it and consult a dermatologist.</p><p>※&nbsp;Do not use on areas with wounds, boils, eczema, or other abnormalities.</p></div>",
+                "consume":{
+                    "title": "How to Use",
+                    "content": "<div style='max-width:fit-content'><h3>Caution</h3><p>※&nbsp;If you notice any abnormalities such as redness, swelling, itching, irritation, loss of color (white spots etc.) or dark spots on your skin during or after use, we recommend discontinuing use and consult a dermatologist.</p><p>※&nbsp;If you notice any skin irritation, stop using it and consult a dermatologist.</p><p>※&nbsp;Do not use on areas with wounds, boils, eczema, or other abnormalities.</p></div>"
+                },
                 "storage":"<div style='max-width:fit-content'><ul><li>Please do not store in extremely hot or cold places or place exposed to direct sunlight.</li><li>Since natural ingredients are used, discoloration, precipitation, etc. may occur, but there is no problem to the quality.</li><li>Please close the cap tightly after use.</li><li>Please keep out of reach of children.</li></ul></div>"
             },
             "facemask": {
@@ -713,7 +716,7 @@
                 "ingredient": {
                     "title": "Ingredients · Nutrition ingredient display",
                     "type": "table",
-                    "table": "<div style='max-width:fit-content'><p>Ingredients: Beetroot sugar, pineapple fruit juice, swiftlet nest extract, fish collagen peptide (gelatin), white jelly mushroom extract, fermented wild grass extract , acidulant, Vitamin C, thickening agent (polysaccharide thickener), flavorings</p><p>Shelf life: 1 year from the manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component of 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>10.9kcal</td></tr><tr><th>Carbohydrate</th><td>2.15g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Sodium</th><td>0.04g</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                    "table": "<div style='max-width:fit-content'><p>Ingredients: Beetroot sugar, pineapple fruit juice, swiftlet nest extract, fish collagen peptide (gelatin), white jelly mushroom extract, fermented wild grass extract , acidulant, Vitamin C, thickening agent (polysaccharide thickener), flavorings</p><p>Shelf life: 2 year from the manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component of 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>10.9kcal</td></tr><tr><th>Carbohydrate</th><td>2.15g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Sodium</th><td>0.04g</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
                 },
                 "consume": {
                     "title": "How to Consume",
@@ -741,7 +744,7 @@
                 "ingredient": {
                     "title": "Ingredients · Nutrition ingredient display",
                     "type": "table",
-                    "table": "<div style='max-width:fit-content'><p>Ingredients: Beetroot sugar, pineapple fruit juice, swiftlet nest extract, fish collagen peptide (gelatin), white jelly mushroom extract, fermented wild grass extract , acidulant, Vitamin C, thickening agent (polysaccharide thickener), flavorings</p><p>Shelf life: 1 year from the manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component of 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>10.9kcal</td></tr><tr><th>Carbohydrate</th><td>2.15g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Sodium</th><td>0.04g</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                    "table": "<div style='max-width:fit-content'><p>Ingredients: Beetroot sugar, pineapple fruit juice, swiftlet nest extract, fish collagen peptide (gelatin), white jelly mushroom extract, fermented wild grass extract , acidulant, Vitamin C, thickening agent (polysaccharide thickener), flavorings</p><p>Shelf life: 2 year from the manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component of 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>10.9kcal</td></tr><tr><th>Carbohydrate</th><td>2.15g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Sodium</th><td>0.04g</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
                 },
                 "consume": {
                     "title": "How to Consume",
@@ -769,7 +772,7 @@
                 "ingredient": {
                     "title": "Ingredients · Nutrition ingredient display",
                     "type": "table",
-                    "table": "<div style='max-width:fit-content'><p>Ingredients name: Rose flower extract (manufactured in Japan), Beetroot sugar, Swiftlets Nest Extract, Fish Collagen Peptide (including gelatin), White Jelly Fungus Extract, Wild Grass Fermented Extract / thickening agent (polysaccharide thickener), Vitamin C, Citric Acid</p><p>Shelf life: 1 year from manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component for 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>11.5kcal</td></tr><tr><th>Carbohydrate</th><td>2.53g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Salt Equivalent</th><td>0.01ｇ</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                    "table": "<div style='max-width:fit-content'><p>Ingredients name: Rose flower extract (manufactured in Japan), Beetroot sugar, Swiftlets Nest Extract, Fish Collagen Peptide (including gelatin), White Jelly Fungus Extract, Wild Grass Fermented Extract / thickening agent (polysaccharide thickener), Vitamin C, Citric Acid</p><p>Shelf life: 2 year from manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component for 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>11.5kcal</td></tr><tr><th>Carbohydrate</th><td>2.53g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Salt Equivalent</th><td>0.01ｇ</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
                 },
                 "consume": {
                     "title": "How to Consume",
@@ -797,7 +800,7 @@
                 "ingredient": {
                     "title": "Ingredients · Nutrition ingredient display",
                     "type": "table",
-                    "table": "<div style='max-width:fit-content'><p>Ingredients name: Rose flower extract (manufactured in Japan), Beetroot sugar, Swiftlets Nest Extract, Fish Collagen Peptide (including gelatin), White Jelly Fungus Extract, Wild Grass Fermented Extract / thickening agent (polysaccharide thickener), Vitamin C, Citric Acid</p><p>Shelf life: 1 year from manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component for 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>11.5kcal</td></tr><tr><th>Carbohydrate</th><td>2.53g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Salt Equivalent</th><td>0.01ｇ</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                    "table": "<div style='max-width:fit-content'><p>Ingredients name: Rose flower extract (manufactured in Japan), Beetroot sugar, Swiftlets Nest Extract, Fish Collagen Peptide (including gelatin), White Jelly Fungus Extract, Wild Grass Fermented Extract / thickening agent (polysaccharide thickener), Vitamin C, Citric Acid</p><p>Shelf life: 2 year from manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component for 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>11.5kcal</td></tr><tr><th>Carbohydrate</th><td>2.53g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Salt Equivalent</th><td>0.01ｇ</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
                 },
                 "consume": {
                     "title": "How to Consume",
@@ -825,7 +828,7 @@
                 "ingredient": {
                     "title": "Ingredients · Nutrition ingredient display",
                     "type": "table",
-                    "table": "<div style='max-width:fit-content'><p>Ingredients: Beetroot sugar, pineapple fruit juice, swiftlet nest extract, fish collagen peptide (gelatin), white jelly mushroom extract, fermented wild grass extract , acidulant, Vitamin C, thickening agent (polysaccharide thickener), flavorings</p><p>Shelf life: 1 year from the manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component of 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>10.9kcal</td></tr><tr><th>Carbohydrate</th><td>2.15g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Sodium</th><td>0.04g</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
+                    "table": "<div style='max-width:fit-content'><p>Ingredients: Beetroot sugar, pineapple fruit juice, swiftlet nest extract, fish collagen peptide (gelatin), white jelly mushroom extract, fermented wild grass extract , acidulant, Vitamin C, thickening agent (polysaccharide thickener), flavorings</p><p>Shelf life: 2 year from the manufacturing date</p><table><colgroup class='title'> </colgroup><colgroup class='detail'> </colgroup><thead><tr><th colspan='2'>Nutritional component of 1 stick (per 12 g)</th></tr></thead><tbody><tr><th>Energy</th><td>10.9kcal</td></tr><tr><th>Carbohydrate</th><td>2.15g</td></tr><tr><th>Protein</th><td>0.35g</td></tr><tr><th>Sodium</th><td>0.04g</td></tr><tr><th>Lipid</th><td>0g</td></tr></tbody></table><p>* Analytical test results by the Japan Food Research Laboratory</p></div>"
                 },
                 "consume": {
                     "title": "How to Consume",
