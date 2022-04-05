@@ -1,27 +1,34 @@
 @use "sass:math";
 @import "./modules/variables";
-main>.slider{
+
+main>.slider {
     position: relative;
-    li{
-        position:absolute;
-        &:first-child{
+
+    li {
+        position: absolute;
+
+        &:first-child {
             position: relative;
         }
     }
 }
+
 #search {
     width: 95%;
     margin: 1rem auto 0;
     background-color: whitesmoke;
     padding: 0.5rem;
+
     form {
         display: flex;
+
         input {
             width: 100%;
             margin-right: 0.2rem;
             appearance: none;
             border-radius: 0;
         }
+
         button {
             width: 65px;
             text-align: center;
@@ -37,6 +44,7 @@ main>.slider{
     max-width: $breakpoint-tablet;
     margin: 2rem auto;
     font-size: 0.9rem;
+
     ul li {
         border: double 4px darkgray;
         display: grid;
@@ -44,6 +52,7 @@ main>.slider{
         grid-template-areas: "tag separator date title";
         margin: 0.5rem 0;
         padding: 0.5rem 1rem;
+
         &::before {
             content: attr(title);
             text-transform: capitalize;
@@ -51,6 +60,7 @@ main>.slider{
             font-family: var(--main-font-latin);
             color: var(--font-darkGold);
         }
+
         &::after {
             content: "│";
             grid-area: separator;
@@ -58,19 +68,22 @@ main>.slider{
             font-family: var(--main-font-latin);
             color: var(--font-darkGold);
         }
+
         time {
             grid-area: date;
             font-family: var(--main-font-latin);
             color: var(--font-darkGold);
         }
+
         p {
             grid-area: title;
         }
     }
+
     @include max-screen($breakpoint-tablet) {
         ul li {
             grid-template-columns: min-content 1.5rem 1fr;
-            grid-template-areas: "tag separator date" "title title title";
+            grid-template-areas: "tag separator date""title title title";
         }
     }
 }
@@ -85,18 +98,21 @@ main>.slider{
         text-align: center;
         line-height: 1.5;
         margin: 2rem auto;
-            font-size: 1.5rem;
+        font-size: 1.5rem;
     }
+
     ul {
         display: flex;
         justify-content: space-between;
         margin-top: 2rem;
+
         li {
-            width: (100% / 4 - 2);
-            // width: (math.div(100%, 4) -2);
+            width: (math.div(100%, 4) -2);
+
             a {
                 display: flex;
                 flex-direction: column-reverse;
+
                 h3 {
                     margin-top: 1em;
                     line-height: 1.5;
@@ -118,12 +134,15 @@ main>.slider{
                 }
             }
         }
+
         @include max-screen($breakpoint-sp-horizontal) {
             flex-wrap: wrap;
-            padding:0 1rem;
+            padding: 0 1rem;
+
             li {
                 width: 45%;
                 text-align: center;
+
                 h3 {
                     margin-bottom: 2rem;
                     text-align: left;
@@ -131,8 +150,9 @@ main>.slider{
             }
         }
     }
+
     .campaign {
-        + .campaign {
+        +.campaign {
             margin-top: 1rem;
         }
     }
@@ -148,17 +168,21 @@ main>.slider{
         text-align: center;
         line-height: 1.5;
         margin: 2rem auto;
-            font-size: 1.5rem;
+        font-size: 1.5rem;
     }
+
     ul {
         display: flex;
         justify-content: space-between;
         margin-top: 2rem;
+
         li {
-            width: (100%/5 - 2);//(math.div(100%, 5) -2);
+            width: (math.div(100%, 5) -2);
+
             a {
                 display: flex;
                 flex-direction: column-reverse;
+
                 h3 {
                     margin-top: 1em;
                     line-height: 1.5;
@@ -166,12 +190,15 @@ main>.slider{
                 }
             }
         }
+
         @include max-screen($breakpoint-sp-horizontal) {
             flex-wrap: wrap;
-            padding:0 1rem;
+            padding: 0 1rem;
+
             li {
                 width: 45%;
                 text-align: center;
+
                 h3 {
                     margin-bottom: 2rem;
                     text-align: left;
@@ -184,6 +211,7 @@ main>.slider{
 #products {
     margin: auto;
     max-width: $breakpoint-pc;
+
     h2 {
         text-align: center;
         font-size: 1.5rem;
@@ -202,9 +230,11 @@ main>.slider{
         //     z-index: 10;
         // }
     }
+
     section {
         margin: 40px auto 6rem;
         background: no-repeat top center;
+
         header {
             position: relative;
             height: 480px;
@@ -213,6 +243,7 @@ main>.slider{
             display: flex;
             flex-direction: column;
             justify-content: center;
+
             h3 {
                 &::before {
                     font-size: 1.5rem;
@@ -220,33 +251,42 @@ main>.slider{
                     content: attr(title);
                     display: block;
                 }
+
                 margin-bottom: 2rem;
             }
+
             p {
                 em:not(.attention) {
                     display: block;
+
                     &:lang(ja) {
                         &::before {
                             content: "“";
                         }
+
                         &::after {
                             content: "”";
                         }
                     }
+
                     &:lang(en) {
                         font-weight: bold;
                     }
+
                     &:lang(zh-TW) {
                         font-weight: bold;
                     }
+
                     &:lang(zh-CN) {
                         font-weight: bold;
                     }
                 }
+
                 em.attention {
                     vertical-align: super;
                     font-size: small;
                 }
+
                 &.attention {
                     font-size: small;
                     position: absolute;
@@ -255,15 +295,18 @@ main>.slider{
                 }
             }
         }
+
         div {
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            > * {
+
+            >* {
                 width: 80%;
                 margin: 0 auto;
             }
+
             .button {
                 @include Button("> a") {
                     border: 1px solid var(--color-button);
@@ -273,6 +316,7 @@ main>.slider{
                     line-height: 3;
                     border-radius: 3px;
                     position: relative;
+
                     &::after {
                         position: absolute;
                         content: "";
@@ -284,63 +328,86 @@ main>.slider{
                         right: 15px;
                         margin: auto;
                     }
+
                     &:hover::after {
                         background-image: url(https://bi-su.jp/img/common/arrow-right_on.png);
                     }
                 }
             }
         }
+
         @include min-screen($breakpoint-sp-horizontal) {
             display: flex;
             align-items: flex-end;
             padding-top: 500px;
-            > * {
+
+            >* {
                 width: 50%;
             }
+
             div {
                 height: 390px;
             }
+
             &#HealthyFood {
                 background-image: url(/img/en/products-pc.jpg);
             }
+
             &#SkinCare {
                 background-image: url(/img/en/products-care.jpg);
                 flex-direction: row-reverse;
             }
         }
+
         @include max-screen($breakpoint-sp-horizontal) {
             padding-top: 105vw;
             background-size: contain;
+
             header {
                 width: 85vw;
                 height: 85vw;
                 margin: auto;
             }
+
             div {
                 margin-top: 2rem;
             }
+
             &#HealthyFood {
                 background-image: url(/img/en/products-food_sp.jpg);
-                @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx) {
+
+                @media (-webkit-min-device-pixel-ratio: 1.25),
+                (min-resolution: 1.25dppx) {
                     // background-image: url(/img/index/products-food_sp@2x.jpg);
                 }
-                @media (-webkit-min-device-pixel-ratio: 2.25), (min-resolution: 2.25dppx) {
+
+                @media (-webkit-min-device-pixel-ratio: 2.25),
+                (min-resolution: 2.25dppx) {
                     // background-image: url(/img/index/products-food_sp@3x.jpg);
                 }
-                @media (-webkit-min-device-pixel-ratio: 3.25), (min-resolution: 3.25dppx) {
+
+                @media (-webkit-min-device-pixel-ratio: 3.25),
+                (min-resolution: 3.25dppx) {
                     // background-image: url(/img/index/products-food_sp@4x.jpg);
                 }
             }
+
             &#SkinCare {
                 background-image: url(/img/en/products-care_sp.jpg);
                 flex-direction: row-reverse;
-                @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx) {
+
+                @media (-webkit-min-device-pixel-ratio: 1.25),
+                (min-resolution: 1.25dppx) {
                     // background-image: url(/img/index/products-care_sp@2x.jpg);
                 }
-                @media (-webkit-min-device-pixel-ratio: 2.25), (min-resolution: 2.25dppx) {
+
+                @media (-webkit-min-device-pixel-ratio: 2.25),
+                (min-resolution: 2.25dppx) {
                     // background-image: url(/img/index/products-care_sp@3x.jpg);
                 }
-                @media (-webkit-min-device-pixel-ratio: 3.25), (min-resolution: 3.25dppx) {
+
+                @media (-webkit-min-device-pixel-ratio: 3.25),
+                (min-resolution: 3.25dppx) {
                     // background-image: url(/img/index/products-care_sp@4x.jpg);
                 }
             }
@@ -350,61 +417,74 @@ main>.slider{
 
 // -------------------------------------------------
 
-body > footer {
+body>footer {
     section {
         margin: 8rem auto 4rem;
+
         #story {
             h2 {
                 font-family: var(--main-font-latin);
                 font-size: 1.5rem;
             }
         }
+
         #sns {
             display: flex;
             justify-content: center;
+
             li {
                 margin: 0 0.5rem;
+
                 a {
                     font-family: "icomoon";
-                    font-size:3rem;
+                    font-size: 3rem;
                 }
             }
         }
     }
+
     #policy {
         margin: 3rem auto 4rem;
     }
+
     @include max-screen($breakpoint-sp-horizontal) {
         #story {
             h2 {
                 text-align: center;
                 margin: 1rem 0;
             }
+
             ul {
                 li {
                     border-top: 1px dashed darkgray;
                     padding: 1rem 10%;
+
                     &:last-child {
                         border-bottom: 1px dashed darkgray;
                     }
                 }
             }
         }
+
         #sns {
             margin: 3rem auto;
             font-size: 2rem;
         }
+
         #policy {
             border-top: 1px dashed darkgray;
             border-bottom: 1px dashed darkgray;
+
             li {
                 margin: 1rem 10%;
             }
         }
+
         small {
             $image-size: 130px;
             $image-margin: 50px;
             position: relative;
+
             &::before {
                 position: absolute;
                 bottom: 100%;
@@ -418,15 +498,18 @@ body > footer {
                 margin: auto;
                 margin-bottom: $image-margin;
             }
-            margin-top: $image-size + ($image-margin * 2);
+
+            margin-top: $image-size+($image-margin * 2);
         }
     }
+
     @include min-screen($breakpoint-sp-horizontal) {
         section {
             max-width: 800px;
             display: flex;
             justify-content: space-between;
             position: relative;
+
             &::before {
                 content: "";
                 display: block;
@@ -435,6 +518,7 @@ body > footer {
                 margin: auto;
                 border-left: 1px solid darkgray;
             }
+
             &::after {
                 order: -1;
                 content: "";
@@ -445,29 +529,36 @@ body > footer {
                 margin: auto;
                 margin-right: 0;
             }
+
             #story {
                 max-width: 600px;
+
                 ul {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
+
                     li {
                         margin: 1rem 2rem 0 0;
                     }
                 }
             }
+
             aside {
                 position: absolute;
                 right: 0;
                 bottom: 0;
+
                 #sns {
                     justify-content: flex-end;
                 }
             }
         }
+
         #policy {
             max-width: 1000px;
             display: flex;
             justify-content: center;
+
             li {
                 padding: 0 2rem;
             }

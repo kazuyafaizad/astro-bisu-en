@@ -1,18 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-main{
-    background:transparent;
-    margin:auto;
-    max-width:1024px;
+main {
+    background: transparent;
+    margin: auto;
+    max-width: 1024px;
 }
 
-h1,h2,h3,p{
-    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+h1,
+h2,
+h3,
+p {
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
 }
 
-#cosmetics,#healthy{
-    top:-5rem;
+#cosmetics,
+#healthy {
+    top: -5rem;
     position: absolute;
 }

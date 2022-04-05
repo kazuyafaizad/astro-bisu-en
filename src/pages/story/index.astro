@@ -8,22 +8,10 @@ const {lang = "en" } = Astro.props;
 
 ---
 
-<script type="module" hoist>
+<script>
 import '../../scripts/story.ts';
 </script>
 
-<script>
-const startup = () => {
-    stickyItems({ main: "#stories", position: "h3", contents: "section, aside" });
-    sideNav({
-        title: "bi-su story",
-        target: "#stories",
-        anchor: ["#section1", "#section2", "#section3", "#section4", "#section5"],
-    });
-};
-window.addEventListener("DOMContentLoaded", startup, { passive: true });
-
-</script>
 
 <Layout lang={lang} title={translation.story.title}  description={translation.story.title} >
 <header>
@@ -185,4 +173,16 @@ window.addEventListener("DOMContentLoaded", startup, { passive: true });
 
     <p>{translation.story.goal.body[4]}</p>
 </section>
+
+<script is:inline>
+const startup = () => {
+    stickyItems({ main: "#stories", position: "h3", contents: "section, aside" });
+    sideNav({
+        title: "bi-su story",
+        target: "#stories",
+        anchor: ["#section1", "#section2", "#section3", "#section4", "#section5"],
+    });
+};
+window.addEventListener("DOMContentLoaded", startup, { passive: true });
+</script>
 </Layout>

@@ -1,17 +1,20 @@
-// Full Astro Configuration API Documentation:
-// https://docs.astro.build/reference/configuration-reference
+import { defineConfig } from 'astro/config';
 
-// @ts-check
-export default /** @type {import('astro').AstroUserConfig} */ ({
-	// Comment out "renderers: []" to enable Astro's default component support.
-	renderers: [],
-	devOptions: {
-    hostname: '0.0.0.0',  // The hostname to run the dev server on.
-		// port: 3000,             // The port to run the dev server on.
-	},
-	buildOptions: { site: 'https://bi-su.jp/lp_faizad/en' },
-	vite: {
-    ssr: { external: ['svgo'] },
-    server: { host: '0.0.0.0' },
+import tailwind from "@astrojs/tailwind";
+
+// https://astro.build/config
+export default defineConfig({
+  integrations: [tailwind()],
+  site: "https://bisu-en.com",
+  server: {
+	  host: true
   },
+  vite: {
+    ssr: {
+      external: ['svgo']
+    },
+    server: {
+      host: '0.0.0.0'
+    }
+  }
 });

@@ -5,16 +5,10 @@ import Layout from '../layouts/Layout.astro';
 import translation from '../locales/en.json';
 import { Icon } from 'astro-icon';
 const {lang = "en" } = Astro.props;
-
 ---
-
-<script type="module" hoist>
+<script>
 import '../scripts/index.ts';
 </script>
-
-<style>
-
-</style>
 
 <Layout lang={lang} title="Website" description="Bi-su Official Website">
 <ul class="slider">

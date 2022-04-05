@@ -25,7 +25,7 @@ const {
 } = Astro.props as Props
 ---
 
-<script type="module" hoist>
+<script>
 import '../../scripts/product.min.js';
 </script>
 
@@ -45,8 +45,8 @@ import '../../scripts/product.min.js';
      <section id="item" class="pt-12 mb-12 px-3 min-h-[80vh]">
           <figure id="item-images"><img src={item.imgUrl} style="opacity: 1;height:20rem;" alt="">
             <ul>
-            <Fragment set:html={li1}>
-            <Fragment set:html={li2}>
+            <Fragment set:html={li1} />
+            <Fragment set:html={li2} />
             </ul>
           </figure>
 
@@ -86,7 +86,7 @@ import '../../scripts/product.min.js';
                 </div>
 
             </div>
-             <Fragment set:html={price2}>
+             <Fragment set:html={price2} />
             </div>
         </section>
             <ul id="item-detail">
@@ -100,19 +100,19 @@ import '../../scripts/product.min.js';
                     <details >
                     <summary>{item.ingredient.title}</summary>
                         <p style="max-width:fit-content;">{item.ingredient.expiry}</p>
-                       <Fragment set:html={ingredients}>
+                       <Fragment set:html={ingredients} />
                     </details>
                 </li>
                 <li><details> <summary>{item.consume.title}</summary>
-                <Fragment set:html={item.consume.content}>
+                <Fragment set:html={item.consume.content} />
                 </details>
                 </li>
                 <li><details> <summary>Storage</summary>
-                <Fragment set:html={item.storage}>
+                <Fragment set:html={item.storage} />
                 </details>
                 </li>
                 <li class={caution}><details> <summary>Caution Items</summary>
-                <Fragment set:html={item.caution}>
+                <Fragment set:html={item.caution} />
                 </details>
                 </li>
                 </ul>

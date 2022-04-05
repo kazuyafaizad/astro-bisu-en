@@ -1,7 +1,7 @@
 ---
+import '../../styles/products.scss';
 import Layout from '../../layouts/Layout.astro';
 import translation from '../../locales/en.json';
-import '../../styles/products.scss';
 
 import HealthyHeader from '../../img/en/bi-su-categories_pic02-en.jpg'
 import CosmeticHeader from '../../img/en/bi-su-categories_pic01-en.jpg'
@@ -27,20 +27,6 @@ const {
     handcream = translation.products.items.handcream.amazon? 'block' : 'hidden',
     handcreamrose = translation.products.items.handcreamrose.amazon? 'block' : 'hidden',
     } = Astro.props;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 <Layout lang={lang} title={translation.products.title}  description={translation.products.title} >
