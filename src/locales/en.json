@@ -104,7 +104,7 @@
         "nav": {
             "sns": {
                 "1": {
-                    "link": "www.bisu-global.com",
+                    "link": "https://www.bisu-global.com",
                     "title": "sphere"
                 },
                 "2": {
@@ -506,9 +506,9 @@
                 "title": "Moisturizing Lotion",
                 "price": "$100.00",
                 "amazon":"https://www.amazon.com/dp/B09VNSJB3J?ref=myi_title_dp",
-                "imgUrl": "https://cart.bi-su.jp/upload/save_image/06011114_5ed4648d836.jpg",
+                "imgUrl": "https:bisu-us.com/img/lotion01.jpg",
                 "imgUrl1":"https://cart.bi-su.jp/upload/save_image/06011114_5ed46494264.jpg",
-                "imgUrl2":"https://cart.bi-su.jp/upload/save_image/03271411_5e7d8aec93d.jpg",
+                "imgUrl2":"https:bisu-us.com/img/lotion02.jpg",
                 "recommend": {
                     "1": "facecream",
                     "2": "serum",
@@ -816,8 +816,8 @@
                 "title": "Deluxe Set (3 Flavors)",
                 "price": "$160.00",
                 "amazon":"https://www.amazon.com/dp/B09SWYW54Q?ref=myi_title_dp",
-                "imgUrl": "https://cart.bi-su.jp/upload/save_image/12131005_61b69c7651a.jpg",
-                "imgUrl1":"https://cart.bi-su.jp/upload/save_image/12131006_61b69c7d021.jpg",
+                "imgUrl": "https://bisu-us.com/img/jelly_enzyme_set-4.jpg",
+                "imgUrl1":"https://bisu-us.com/img/jelly_enzyme_set-5.jpg",
                 "imgUrl2":"https://cart.bi-su.jp/upload/save_image/12031720_5de61ad7987.jpg",
                 "recommend": {
                     "1": "jelly",
