@@ -4,12 +4,12 @@
 // @ts-check
 export default /** @type {import('astro').AstroUserConfig} */ ({
 	// Comment out "renderers: []" to enable Astro's default component support.
-	renderers: [],
+	integrations: [],
 	devOptions: {
     hostname: '0.0.0.0',  // The hostname to run the dev server on.
 		// port: 3000,             // The port to run the dev server on.
 	},
-	buildOptions: { site: '' },
+	buildOptions: { site: 'https://bisu-us.com' },
 	vite: {
     ssr: { external: ['svgo'] },
     server: { host: '0.0.0.0' },
