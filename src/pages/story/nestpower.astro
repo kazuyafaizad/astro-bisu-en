@@ -1,17 +1,17 @@
 ---
-import '../../styles/story-power.scss';
-import Layout from '../../layouts/Layout.astro';
-import translation from '../../locales/en.json';
-import StoryHeaderSp from '../../img/en/SP/story-header-sp_en.jpg';
-import StoryHeader from '../../img/en/PC/story-headimg01_en.jpg';
-import ThreePromises from '../../img/en/power-img03_en.jpg';
+import '$/styles/story-power.scss';
+import Layout from '$/layouts/Layout.astro';
+import translation from '$/locales/en.json';
+import StoryHeaderSp from '$/img/en/SP/story-header-sp_en.jpg';
+import StoryHeader from '$/img/en/PC/story-headimg01_en.jpg';
+import ThreePromises from '$/img/en/power-img03_en.jpg';
 const {lang = "en" } = Astro.props;
 
 ---
 
-<script type="module" hoist>
-import '../../scripts/story.ts';
-import '../../scripts/story-power.ts';
+<script  >
+import '$/scripts/story.ts';
+import '$/scripts/story-power.ts';
 </script>
 
 <Layout lang={lang} title={translation.nestpower.title} description={translation.nestpower.title} >

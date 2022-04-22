@@ -1,10 +1,11 @@
 ---
-import '../../styles/products.scss';
-import Layout from '../../layouts/Layout.astro';
-import translation from '../../locales/en.json';
+import '$/styles/global.css';
+import '$/styles/products.scss';
+import Layout from '$/layouts/Layout.astro';
+import translation from '$/locales/en.json';
 
-import HealthyHeader from '../../img/en/bi-su-categories_pic02-en.jpg'
-import CosmeticHeader from '../../img/en/bi-su-categories_pic01-en.jpg'
+import HealthyHeader from '$/img/en/bi-su-categories_pic02-en.jpg'
+import CosmeticHeader from '$/img/en/bi-su-categories_pic01-en.jpg'
 const {
     lang = "en",
     bisu16 = translation.products.items.bisu16.amazon? 'block' : 'hidden',
@@ -27,20 +28,6 @@ const {
     handcream = translation.products.items.handcream.amazon? 'block' : 'hidden',
     handcreamrose = translation.products.items.handcreamrose.amazon? 'block' : 'hidden',
     } = Astro.props;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 <Layout lang={lang} title={translation.products.title}  description={translation.products.title} >

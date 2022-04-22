@@ -1,15 +1,15 @@
 ---
-import '../styles/index.scss';
-import '../styles/slider.scss';
-import Layout from '../layouts/Layout.astro';
-import translation from '../locales/en.json';
+import '$/styles/index.scss';
+import '$/styles/slider.scss';
+import Layout from '$/layouts/Layout.astro';
+import translation from '$/locales/en.json';
 import { Icon } from 'astro-icon';
 const {lang = "en" } = Astro.props;
 
 ---
 
-<script type="module" hoist>
-import '../scripts/index.ts';
+<script>
+import '$/scripts/index.ts';
 </script>
 
 <style>
@@ -155,7 +155,7 @@ import '../scripts/index.ts';
         <ul id="sns">
             <li>
                 <a href={translation.index.nav.sns[1].link} style="font-size:2.3rem;">
-                    <Icon name="bi:globe" style="width:3rem;">
+                    <Icon name="bi:globe" style="width:3rem;"/>
                 </a>
             </li>
             <li>

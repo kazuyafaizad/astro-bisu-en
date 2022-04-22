@@ -1,18 +1,18 @@
 ---
-import '../../styles/story-promises.scss';
-import Layout from '../../layouts/Layout.astro';
-import translation from '../../locales/en.json';
-import PromiseHeaderSP from '../../img/en/SP/3promise-header-sp_en.jpg';
-import PromiseHeader from '../../img/en/PC/story-headimg03_en.jpg';
-import ThreePromises2 from '../../img/en/threepromises-con07.jpg';
-import ThreePromises3 from '../../img/en/threepromises-con08.jpg';
+import '$/styles/story-promises.scss';
+import Layout from '$/layouts/Layout.astro';
+import translation from '$/locales/en.json';
+import PromiseHeaderSP from '$/img/en/SP/3promise-header-sp_en.jpg';
+import PromiseHeader from '$/img/en/PC/story-headimg03_en.jpg';
+import ThreePromises2 from '$/img/en/threepromises-con07.jpg';
+import ThreePromises3 from '$/img/en/threepromises-con08.jpg';
 
 const {lang = "en" } = Astro.props;
 
 ---
 
-<script type="module" hoist>
-import '../../scripts/story.ts';
+<script  >
+import '$/scripts/story.ts';
 </script>
 
 <Layout lang={lang} title={translation.threepromises.title} description={translation.threepromises.title}>

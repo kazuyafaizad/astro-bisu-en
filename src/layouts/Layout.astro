@@ -1,31 +1,33 @@
 ---
+
+import '$/styles/common.scss'
+import translation from '$/locales/en.json';
+import Footer from '$/components/Footer.astro'
+import Nav from '$/components/Nav.astro';
+
 export interface Props {
   title?: string
   description?: string
   lang?: string
 }
-import '../styles/common.scss'
-import translation from '../locales/en.json';
-import Footer from '../components/Footer.astro'
-import Meta from '../components/Meta.astro'
-import Nav from '../components/Nav.astro';
 
 const { title, description,lang } = Astro.props as Props
 ---
-<script type="module" hoist>
-import '../scripts/common.ts';
+<script  >
+import '$/scripts/common.ts';
 </script>
+
 <html lang={lang}>
   <head>
     <title>{translation.master.sitename} | {title}</title>
-    <meta
-      name="description"
-      content={description}
-    />
+    <meta name="description" content={description} />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="facebook-domain-verification" content="stcjzptnq74zp5la5gt1t5uce2754g" />
+    <link rel="preconnect dns-prefetch" href="//www.googletagmanager.com" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lora&amp;display=swap" onload="this.rel='stylesheet'" media="screen" />
 
     <slot name="header"/>
-    <Meta/>
-
   </head>
 
   <body>

@@ -1,7 +1,6 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import translation from '../locales/en.json';
-import '../styles/contact.scss';
+import '$/styles/global.css';
+import Layout from '$/layouts/Layout.astro';
 const {lang = "en" } = Astro.props;
 
 ---
@@ -46,7 +45,6 @@ const {lang = "en" } = Astro.props;
       <p class="w-full tracking-wide mb-2 text-xs" >
       <input type="checkbox" class="form-checkbox" checked /> *I agree to the protection of my personal information.
       </p>
-      </label>
     </div>
 
     <div class="flex w-full px-3 mb-2 md:mb-0 items-center">
@@ -61,7 +59,7 @@ const {lang = "en" } = Astro.props;
   </div>
 </form>
      </section>
-<script>
+<script is:inline>
 let form = document.getElementById("contactus");
 
 form.addEventListener("input", function () {

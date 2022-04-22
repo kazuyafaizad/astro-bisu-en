@@ -1,8 +1,9 @@
 ---
-import '../../styles/items.scss';
-import Layout from '../../layouts/Layout.astro';
-import translation from '../../locales/en.json';
-import amazon from '../../img/Amazon-logo.png';
+import '$/styles/global.css';
+import '$/styles/items.scss';
+import Layout from '$/layouts/Layout.astro';
+import translation from '$/locales/en.json';
+import amazon from '$/img/Amazon-logo.png';
 
 export async function getStaticPaths() {
 
@@ -25,8 +26,8 @@ const {
 } = Astro.props as Props
 ---
 
-<script type="module" hoist>
-import '../../scripts/product.min.js';
+<script  >
+import '$/scripts/product.min.js';
 </script>
 
 <Layout lang={lang} title={item.title}  description={item.title} >

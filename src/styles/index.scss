@@ -109,7 +109,6 @@ main>.slider {
         li {
             width: (math.div(100%, 4) -2);
 
-            // width: (math.div(100%, 4) -2);
             a {
                 display: flex;
                 flex-direction: column-reverse;
@@ -118,6 +117,8 @@ main>.slider {
                     margin-top: 1em;
                     line-height: 1.5;
                     font-size: 0.9rem;
+                    text-align: center;
+
                     // &::before {
                     //     content: "美巣bi-su";
                     //     display: block;
@@ -178,7 +179,12 @@ main>.slider {
         margin-top: 2rem;
 
         li {
-            width: (math.div(100%, 5) -2); //(math.div(100%, 5) -2);
+            width: (math.div(100%, 5) -2);
+
+            h3 {
+
+                text-align: center;
+            }
 
             a {
                 display: flex;
@@ -435,6 +441,9 @@ body>footer {
 
             li {
                 margin: 0 0.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 a {
                     font-family: "icomoon";
